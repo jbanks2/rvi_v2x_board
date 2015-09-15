@@ -30,12 +30,12 @@ LIBS:contrib
 LIBS:valves
 LIBS:sim5320_KICAD_PART
 LIBS:dc-dc
-LIBS:OBD2_SMS-cache
+LIBS:CUSTOM_KICAD_PART
 EELAYER 25 0
 EELAYER END
 $Descr USLetter 11000 8500
 encoding utf-8
-Sheet 5 6
+Sheet 5 7
 Title "OBD2-SMS - Open source RVI over SMS daughter card"
 Date "2015-07-17"
 Rev "0.01"
@@ -202,7 +202,13 @@ $EndComp
 Connection ~ 4900 3750
 Connection ~ 5200 3750
 Wire Wire Line
-	4600 3750 5400 3750
+	4600 3750 4900 3750
+Wire Wire Line
+	4900 3750 5050 3750
+Wire Wire Line
+	5050 3750 5200 3750
+Wire Wire Line
+	5200 3750 5400 3750
 Connection ~ 6300 3750
 $Comp
 L C C3
@@ -249,19 +255,25 @@ F 3 "" H 2400 1550 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	1200 1250 1200 1350
+	1200 1250 1200 1300
+Wire Wire Line
+	1200 1300 1200 1350
 Wire Wire Line
 	1200 1300 1300 1300
 Connection ~ 1200 1300
 Wire Wire Line
-	1800 1300 2000 1300
+	1800 1300 1900 1300
+Wire Wire Line
+	1900 1300 2000 1300
 Wire Wire Line
 	1900 1300 1900 1350
 Connection ~ 1900 1300
 Wire Wire Line
 	2300 1300 2400 1300
 Wire Wire Line
-	2400 1250 2400 1400
+	2400 1250 2400 1300
+Wire Wire Line
+	2400 1300 2400 1400
 Connection ~ 2400 1300
 $Comp
 L GND #PWR0105
@@ -341,7 +353,11 @@ F 3 "" H 2350 5600 60  0000 C CNN
 	-1   0    0    -1  
 $EndComp
 Wire Wire Line
-	2250 5300 2800 5300
+	2250 5300 2350 5300
+Wire Wire Line
+	2350 5300 2650 5300
+Wire Wire Line
+	2650 5300 2800 5300
 Connection ~ 2350 5300
 $Comp
 L PNVX002 U3
@@ -399,7 +415,9 @@ F 3 "" H 2500 4100 30  0000 C CNN
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	2050 3950 2550 3950
+	2050 3950 2500 3950
+Wire Wire Line
+	2500 3950 2550 3950
 Wire Wire Line
 	2850 3950 2950 3950
 Wire Wire Line
@@ -421,7 +439,11 @@ F 3 "" H 1250 4300 60  0000 C CNN
 $EndComp
 Connection ~ 3450 3750
 Wire Wire Line
-	1600 2500 2550 2500
+	1600 2500 2050 2500
+Wire Wire Line
+	2050 2500 2400 2500
+Wire Wire Line
+	2400 2500 2550 2500
 $Comp
 L C C15
 U 1 1 55AD22BB
@@ -464,7 +486,13 @@ Text Notes 800  4900 0    60   ~ 0
 Text Notes 1250 3450 0    60   ~ 0
 4.1V @ 2A DC-DC Power Supply
 Wire Wire Line
-	2050 3750 3900 3750
+	2050 3750 3250 3750
+Wire Wire Line
+	3250 3750 3450 3750
+Wire Wire Line
+	3450 3750 3800 3750
+Wire Wire Line
+	3800 3750 3900 3750
 $Comp
 L C C8
 U 1 1 55AD38E8
@@ -503,7 +531,9 @@ F 3 "" H 2400 2800 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	1250 3950 1250 4300
+	1250 3950 1250 4050
+Wire Wire Line
+	1250 4050 1250 4300
 $Comp
 L TLV70033DDC U4
 U 1 1 55B5E034
@@ -586,12 +616,12 @@ $EndComp
 $Comp
 L FUSE F2
 U 1 1 55C7D59B
-P 4450 1300
-F 0 "F2" H 4550 1350 50  0000 C CNN
-F 1 "1A" H 4350 1250 50  0000 C CNN
-F 2 "Resistors_SMD:R_1210" H 4450 1300 60  0001 C CNN
-F 3 "" H 4450 1300 60  0000 C CNN
-	1    4450 1300
+P 4250 1300
+F 0 "F2" H 4350 1350 50  0000 C CNN
+F 1 "1A" H 4150 1250 50  0000 C CNN
+F 2 "Resistors_SMD:R_1210" H 4250 1300 60  0001 C CNN
+F 3 "" H 4250 1300 60  0000 C CNN
+	1    4250 1300
 	1    0    0    -1  
 $EndComp
 Text GLabel 6450 3650 1    60   Input ~ 0
@@ -605,7 +635,13 @@ Connection ~ 6450 3750
 Text GLabel 5050 3650 1    60   Input ~ 0
 4V1
 Wire Wire Line
-	6100 3750 6900 3750
+	6100 3750 6300 3750
+Wire Wire Line
+	6300 3750 6450 3750
+Wire Wire Line
+	6450 3750 6600 3750
+Wire Wire Line
+	6600 3750 6900 3750
 Text GLabel 2800 5300 2    60   Input ~ 0
 3V3
 Text GLabel 2550 2500 2    60   Input ~ 0
@@ -621,7 +657,7 @@ Text GLabel 900  2500 0    60   Input ~ 0
 12V0
 Text GLabel 1250 3750 0    60   Input ~ 0
 12V0
-Text GLabel 4200 1300 0    60   Input ~ 0
+Text GLabel 4000 1300 0    60   Input ~ 0
 5V0
 Text GLabel 1350 5300 0    60   Input ~ 0
 5V0
@@ -749,4 +785,55 @@ F 3 "" H 2900 7300 60  0000 C CNN
 $EndComp
 Text GLabel 1250 3850 0    60   Input ~ 0
 PD0
+Text GLabel 4600 950  0    60   Input ~ 0
+5V0_OUT
+Wire Wire Line
+	4600 950  4700 950 
+Wire Wire Line
+	4700 950  4700 1300
+Wire Wire Line
+	4700 1300 4500 1300
+$Comp
+L USB_OTG P?
+U 1 1 55F87F67
+P 5900 1400
+F 0 "P?" H 6225 1275 50  0000 C CNN
+F 1 "USB_u" H 5900 1600 50  0000 C CNN
+F 2 "Connect:USB_Micro-B" V 5850 1300 60  0001 C CNN
+F 3 "" V 5850 1300 60  0000 C CNN
+	1    5900 1400
+	0    -1   1    0   
+$EndComp
+Text GLabel 6200 1300 2    67   Input ~ 0
+USB_M
+Text GLabel 6200 1400 2    67   Input ~ 0
+USB_P
+$Comp
+L GND #PWR?
+U 1 1 55F87F70
+P 5800 1800
+F 0 "#PWR?" H 5800 1550 50  0001 C CNN
+F 1 "GND" V 5800 1600 50  0000 C CNN
+F 2 "" H 5800 1800 60  0000 C CNN
+F 3 "" H 5800 1800 60  0000 C CNN
+	1    5800 1800
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 55F87F76
+P 6200 1600
+F 0 "#PWR?" H 6200 1350 50  0001 C CNN
+F 1 "GND" V 6200 1400 50  0000 C CNN
+F 2 "" H 6200 1600 60  0000 C CNN
+F 3 "" H 6200 1600 60  0000 C CNN
+	1    6200 1600
+	1    0    0    -1  
+$EndComp
+Text Notes 5850 1050 0    60   ~ 0
+HOST Data/Power Connection
+Text GLabel 6200 1200 2    60   Input ~ 0
+5V0_OUT
+Text Notes 3800 800  0    60   ~ 0
+HOST Power Connection
 $EndSCHEMATC

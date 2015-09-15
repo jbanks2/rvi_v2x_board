@@ -30,12 +30,12 @@ LIBS:contrib
 LIBS:valves
 LIBS:sim5320_KICAD_PART
 LIBS:dc-dc
-LIBS:OBD2_SMS-cache
+LIBS:CUSTOM_KICAD_PART
 EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 4 6
+Sheet 4 7
 Title "OBD2-SMS - Open source RVI over SMS daughter card"
 Date "2015-07-17"
 Rev "0.01"
@@ -450,7 +450,7 @@ F 3 "" H 5250 7400 60  0000 C CNN
 	1    5250 7400
 	1    0    0    -1  
 $EndComp
-Text Notes 5300 6100 2    60   ~ 0
+Text Notes 5300 6250 2    60   ~ 0
 CAN Transciever
 Text Notes 1650 6050 2    60   ~ 0
 ISO Transciever
@@ -1336,17 +1336,6 @@ F 3 "" H 7450 3600 30  0000 C CNN
 $EndComp
 Text Notes 6600 3300 0    60   ~ 0
 Automatically Enables CANBUS traciever\nif FTDI contol pins boot to high-z\neasier for initial bring up, simpler fdti setup\nMay reverse for final design, or remove
-$Comp
-L JUMPER3 JP1
-U 1 1 55BE8D93
-P 8750 5900
-F 0 "JP1" H 8800 5800 50  0000 L CNN
-F 1 "CAN_EN_SRC" V 8800 6250 50  0000 C BNN
-F 2 "Connect:PINHEAD1-3" H 8750 5900 60  0001 C CNN
-F 3 "" H 8750 5900 60  0000 C CNN
-	1    8750 5900
-	0    1    1    0   
-$EndComp
 Text GLabel 3850 6700 1    60   Input ~ 0
 CAN_3.3V_SW
 $Comp
@@ -1607,8 +1596,6 @@ Wire Notes Line
 	4300 5800 4300 7700
 Wire Wire Line
 	8500 5650 8900 5650
-Wire Wire Line
-	8900 6150 8750 6150
 Wire Notes Line
 	500  2100 5700 2100
 Wire Notes Line
@@ -1750,7 +1737,6 @@ Wire Wire Line
 	7300 3450 7300 3600
 Wire Wire Line
 	8500 5400 8500 5650
-Connection ~ 8750 5650
 Wire Wire Line
 	10250 4550 10250 4700
 Wire Wire Line
@@ -1938,19 +1924,46 @@ Connection ~ 7300 3500
 Text GLabel 1050 1850 0    60   Input ~ 0
 12V0RAW
 Text GLabel 7100 1350 0    60   Input ~ 0
-PD3
+~CAN_RESET
 Text GLabel 7100 2450 0    60   Input ~ 0
-PD2
+~CAN_SLEEP
 Text GLabel 7600 3450 2    60   Input ~ 0
 PD2
 Text GLabel 7600 3600 2    60   Input ~ 0
 PD3
 Text GLabel 8800 2450 2    60   Input ~ 0
-PB1
-Text GLabel 8900 6150 2    60   Input ~ 0
-PD3
+STN_TXD
 Text GLabel 8800 2550 2    60   Input ~ 0
-PB0
+STN_RXD
 Text GLabel 9950 4550 3    60   Input ~ 0
 PB1
+$Comp
+L R R?
+U 1 1 55F7D009
+P 6050 5950
+F 0 "R?" V 6130 5950 50  0000 C CNN
+F 1 "120" V 6050 5950 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603" V 5980 5950 30  0001 C CNN
+F 3 "" H 6050 5950 30  0000 C CNN
+	1    6050 5950
+	0    1    1    0   
+$EndComp
+Text GLabel 4900 5950 0    60   Input ~ 0
+CAN_H
+Text GLabel 6200 5950 2    60   Input ~ 0
+CAN_L
+$Comp
+L SPST SW?
+U 1 1 55F7E47B
+P 5400 5950
+F 0 "SW?" H 5400 6050 50  0000 C CNN
+F 1 "SPST" H 5400 5850 50  0000 C CNN
+F 2 "" H 5400 5950 60  0000 C CNN
+F 3 "" H 5400 5950 60  0000 C CNN
+	1    5400 5950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8650 5900 8650 5650
+Connection ~ 8650 5650
 $EndSCHEMATC

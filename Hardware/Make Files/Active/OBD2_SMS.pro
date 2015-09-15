@@ -1,4 +1,4 @@
-update=9/3/2015 10:34:52 AM
+update=9/14/2015 3:08:27 PM
 version=1
 last_client=kicad
 [pcbnew]
@@ -37,7 +37,7 @@ SpiceUseNetNumbers=0
 LabSize=60
 [eeschema]
 version=1
-LibDir=../../../Kicad_Custom_Parts
+LibDir=C:/Users/jbanks2/Documents/Projects/Kicad_Custom_Parts
 [eeschema/libraries]
 LibName1=power
 LibName2=device
@@ -70,5 +70,5 @@ LibName28=contrib
 LibName29=valves
 LibName30=sim5320_KICAD_PART
 LibName31=dc-dc
-LibName32=C:/Users/jbanks2/Documents/Projects/Kicad_Custom_Parts/CUSTOM_KICAD_PART
-LibName33=C:/Users/jbanks2/Documents/Projects/Kicad_Custom_Parts/sim5320_KICAD_PART
+LibName32=C:/Users/jbanks2/Documents/Projects/Kicad_Custom_Parts/sim5320_KICAD_PART
+LibName33=C:/Users/jbanks2/Documents/Projects/Kicad_Custom_Parts/CUSTOM_KICAD_PART

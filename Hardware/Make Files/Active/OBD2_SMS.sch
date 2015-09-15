@@ -30,12 +30,12 @@ LIBS:contrib
 LIBS:valves
 LIBS:sim5320_KICAD_PART
 LIBS:dc-dc
-LIBS:OBD2_SMS-cache
+LIBS:CUSTOM_KICAD_PART
 EELAYER 25 0
 EELAYER END
 $Descr USLetter 11000 8500
 encoding utf-8
-Sheet 1 6
+Sheet 1 7
 Title "OBD2-SMS - Open source RVI over SMS daughter card"
 Date "2015-07-17"
 Rev "0.01"
@@ -46,7 +46,7 @@ Comment3 "Manager: Magnus Feuer"
 Comment4 ""
 $EndDescr
 $Sheet
-S 2400 3150 1400 850 
+S 4300 1100 1400 850 
 U 55AB1D0F
 F0 "OBD2_SMS FTDI sub" 60
 F1 "OBD2_SMS_FTDI.sch" 60
@@ -59,21 +59,33 @@ F1 "OBD2_SMS_GPRS.sch" 60
 $EndSheet
 NoConn ~ 7500 4950
 $Sheet
-S 2400 1000 1400 850 
+S 4300 2300 1400 850 
 U 55AB3ADF
 F0 "OBD2_SMS OBD2 sub" 60
 F1 "OBD2_SMS_OBD2.sch" 60
 $EndSheet
 $Sheet
-S 2400 2050 1400 850 
+S 1200 1150 1350 850 
 U 55AB3850
 F0 "OBD2_SMS PWR sub" 60
 F1 "OBD2_SMS_PWR.sch" 60
 $EndSheet
 $Sheet
-S 2400 4250 1350 850 
+S 7300 3900 1350 850 
 U 55AFC3B8
 F0 "OBD2_SMS ACCEL sub" 60
 F1 "OBD2_SMS_ACCEL.sch" 60
+$EndSheet
+$Sheet
+S 1200 2400 1350 900 
+U 55F8B2F2
+F0 "OBD2_SMS_HUB" 60
+F1 "OBD2_SMS_Hub.sch" 60
+$EndSheet
+$Sheet
+S 1200 3650 1200 900 
+U 55F91B74
+F0 "V2X Power Sequencer" 59
+F1 "V2X_CTRL.sch" 59
 $EndSheet
 $EndSCHEMATC

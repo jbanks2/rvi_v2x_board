@@ -30,12 +30,12 @@ LIBS:contrib
 LIBS:valves
 LIBS:sim5320_KICAD_PART
 LIBS:dc-dc
-LIBS:OBD2_SMS-cache
+LIBS:CUSTOM_KICAD_PART
 EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 2 6
+Sheet 2 7
 Title "OBD2-SMS - Open source RVI over SMS daughter card"
 Date "2015-07-17"
 Rev "0.01"
@@ -596,46 +596,14 @@ Text GLabel 3750 2850 0    67   Input ~ 0
 USB_M
 Text GLabel 3750 2950 0    67   Input ~ 0
 USB_P
-$Comp
-L R R52
-U 1 1 55ADFEA6
-P 6050 1050
-F 0 "R52" V 6130 1050 50  0000 C CNN
-F 1 "DNS" V 6050 1050 50  0000 C CNN
-F 2 "Resistors_SMD:R_0603" V 5980 1050 30  0001 C CNN
-F 3 "" H 6050 1050 30  0000 C CNN
-	1    6050 1050
-	-1   0    0    1   
-$EndComp
-$Comp
-L R R53
-U 1 1 55AE0096
-P 6200 1050
-F 0 "R53" V 6280 1050 50  0000 C CNN
-F 1 "DNS" V 6200 1050 50  0000 C CNN
-F 2 "Resistors_SMD:R_0603" V 6130 1050 30  0001 C CNN
-F 3 "" H 6200 1050 30  0000 C CNN
-	1    6200 1050
-	-1   0    0    1   
-$EndComp
 Wire Wire Line
 	5750 1350 6300 1350
 Wire Wire Line
-	6050 1200 6050 1350
-Connection ~ 6050 1350
-Wire Wire Line
 	5750 1450 6300 1450
-Wire Wire Line
-	6200 1200 6200 1450
-Connection ~ 6200 1450
 Wire Wire Line
 	5750 1550 6300 1550
 Wire Wire Line
 	5750 1750 6300 1750
-Wire Wire Line
-	6050 850  6200 850 
-Wire Wire Line
-	6200 850  6200 900 
 Wire Wire Line
 	5750 2250 6100 2250
 Wire Wire Line
@@ -669,80 +637,44 @@ Wire Wire Line
 $Comp
 L USB_OTG P5
 U 1 1 55C540A0
-P 750 4550
-F 0 "P5" H 1075 4425 50  0000 C CNN
-F 1 "USB_u" H 750 4750 50  0000 C CNN
-F 2 "Connect:USB_Micro-B" V 700 4450 60  0001 C CNN
-F 3 "" V 700 4450 60  0000 C CNN
-	1    750  4550
+P 900 4500
+F 0 "P5" H 1225 4375 50  0000 C CNN
+F 1 "USB_u" H 900 4700 50  0000 C CNN
+F 2 "Connect:USB_Micro-B" V 850 4400 60  0001 C CNN
+F 3 "" V 850 4400 60  0000 C CNN
+	1    900  4500
 	0    -1   1    0   
 $EndComp
-Text GLabel 1050 4450 2    67   Input ~ 0
+Text GLabel 1200 4400 2    67   Input ~ 0
 USB_M
-Text GLabel 1050 4550 2    67   Input ~ 0
+Text GLabel 1200 4500 2    67   Input ~ 0
 USB_P
 $Comp
 L GND #PWR019
 U 1 1 55C54233
-P 650 4950
-F 0 "#PWR019" H 650 4700 50  0001 C CNN
-F 1 "GND" V 650 4750 50  0000 C CNN
-F 2 "" H 650 4950 60  0000 C CNN
-F 3 "" H 650 4950 60  0000 C CNN
-	1    650  4950
+P 800 4900
+F 0 "#PWR019" H 800 4650 50  0001 C CNN
+F 1 "GND" V 800 4700 50  0000 C CNN
+F 2 "" H 800 4900 60  0000 C CNN
+F 3 "" H 800 4900 60  0000 C CNN
+	1    800  4900
 	1    0    0    -1  
 $EndComp
 $Comp
 L GND #PWR020
 U 1 1 55C5428C
-P 1050 4750
-F 0 "#PWR020" H 1050 4500 50  0001 C CNN
-F 1 "GND" V 1050 4550 50  0000 C CNN
-F 2 "" H 1050 4750 60  0000 C CNN
-F 3 "" H 1050 4750 60  0000 C CNN
-	1    1050 4750
+P 1200 4700
+F 0 "#PWR020" H 1200 4450 50  0001 C CNN
+F 1 "GND" V 1200 4500 50  0000 C CNN
+F 2 "" H 1200 4700 60  0000 C CNN
+F 3 "" H 1200 4700 60  0000 C CNN
+	1    1200 4700
 	1    0    0    -1  
 $EndComp
 Text GLabel 3750 3150 0    60   Input ~ 0
 FTDI_RESET
-Text GLabel 2100 4350 2    60   Input ~ 0
-FTDI_RESET
-$Comp
-L R R57
-U 1 1 55C546BE
-P 1750 4650
-F 0 "R57" V 1830 4650 50  0000 C CNN
-F 1 "10K" V 1750 4650 50  0000 C CNN
-F 2 "Resistors_SMD:R_0603" V 1680 4650 30  0001 C CNN
-F 3 "" H 1750 4650 30  0000 C CNN
-	1    1750 4650
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	1050 4350 1450 4350
-Wire Wire Line
-	1800 4350 1750 4350
-Wire Wire Line
-	1750 4350 1750 4500
-$Comp
-L GND #PWR021
-U 1 1 55C54A18
-P 1750 4800
-F 0 "#PWR021" H 1750 4550 50  0001 C CNN
-F 1 "GND" V 1750 4600 50  0000 C CNN
-F 2 "" H 1750 4800 60  0000 C CNN
-F 3 "" H 1750 4800 60  0000 C CNN
-	1    1750 4800
-	1    0    0    -1  
-$EndComp
-Text Notes 700  4200 0    60   ~ 0
+Text Notes 850  4150 0    60   ~ 0
 HOST Data Connection
-Text Notes 1850 4750 0    60   ~ 0
-FTDI goes into\nreset when host \nUSB is removed
-Text GLabel 6200 850  2    60   Input ~ 0
-3V3
-Wire Wire Line
-	6050 850  6050 900 
 Text GLabel 900  950  0    60   Input ~ 0
 3V3
 Text GLabel 2100 950  2    60   Input ~ 0
@@ -796,17 +728,6 @@ Text GLabel 3750 2350 0    60   Input ~ 0
 FT3V3PHY
 Text GLabel 3650 1850 0    60   Input ~ 0
 FT1V8
-$Comp
-L R R56
-U 1 1 55C5C744
-P 1950 4350
-F 0 "R56" V 2030 4350 50  0000 C CNN
-F 1 "1K" V 1950 4350 50  0000 C CNN
-F 2 "Resistors_SMD:R_0603" V 1880 4350 30  0001 C CNN
-F 3 "" H 1950 4350 30  0000 C CNN
-	1    1950 4350
-	0    1    1    0   
-$EndComp
 Wire Notes Line
 	2650 4000 2650 500 
 Wire Notes Line
@@ -819,17 +740,6 @@ Text GLabel 2250 5550 2    60   Input ~ 0
 FT_CLK
 Text GLabel 3750 3950 0    60   Input ~ 0
 FT_CLK
-$Comp
-L R R55
-U 1 1 55B1B5CD
-P 1600 4350
-F 0 "R55" V 1680 4350 50  0000 C CNN
-F 1 "4K7" V 1600 4350 50  0000 C CNN
-F 2 "Resistors_SMD:R_0603" V 1530 4350 30  0001 C CNN
-F 3 "" H 1600 4350 30  0000 C CNN
-	1    1600 4350
-	0    1    1    0   
-$EndComp
 Text GLabel 1450 5550 0    60   Input ~ 0
 FT_CLK_M
 Text GLabel 3750 4050 0    60   Input ~ 0
@@ -975,4 +885,6 @@ Wire Wire Line
 	900  6600 950  6600
 Text GLabel 1550 6600 0    60   Input ~ 0
 3V3
+Text GLabel 1200 4300 2    60   Input ~ 0
+5V0_OUT
 $EndSCHEMATC

@@ -30,12 +30,12 @@ LIBS:contrib
 LIBS:valves
 LIBS:sim5320_KICAD_PART
 LIBS:dc-dc
-LIBS:OBD2_SMS-cache
+LIBS:CUSTOM_KICAD_PART
 EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 6 6
+Sheet 6 7
 Title "OBD2-SMS - Open source RVI over SMS daughter card"
 Date "2015-07-17"
 Rev "0.01"
@@ -177,26 +177,10 @@ F 3 "" H 1450 2400 30  0000 C CNN
 	1    1450 2400
 	0    1    1    0   
 $EndComp
-$Comp
-L R R2
-U 1 1 55C42145
-P 1450 2600
-F 0 "R2" V 1530 2600 50  0000 C CNN
-F 1 "DNS" V 1450 2600 50  0000 C CNN
-F 2 "Resistors_SMD:R_0603" V 1380 2600 30  0001 C CNN
-F 3 "" H 1450 2600 30  0000 C CNN
-	1    1450 2600
-	0    1    1    0   
-$EndComp
 Text GLabel 1300 2400 0    60   Input ~ 0
 ACL_EN
-Text GLabel 1300 2600 0    60   Input ~ 0
-PD1
-Wire Wire Line
-	1600 2600 1750 2600
 Wire Wire Line
 	1750 2400 1750 2750
 Wire Wire Line
 	1600 2400 1750 2400
-Connection ~ 1750 2600
 $EndSCHEMATC
