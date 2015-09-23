@@ -1,0 +1,180 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:sim5320_KICAD_PART
+LIBS:dc-dc
+LIBS:CUSTOM_KICAD_PART
+LIBS:V2X-cache
+EELAYER 25 0
+EELAYER END
+$Descr USLetter 11000 8500
+encoding utf-8
+Sheet 1 8
+Title "OBD2-SMS - Open source RVI over SMS daughter card"
+Date "2015-07-17"
+Rev "0.01"
+Comp "Jaguar Land Rover"
+Comment1 "Designer: Jesse Banks"
+Comment2 "Advisor: Rudolf Steif"
+Comment3 "Manager: Magnus Feuer"
+Comment4 ""
+$EndDescr
+$Sheet
+S 7400 1100 1400 850 
+U 55AB1D0F
+F0 "V2X FTDI Sub" 59
+F1 "V2X_FTDI.sch" 59
+$EndSheet
+$Sheet
+S 7450 2700 1350 900 
+U 55AF97E0
+F0 "V2X GSM + GPS Sub" 59
+F1 "V2X_GSM.sch" 59
+$EndSheet
+NoConn ~ 7500 4950
+$Sheet
+S 7500 4250 1400 850 
+U 55AB3ADF
+F0 "V2X OBD Sub" 59
+F1 "V2X_OBD.sch" 59
+$EndSheet
+$Sheet
+S 1950 1150 1350 850 
+U 55AB3850
+F0 "V2X Power Sub" 59
+F1 "V2X_PWR.sch" 59
+$EndSheet
+$Sheet
+S 4400 4350 1350 850 
+U 55AFC3B8
+F0 "V2X ACCEL Sub" 59
+F1 "V2X_ACCEL.sch" 59
+$EndSheet
+$Sheet
+S 4350 1100 1350 900 
+U 55F8B2F2
+F0 "V2X Hub Sub" 59
+F1 "V2X_HUB.sch" 59
+$EndSheet
+$Sheet
+S 4400 2650 1200 1050
+U 55F91B74
+F0 "V2X Power Sequencer" 59
+F1 "V2X_CTRL.sch" 59
+$EndSheet
+Wire Notes Line
+	4400 3100 3000 3100
+Wire Notes Line
+	3000 3100 3000 2000
+Wire Notes Line
+	3300 1550 4350 1550
+Wire Notes Line
+	5700 1450 7400 1450
+Wire Notes Line
+	8800 1700 9300 1700
+Wire Notes Line
+	9300 1700 9300 3100
+Wire Notes Line
+	9300 3100 8800 3100
+Wire Notes Line
+	8800 1400 9700 1400
+Wire Notes Line
+	9700 1400 9700 4650
+Wire Notes Line
+	9700 4650 8900 4650
+Wire Notes Line
+	5600 3350 6750 3350
+Wire Notes Line
+	6750 3350 6750 4600
+Wire Notes Line
+	6750 4600 7500 4600
+Wire Notes Line
+	5600 3550 6300 3550
+Wire Notes Line
+	6300 3550 6300 4750
+Wire Notes Line
+	6300 4750 5750 4750
+Wire Notes Line
+	5600 3150 7050 3150
+Wire Notes Line
+	7050 3150 7050 3400
+Wire Notes Line
+	7050 3400 7450 3400
+Wire Notes Line
+	5700 1700 7250 1700
+Wire Notes Line
+	7250 1700 7250 3050
+Wire Notes Line
+	7250 3050 7450 3050
+Wire Notes Line
+	5600 2800 6100 2800
+Wire Notes Line
+	6100 2800 6100 1900
+Wire Notes Line
+	6100 1900 5700 1900
+Text Notes 6150 2350 0    60   ~ 0
+Enable
+Text Notes 6300 1400 0    60   ~ 0
+USB Path
+Text Notes 6350 1650 0    60   ~ 0
+USB Path
+Text Notes 9000 1350 0    60   ~ 0
+Serial
+Text Notes 9000 1650 0    60   ~ 0
+Serial
+Text Notes 5750 3100 0    60   ~ 0
+Serial, enable, interupts
+Text Notes 5750 3300 0    60   ~ 0
+Serial, enable
+Text Notes 5750 3500 0    60   ~ 0
+SPI, enable, interupts
+Text Notes 3150 3050 0    60   ~ 0
+enable
+Text Notes 1950 1000 0    60   ~ 0
+All modules have switched power
+Wire Notes Line
+	7500 4800 6750 4800
+Wire Notes Line
+	6750 4800 6750 5700
+Wire Notes Line
+	6750 5700 2800 5700
+Wire Notes Line
+	2800 5700 2800 2000
+Text Notes 4600 5650 0    60   ~ 0
+Power
+Text Notes 5750 2900 0    60   ~ 0
+Serial, enable, interupts
+Wire Notes Line
+	5600 2950 7050 2950
+Wire Notes Line
+	7050 2950 7050 1850
+Wire Notes Line
+	7050 1850 7400 1850
+$EndSCHEMATC

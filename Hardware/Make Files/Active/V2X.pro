@@ -1,4 +1,4 @@
-update=9/14/2015 3:08:27 PM
+update=9/22/2015 11:38:57 AM
 version=1
 last_client=kicad
 [pcbnew]
@@ -25,16 +25,6 @@ version=1
 NetIExt=net
 [general]
 version=1
-[schematic_editor]
-version=1
-PageLayoutDescrFile=
-PlotDirectoryName=
-SubpartIdSeparator=0
-SubpartFirstId=65
-NetFmtName=Pcbnew
-SpiceForceRefPrefix=0
-SpiceUseNetNumbers=0
-LabSize=60
 [eeschema]
 version=1
 LibDir=C:/Users/jbanks2/Documents/Projects/Kicad_Custom_Parts
@@ -72,3 +62,13 @@ LibName30=sim5320_KICAD_PART
 LibName31=dc-dc
 LibName32=C:/Users/jbanks2/Documents/Projects/Kicad_Custom_Parts/sim5320_KICAD_PART
 LibName33=C:/Users/jbanks2/Documents/Projects/Kicad_Custom_Parts/CUSTOM_KICAD_PART
+[schematic_editor]
+version=1
+PageLayoutDescrFile=
+PlotDirectoryName=
+SubpartIdSeparator=0
+SubpartFirstId=65
+NetFmtName=Pcbnew
+SpiceForceRefPrefix=0
+SpiceUseNetNumbers=0
+LabSize=69

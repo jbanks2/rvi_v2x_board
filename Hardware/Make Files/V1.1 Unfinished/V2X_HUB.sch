@@ -1,0 +1,446 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:sim5320_KICAD_PART
+LIBS:dc-dc
+LIBS:CUSTOM_KICAD_PART
+LIBS:V2X-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 7 8
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L USB2242 U18
+U 1 1 55F88FA9
+P 4350 3650
+F 0 "U18" H 3950 4300 60  0000 C CNN
+F 1 "USB2242" H 4600 4300 60  0000 C CNN
+F 2 "" H 4350 3650 60  0000 C CNN
+F 3 "" H 4350 3650 60  0000 C CNN
+	1    4350 3650
+	1    0    0    -1  
+$EndComp
+Text GLabel 2750 3100 0    60   Input ~ 0
+3V3_B
+Text GLabel 2000 3900 0    60   Input ~ 0
+3V3_B
+$Comp
+L GND #PWR126
+U 1 1 55F890DF
+P 4350 4450
+F 0 "#PWR126" H 4350 4200 50  0001 C CNN
+F 1 "GND" V 4350 4250 50  0000 C CNN
+F 2 "" H 4350 4450 60  0000 C CNN
+F 3 "" H 4350 4450 60  0000 C CNN
+	1    4350 4450
+	1    0    0    -1  
+$EndComp
+Text GLabel 3650 3200 0    60   Input ~ 0
+FTDI_DM
+Text GLabel 3650 3300 0    60   Input ~ 0
+FTDI_DP
+Text GLabel 3650 3400 0    60   Input ~ 0
+SIM_DM
+Text GLabel 3650 3500 0    60   Input ~ 0
+SIM_DP
+NoConn ~ 3650 3600
+Text GLabel 5050 4000 2    60   Input ~ 0
+~HUB_RESET
+Text GLabel 5050 3300 2    60   Input ~ 0
+HUB_CLK
+Text GLabel 5050 3400 2    60   Input ~ 0
+HUB_CLKN
+Text GLabel 8750 5550 2    60   Input ~ 0
+HUB_CLK
+Text GLabel 8100 5550 0    60   Input ~ 0
+HUB_CLKN
+$Comp
+L C C62
+U 1 1 55F89350
+P 8200 5800
+F 0 "C62" H 8225 5900 50  0000 L CNN
+F 1 "18P" H 8225 5700 50  0000 L CNN
+F 2 "" H 8238 5650 30  0000 C CNN
+F 3 "" H 8200 5800 60  0000 C CNN
+	1    8200 5800
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C63
+U 1 1 55F893A4
+P 8650 5800
+F 0 "C63" H 8675 5900 50  0000 L CNN
+F 1 "18P" H 8675 5700 50  0000 L CNN
+F 2 "" H 8688 5650 30  0000 C CNN
+F 3 "" H 8650 5800 60  0000 C CNN
+	1    8650 5800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Crystal_Small Y1
+U 1 1 55F893D2
+P 8450 5550
+F 0 "Y1" H 8450 5650 50  0000 C CNN
+F 1 "24MHz" H 8450 5450 50  0000 C CNN
+F 2 "" H 8450 5550 60  0000 C CNN
+F 3 "" H 8450 5550 60  0000 C CNN
+	1    8450 5550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8100 5550 8200 5550
+Wire Wire Line
+	8200 5550 8350 5550
+Wire Wire Line
+	8200 5650 8200 5550
+Connection ~ 8200 5550
+Wire Wire Line
+	8550 5550 8650 5550
+Wire Wire Line
+	8650 5550 8750 5550
+Wire Wire Line
+	8650 5650 8650 5550
+Connection ~ 8650 5550
+$Comp
+L GND #PWR128
+U 1 1 55F89454
+P 8200 5950
+F 0 "#PWR128" H 8200 5700 50  0001 C CNN
+F 1 "GND" V 8200 5750 50  0000 C CNN
+F 2 "" H 8200 5950 60  0000 C CNN
+F 3 "" H 8200 5950 60  0000 C CNN
+	1    8200 5950
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR129
+U 1 1 55F89474
+P 8650 5950
+F 0 "#PWR129" H 8650 5700 50  0001 C CNN
+F 1 "GND" V 8650 5750 50  0000 C CNN
+F 2 "" H 8650 5950 60  0000 C CNN
+F 3 "" H 8650 5950 60  0000 C CNN
+	1    8650 5950
+	1    0    0    -1  
+$EndComp
+NoConn ~ 3650 3800
+NoConn ~ 3650 4200
+$Comp
+L R R75
+U 1 1 55F89B1E
+P 5850 3100
+F 0 "R75" V 5930 3100 50  0000 C CNN
+F 1 "12K" V 5850 3100 50  0000 C CNN
+F 2 "" V 5780 3100 30  0000 C CNN
+F 3 "" H 5850 3100 30  0000 C CNN
+	1    5850 3100
+	0    1    1    0   
+$EndComp
+$Comp
+L R R76
+U 1 1 55F89C53
+P 9150 3200
+F 0 "R76" V 9230 3200 50  0000 C CNN
+F 1 "1K0" V 9150 3200 50  0000 C CNN
+F 2 "" V 9080 3200 30  0000 C CNN
+F 3 "" H 9150 3200 30  0000 C CNN
+	1    9150 3200
+	-1   0    0    1   
+$EndComp
+$Comp
+L R R73
+U 1 1 55F89CC5
+P 9150 2700
+F 0 "R73" V 9230 2700 50  0000 C CNN
+F 1 "DNS" V 9150 2700 50  0000 C CNN
+F 2 "" V 9080 2700 30  0000 C CNN
+F 3 "" H 9150 2700 30  0000 C CNN
+	1    9150 2700
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	9150 2850 9150 2950
+Wire Wire Line
+	9150 2950 9150 3050
+Connection ~ 9150 2950
+Text GLabel 9150 2550 1    60   Input ~ 0
+3V3_B
+Wire Wire Line
+	9150 2550 9150 2550
+Wire Wire Line
+	9150 3350 9150 3350
+Text Notes 7650 3250 0    60   ~ 0
+Boot Strapping Option\nSUSP_IND = NON_REM0\nSMBDATA = NON_REM1\nNON_REM[1:0] = 10 \nmeans neither down port\n is removable \n\n\nSMBCLK = CFG_SEL = '0'\nMeans the hub is self powered
+$Comp
+L R R77
+U 1 1 55F8A6E8
+P 9200 4200
+F 0 "R77" V 9280 4200 50  0000 C CNN
+F 1 "DNS" V 9200 4200 50  0000 C CNN
+F 2 "" V 9130 4200 30  0000 C CNN
+F 3 "" H 9200 4200 30  0000 C CNN
+	1    9200 4200
+	-1   0    0    1   
+$EndComp
+$Comp
+L R R79
+U 1 1 55F8A750
+P 9200 4700
+F 0 "R79" V 9280 4700 50  0000 C CNN
+F 1 "1K0" V 9200 4700 50  0000 C CNN
+F 2 "" V 9130 4700 30  0000 C CNN
+F 3 "" H 9200 4700 30  0000 C CNN
+	1    9200 4700
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	9200 4350 9200 4450
+Wire Wire Line
+	9200 4450 9200 4500
+Wire Wire Line
+	9200 4500 9200 4550
+Connection ~ 9200 4450
+Text GLabel 9100 3950 0    60   Input ~ 0
+3V3_B
+$Comp
+L GND #PWR127
+U 1 1 55F8A8AD
+P 9200 4850
+F 0 "#PWR127" H 9200 4600 50  0001 C CNN
+F 1 "GND" V 9200 4650 50  0000 C CNN
+F 2 "" H 9200 4850 60  0000 C CNN
+F 3 "" H 9200 4850 60  0000 C CNN
+	1    9200 4850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9200 4050 9200 3950
+Wire Wire Line
+	9200 3950 9100 3950
+Text Notes 7350 4400 0    60   ~ 0
+Boot Strapping Option\nPRTPWR1 = Battery Charge Enable\n0  = feature off, we dont need.
+$Comp
+L GND #PWR120
+U 1 1 55F8AB65
+P 6000 3100
+F 0 "#PWR120" H 6000 2850 50  0001 C CNN
+F 1 "GND" V 6000 2900 50  0000 C CNN
+F 2 "" H 6000 3100 60  0000 C CNN
+F 3 "" H 6000 3100 60  0000 C CNN
+	1    6000 3100
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5700 3100 5050 3100
+$Comp
+L C C60
+U 1 1 55F8ABF9
+P 2150 4050
+F 0 "C60" H 2175 4150 50  0000 L CNN
+F 1 "100N" H 2175 3950 50  0000 L CNN
+F 2 "" H 2188 3900 30  0000 C CNN
+F 3 "" H 2150 4050 60  0000 C CNN
+	1    2150 4050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2000 3900 2150 3900
+Wire Wire Line
+	2150 3900 3650 3900
+Connection ~ 2150 3900
+$Comp
+L GND #PWR124
+U 1 1 55F8AFDA
+P 2150 4200
+F 0 "#PWR124" H 2150 3950 50  0001 C CNN
+F 1 "GND" V 2150 4000 50  0000 C CNN
+F 2 "" H 2150 4200 60  0000 C CNN
+F 3 "" H 2150 4200 60  0000 C CNN
+	1    2150 4200
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C58
+U 1 1 55F8B218
+P 2850 3250
+F 0 "C58" H 2875 3350 50  0000 L CNN
+F 1 "1U" H 2875 3150 50  0000 L CNN
+F 2 "" H 2888 3100 30  0000 C CNN
+F 3 "" H 2850 3250 60  0000 C CNN
+	1    2850 3250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2750 3100 2850 3100
+Wire Wire Line
+	2850 3100 3650 3100
+Connection ~ 2850 3100
+$Comp
+L GND #PWR122
+U 1 1 55F8B30B
+P 2850 3400
+F 0 "#PWR122" H 2850 3150 50  0001 C CNN
+F 1 "GND" V 2850 3200 50  0000 C CNN
+F 2 "" H 2850 3400 60  0000 C CNN
+F 3 "" H 2850 3400 60  0000 C CNN
+	1    2850 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C61
+U 1 1 55F8B394
+P 2500 4300
+F 0 "C61" H 2525 4400 50  0000 L CNN
+F 1 "1U" H 2525 4200 50  0000 L CNN
+F 2 "" H 2538 4150 30  0000 C CNN
+F 3 "" H 2500 4300 60  0000 C CNN
+	1    2500 4300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2500 4150 2500 4000
+Wire Wire Line
+	2500 4000 3650 4000
+$Comp
+L GND #PWR125
+U 1 1 55F8B452
+P 2500 4450
+F 0 "#PWR125" H 2500 4200 50  0001 C CNN
+F 1 "GND" V 2500 4250 50  0000 C CNN
+F 2 "" H 2500 4450 60  0000 C CNN
+F 3 "" H 2500 4450 60  0000 C CNN
+	1    2500 4450
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C59
+U 1 1 55F8B496
+P 5700 3350
+F 0 "C59" H 5725 3450 50  0000 L CNN
+F 1 "100N" H 5725 3250 50  0000 L CNN
+F 2 "" H 5738 3200 30  0000 C CNN
+F 3 "" H 5700 3350 60  0000 C CNN
+	1    5700 3350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5050 3200 5700 3200
+$Comp
+L GND #PWR123
+U 1 1 55F8B6A0
+P 5700 3500
+F 0 "#PWR123" H 5700 3250 50  0001 C CNN
+F 1 "GND" V 5700 3300 50  0000 C CNN
+F 2 "" H 5700 3500 60  0000 C CNN
+F 3 "" H 5700 3500 60  0000 C CNN
+	1    5700 3500
+	1    0    0    -1  
+$EndComp
+Text Notes 7400 4800 0    60   ~ 0
+PRTPWR1 and PRTPWR2 go\n high when the port is active
+Text GLabel 5050 3900 2    60   Input ~ 0
+3V3_B
+Wire Wire Line
+	9100 4500 9200 4500
+Connection ~ 9200 4500
+Text GLabel 5050 4100 2    60   Input ~ 0
+HUB_SCL
+Text GLabel 5050 4200 2    60   Input ~ 0
+HUB_SDA
+$Comp
+L GND #PWR121
+U 1 1 55F9C2E3
+P 9150 3350
+F 0 "#PWR121" H 9150 3100 50  0001 C CNN
+F 1 "GND" V 9150 3150 50  0000 C CNN
+F 2 "" H 9150 3350 60  0000 C CNN
+F 3 "" H 9150 3350 60  0000 C CNN
+	1    9150 3350
+	1    0    0    -1  
+$EndComp
+Text GLabel 5050 3800 2    60   Input ~ 0
+HUB_SUSP_IND
+Text GLabel 9150 2950 0    60   Input ~ 0
+HUB_SUSP_IND
+Text GLabel 3650 3700 0    69   Input ~ 0
+HUB_PWR_PRT1
+Text GLabel 9600 4450 2    69   Input ~ 0
+HUB_STATUS
+Text GLabel 9600 2950 2    69   Input ~ 0
+HUB_SUSP
+$Comp
+L R R74
+U 1 1 55FEC290
+P 9450 2950
+F 0 "R74" V 9530 2950 50  0000 C CNN
+F 1 "1K0" V 9450 2950 50  0000 C CNN
+F 2 "" V 9380 2950 30  0000 C CNN
+F 3 "" H 9450 2950 30  0000 C CNN
+	1    9450 2950
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	9600 2950 9600 2950
+Wire Wire Line
+	9300 2950 9150 2950
+Text GLabel 9100 4500 0    69   Input ~ 0
+HUB_PWR_PRT1
+Wire Wire Line
+	9200 4450 9300 4450
+$Comp
+L R R78
+U 1 1 55FEDA5F
+P 9450 4450
+F 0 "R78" V 9530 4450 50  0000 C CNN
+F 1 "1K0" V 9450 4450 50  0000 C CNN
+F 2 "" V 9380 4450 30  0000 C CNN
+F 3 "" H 9450 4450 30  0000 C CNN
+	1    9450 4450
+	0    -1   -1   0   
+$EndComp
+Text GLabel 5050 3700 2    60   Input ~ 0
+3V3_B
+Text GLabel 5050 3600 2    67   Input ~ 0
+HUB_DM
+Text GLabel 5050 3500 2    67   Input ~ 0
+HUB_DP
+Text GLabel 3650 4100 0    69   Input ~ 0
+HUB_PWR_PRT2
+$EndSCHEMATC
