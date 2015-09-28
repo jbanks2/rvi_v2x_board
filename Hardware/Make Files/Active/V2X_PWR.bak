@@ -37,10 +37,10 @@ EELAYER END
 $Descr USLetter 11000 8500
 encoding utf-8
 Sheet 5 8
-Title "OBD2-SMS - Open source RVI over SMS daughter card"
+Title "V2X - Open source RVI over SMS daughter card"
 Date "2015-07-17"
-Rev "0.01"
-Comp "Jaguar Land Rover"
+Rev "1.2"
+Comp "Jaguar Land Rover OSTC"
 Comment1 "Designer: Jesse Banks"
 Comment2 "Advisor: Rudolf Steif"
 Comment3 "Manager: Magnus Feuer"

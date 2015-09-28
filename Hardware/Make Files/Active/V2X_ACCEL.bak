@@ -37,10 +37,10 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 6 8
-Title "OBD2-SMS - Open source RVI over SMS daughter card"
+Title "V2X - Open source RVI over SMS daughter card"
 Date "2015-07-17"
-Rev "0.01"
-Comp "Jaguar Land Rover"
+Rev "1.2"
+Comp "Jaguar Land Rover OSTC"
 Comment1 "Designer: Jesse Banks"
 Comment2 "Advisor: Rudolf Steif"
 Comment3 "Manager: Magnus Feuer"
@@ -49,115 +49,115 @@ $EndDescr
 $Comp
 L ADXL345 U19
 U 1 1 55B56FB6
-P 3000 1200
-F 0 "U19" H 2750 1700 60  0000 C CNN
-F 1 "ADXL345" H 3000 1000 60  0000 C CNN
-F 2 "Custom Parts:LGA-14_5x3mm" H 3000 1200 60  0001 C CNN
-F 3 "http://www.mouser.com/ds/2/609/ADXL345-246395.pdf" H 3000 1200 60  0001 C CNN
-F 4 "584-ADXL345BCCZ-R7" H 3000 1200 60  0001 C CNN "Mouse PN"
-	1    3000 1200
+P 6200 3950
+F 0 "U19" H 5950 4450 60  0000 C CNN
+F 1 "ADXL345" H 6200 3750 60  0000 C CNN
+F 2 "Custom Parts:LGA-14_5x3mm" H 6200 3950 60  0001 C CNN
+F 3 "http://www.mouser.com/ds/2/609/ADXL345-246395.pdf" H 6200 3950 60  0001 C CNN
+F 4 "584-ADXL345BCCZ-R7" H 6200 3950 60  0001 C CNN "Mouse PN"
+	1    6200 3950
 	1    0    0    -1  
 $EndComp
 $Comp
 L GND #PWR0120
 U 1 1 55B570DE
-P 2550 1300
-F 0 "#PWR0120" H 2550 1050 50  0001 C CNN
-F 1 "GND" H 2550 1150 50  0000 C CNN
-F 2 "" H 2550 1300 60  0000 C CNN
-F 3 "" H 2550 1300 60  0000 C CNN
-	1    2550 1300
+P 5750 4050
+F 0 "#PWR0120" H 5750 3800 50  0001 C CNN
+F 1 "GND" H 5750 3900 50  0000 C CNN
+F 2 "" H 5750 4050 60  0000 C CNN
+F 3 "" H 5750 4050 60  0000 C CNN
+	1    5750 4050
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	2550 1100 2550 1300
-Connection ~ 2550 1200
-Connection ~ 2550 1300
+	5750 3850 5750 4050
+Connection ~ 5750 3950
+Connection ~ 5750 4050
 $Comp
 L GND #PWR0121
 U 1 1 55B57118
-P 1150 1100
-F 0 "#PWR0121" H 1150 850 50  0001 C CNN
-F 1 "GND" H 1150 950 50  0000 C CNN
-F 2 "" H 1150 1100 60  0000 C CNN
-F 3 "" H 1150 1100 60  0000 C CNN
-	1    1150 1100
+P 4350 3850
+F 0 "#PWR0121" H 4350 3600 50  0001 C CNN
+F 1 "GND" H 4350 3700 50  0000 C CNN
+F 2 "" H 4350 3850 60  0000 C CNN
+F 3 "" H 4350 3850 60  0000 C CNN
+	1    4350 3850
 	1    0    0    -1  
 $EndComp
 $Comp
 L C C58
 U 1 1 55B571B1
-P 2050 950
-F 0 "C58" H 2075 1050 50  0000 L CNN
-F 1 "4U7" H 2075 850 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0603" H 2088 800 30  0001 C CNN
-F 3 "http://www.yuden.co.jp/productdata/catalog/en/mlcc_all_e.pdf" H 2050 950 60  0001 C CNN
-F 4 "963-LMK212B7475KG-T" H 2050 950 60  0001 C CNN "Mouse PN"
-	1    2050 950 
+P 5250 3700
+F 0 "C58" H 5275 3800 50  0000 L CNN
+F 1 "4U7" H 5275 3600 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603" H 5288 3550 30  0001 C CNN
+F 3 "http://www.yuden.co.jp/productdata/catalog/en/mlcc_all_e.pdf" H 5250 3700 60  0001 C CNN
+F 4 "963-LMK212B7475KG-T" H 5250 3700 60  0001 C CNN "Mouse PN"
+	1    5250 3700
 	1    0    0    -1  
 $EndComp
 $Comp
 L FILTER FB5
 U 1 1 55B571EB
-P 1700 800
-F 0 "FB5" H 1700 950 50  0000 C CNN
-F 1 "220" H 1700 700 50  0000 C CNN
-F 2 "Capacitors_SMD:C_0805" H 1700 800 60  0001 C CNN
-F 3 "http://product.tdk.com/emc/beads/detailed_information.php?lang=en&ref=jp&part_no=MPZ1608S221ATA00" H 1700 800 60  0001 C CNN
-F 4 "810-MPZ1608S221ATA00" H 1700 800 60  0001 C CNN "Mouse PN"
-	1    1700 800 
+P 4900 3550
+F 0 "FB5" H 4900 3700 50  0000 C CNN
+F 1 "220" H 4900 3450 50  0000 C CNN
+F 2 "Capacitors_SMD:C_0805" H 4900 3550 60  0001 C CNN
+F 3 "http://product.tdk.com/emc/beads/detailed_information.php?lang=en&ref=jp&part_no=MPZ1608S221ATA00" H 4900 3550 60  0001 C CNN
+F 4 "810-MPZ1608S221ATA00" H 4900 3550 60  0001 C CNN "Mouse PN"
+	1    4900 3550
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2050 800  2550 800 
+	5250 3550 5750 3550
 $Comp
 L GND #PWR0122
 U 1 1 55B57242
-P 2050 1100
-F 0 "#PWR0122" H 2050 850 50  0001 C CNN
-F 1 "GND" H 2050 950 50  0000 C CNN
-F 2 "" H 2050 1100 60  0000 C CNN
-F 3 "" H 2050 1100 60  0000 C CNN
-	1    2050 1100
+P 5250 3850
+F 0 "#PWR0122" H 5250 3600 50  0001 C CNN
+F 1 "GND" H 5250 3700 50  0000 C CNN
+F 2 "" H 5250 3850 60  0000 C CNN
+F 3 "" H 5250 3850 60  0000 C CNN
+	1    5250 3850
 	1    0    0    -1  
 $EndComp
-Connection ~ 1350 800 
+Connection ~ 4550 3550
 Wire Wire Line
-	1350 800  1350 1400
+	4550 3550 4550 4150
 Wire Wire Line
-	1350 1400 2300 1400
+	4550 4150 5500 4150
 Wire Wire Line
-	2300 1400 2300 900 
+	5500 4150 5500 3650
 Wire Wire Line
-	2300 900  2550 900 
-Connection ~ 2050 800 
-Connection ~ 1150 800 
-Text GLabel 3450 1200 2    60   Input ~ 0
+	5500 3650 5750 3650
+Connection ~ 5250 3550
+Connection ~ 4350 3550
+Text GLabel 6650 3950 2    60   Input ~ 0
 ACL_INT2
-Text GLabel 3450 1300 2    60   Input ~ 0
+Text GLabel 6650 4050 2    60   Input ~ 0
 ACL_INT1
-Text GLabel 1000 800  0    60   Input ~ 0
+Text GLabel 4200 3550 0    60   Input ~ 0
 3V3_D
 Wire Wire Line
-	1000 800  1350 800 
-Text GLabel 3450 900  2    60   Input ~ 0
+	4200 3550 4550 3550
+Text GLabel 6650 3650 2    60   Input ~ 0
 SEQ_SCK
-Text GLabel 3450 1100 2    60   Input ~ 0
+Text GLabel 6650 3850 2    60   Input ~ 0
 SEQ_MISO
-Text GLabel 3450 1000 2    60   Input ~ 0
+Text GLabel 6650 3750 2    60   Input ~ 0
 SEQ_MOSI
-Text GLabel 3450 800  2    60   Input ~ 0
+Text GLabel 6650 3550 2    60   Input ~ 0
 SEQ_SS
 $Comp
 L C C57
 U 1 1 5605F70E
-P 1150 950
-F 0 "C57" H 1175 1050 50  0000 L CNN
-F 1 "100N" H 1175 850 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0603" H 1188 800 30  0001 C CNN
-F 3 "http://www.mouser.com/ds/2/400/mlcc_commercial_general_en-266370.pdf" H 1150 950 60  0001 C CNN
-F 4 "810-C1608X7R1E104K" H 1150 950 60  0001 C CNN "Mouse PN"
-	1    1150 950 
+P 4350 3700
+F 0 "C57" H 4375 3800 50  0000 L CNN
+F 1 "100N" H 4375 3600 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603" H 4388 3550 30  0001 C CNN
+F 3 "http://www.mouser.com/ds/2/400/mlcc_commercial_general_en-266370.pdf" H 4350 3700 60  0001 C CNN
+F 4 "810-C1608X7R1E104K" H 4350 3700 60  0001 C CNN "Mouse PN"
+	1    4350 3700
 	-1   0    0    -1  
 $EndComp
 $EndSCHEMATC
