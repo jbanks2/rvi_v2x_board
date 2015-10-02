@@ -1,0 +1,994 @@
+Info: Reading netlist file "C:\Users\jbanks2\Documents\Projects\rvi_v2x_board\Hardware\Make Files\Active\V2X.net".
+
+Info: Using references to match components and footprints.
+
+Error: Component 'U9' footprint 'SOT-223' was not found in any libraries in the footprint library table.
+
+Error: Component 'D10' footprint 'Diode-SMC_Standard' was not found in any libraries in the footprint library table.
+
+Error: No footprint defined for component 'W1'.
+
+Error: No footprint defined for component 'W2'.
+
+Error: No footprint defined for component 'A1'.
+
+Error: No footprint defined for component 'A2'.
+
+Error: No footprint defined for component 'X3'.
+
+Error: No footprint defined for component 'P4'.
+
+Error: No footprint defined for component 'X2'.
+
+Info: Checking netlist component footprint "A1:/55AF97E0/55F791FF:".
+
+Error: Cannot add new component "A1:/55AF97E0/55F791FF" due to missing footprint "".
+
+Info: Checking netlist component footprint "A2:/55AF97E0/55F79332:".
+
+Error: Cannot add new component "A2:/55AF97E0/55F79332" due to missing footprint "".
+
+Info: Checking netlist component footprint "C1:/55AB1D0F/5604EF0D:Capacitors_SMD:C_0805".
+
+Info: Checking netlist component footprint "C2:/55AB1D0F/5604EF1B:Capacitors_SMD:C_0603".
+
+Info: Checking netlist component footprint "C3:/55AB1D0F/5604F3DF:Capacitors_SMD:C_0805".
+
+Info: Checking netlist component footprint "C4:/55AB1D0F/5604F3E6:Capacitors_SMD:C_0603".
+
+Info: Checking netlist component footprint "C5:/55AB1D0F/5604F411:Capacitors_SMD:C_0603".
+
+Info: Checking netlist component footprint "C6:/55AB1D0F/5604F474:Capacitors_SMD:C_0603".
+
+Info: Checking netlist component footprint "C7:/55AB1D0F/5604F4D0:Capacitors_SMD:C_0603".
+
+Info: Checking netlist component footprint "C8:/55AB1D0F/5604F527:Capacitors_SMD:C_0603".
+
+Info: Checking netlist component footprint "C9:/55AB1D0F/5604F583:Capacitors_SMD:C_0603".
+
+Info: Checking netlist component footprint "C10:/55AB1D0F/5604F66E:Capacitors_SMD:C_0603".
+
+Info: Checking netlist component footprint "C11:/55AB1D0F/5604F675:Capacitors_SMD:C_0603".
+
+Info: Checking netlist component footprint "C12:/55AB1D0F/5604F67C:Capacitors_SMD:C_0603".
+
+Info: Checking netlist component footprint "C13:/55AB1D0F/5604F683:Capacitors_SMD:C_0603".
+
+Info: Checking netlist component footprint "C14:/55AF97E0/5603FFF9:Capacitors_SMD:C_0603".
+
+Info: Checking netlist component footprint "C15:/55AF97E0/5603FE34:Capacitors_SMD:C_0603".
+
+Info: Checking netlist component footprint "C16:/55AF97E0/55A9296E:Capacitors_ThroughHole:C_Radial_D12.5_L25_P5".
+
+Info: Checking netlist component footprint "C17:/55AF97E0/55A9A6E2:Capacitors_SMD:C_0603".
+
+Info: Checking netlist component footprint "C18:/55AF97E0/5603E72B:Capacitors_SMD:C_0603".
+
+Info: Checking netlist component footprint "C19:/55AF97E0/55F790B9:Capacitors_SMD:C_0603".
+
+Info: Checking netlist component footprint "C20:/55AF97E0/55F793EB:Capacitors_SMD:C_0603".
+
+Info: Checking netlist component footprint "C21:/55AF97E0/55A99D38:Capacitors_SMD:C_0603".
+
+Info: Checking netlist component footprint "C22:/55AF97E0/5603EDA6:Capacitors_SMD:C_0603".
+
+Info: Checking netlist component footprint "C23:/55AF97E0/56039E83:Capacitors_SMD:c_elec_6.3x5.8".
+
+Info: Checking netlist component footprint "C24:/55AF97E0/5602E87D:Capacitors_SMD:C_0805".
+
+Info: Checking netlist component footprint "C25:/55AF97E0/5603A9F0:Capacitors_SMD:C_0603".
+
+Info: Checking netlist component footprint "C26:/55AF97E0/5606F033:Capacitors_SMD:c_elec_6.3x5.8".
+
+Info: Checking netlist component footprint "C27:/55AF97E0/55FD6CB9:Capacitors_SMD:C_0603".
+
+Info: Checking netlist component footprint "C28:/55AF97E0/5603DA9C:Capacitors_SMD:C_0805".
+
+Info: Checking netlist component footprint "C29:/55AB3ADF/56048D13:Capacitors_SMD:C_0603".
+
+Info: Checking netlist component footprint "C30:/55AB3ADF/56046502:Capacitors_SMD:C_0603".
+
+Info: Checking netlist component footprint "C31:/55AB3ADF/56049282:Capacitors_SMD:C_0805".
+
+Info: Checking netlist component footprint "C32:/55AB3ADF/56065471:Capacitors_SMD:C_0603".
+
+Info: Checking netlist component footprint "C33:/55AB3ADF/5604E07D:Capacitors_SMD:C_0603".
+
+Info: Checking netlist component footprint "C34:/55AB3ADF/5604EB81:Capacitors_SMD:C_0603".
+
+Info: Checking netlist component footprint "C35:/55AB3ADF/5604DEF3:Capacitors_SMD:C_0603".
+
+Info: Checking netlist component footprint "C36:/55AB3ADF/5604F281:Capacitors_SMD:C_0603".
+
+Info: Checking netlist component footprint "C37:/55AB3ADF/5604F3BB:Capacitors_SMD:C_0603".
+
+Info: Checking netlist component footprint "C38:/55AB3ADF/5604ECAE:Capacitors_SMD:C_0603".
+
+Info: Checking netlist component footprint "C39:/55AB3ADF/55B1F376:Capacitors_SMD:C_0603".
+
+Info: Checking netlist component footprint "C40:/55AB3ADF/5606AD61:Capacitors_SMD:C_0603".
+
+Info: Checking netlist component footprint "C41:/55AB3850/55AA984D:Capacitors_SMD:C_0603".
+
+Info: Checking netlist component footprint "C42:/55AB3850/55AAA21C:Capacitors_Tantalum_SMD:TantalC_SizeD_EIA-7343_Reflow".
+
+Info: Checking netlist component footprint "C43:/55AB3850/560779B3:Capacitors_SMD:C_0805".
+
+Info: Checking netlist component footprint "C44:/55AB3850/55FBBA04:Capacitors_SMD:C_0603".
+
+Info: Checking netlist component footprint "C45:/55AB3850/55FBBA48:Capacitors_SMD:C_1206".
+
+Info: Checking netlist component footprint "C46:/55AB3850/5607837C:Capacitors_SMD:C_0805".
+
+Info: Checking netlist component footprint "C47:/55AB3850/55AB2334:Capacitors_SMD:C_0603".
+
+Info: Checking netlist component footprint "C48:/55AB3850/5607879B:Capacitors_SMD:C_1206".
+
+Info: Checking netlist component footprint "C49:/55AB3850/56078A7C:Capacitors_SMD:C_1206".
+
+Info: Checking netlist component footprint "C50:/55AB3850/56078498:Capacitors_SMD:C_0805".
+
+Info: Checking netlist component footprint "C51:/55AB3850/5607D34D:Capacitors_SMD:C_0603".
+
+Info: Checking netlist component footprint "C52:/55AB3850/56078B60:Capacitors_SMD:C_1206".
+
+Info: Checking netlist component footprint "C53:/55AFC3B8/5605F70E:Capacitors_SMD:C_0603".
+
+Info: Checking netlist component footprint "C54:/55AFC3B8/55B571B1:Capacitors_SMD:C_0805".
+
+Info: Checking netlist component footprint "C55:/55F8B2F2/56053A8A:Capacitors_SMD:C_0603".
+
+Info: Checking netlist component footprint "C56:/55F8B2F2/56053852:Capacitors_SMD:C_0603".
+
+Info: Checking netlist component footprint "C57:/55F8B2F2/56053914:Capacitors_SMD:C_0603".
+
+Info: Checking netlist component footprint "C58:/55F8B2F2/55F8B394:Capacitors_SMD:C_0603".
+
+Info: Checking netlist component footprint "C59:/55F91B74/56052557:Capacitors_SMD:C_0603".
+
+Info: Checking netlist component footprint "C60:/55F91B74/56052E12:Capacitors_SMD:C_0603".
+
+Info: Checking netlist component footprint "C61:/55F91B74/56052E7D:Capacitors_SMD:C_0603".
+
+Info: Checking netlist component footprint "C62:/55F91B74/56052EE9:Capacitors_SMD:C_0603".
+
+Info: Checking netlist component footprint "C63:/55F91B74/56052F58:Capacitors_SMD:C_0603".
+
+Info: Checking netlist component footprint "C64:/55F91B74/56059C07:Capacitors_SMD:C_0603".
+
+Info: Checking netlist component footprint "C65:/55AF97E0/560A25B5:Capacitors_SMD:C_0603".
+
+Changing component "C65:/55AF97E0/560A25B5" pin "2" net name from "" to "Net-(A2-Pad6)".
+
+Info: Checking netlist component footprint "C66:/55AF97E0/560A30F7:Capacitors_SMD:C_0603".
+
+Info: Checking netlist component footprint "C67:/55AF97E0/560A4244:Capacitors_SMD:C_0603".
+
+Info: Checking netlist component footprint "CON1:/55F91B74/55F86EF7:Pin_Headers:Pin_Header_Straight_2x03".
+
+Changing component "CON1:/55F91B74/55F86EF7" pin "3" net name from "" to "Net-(CON1-Pad3)".
+
+Changing component "CON1:/55F91B74/55F86EF7" pin "4" net name from "" to "Net-(CON1-Pad4)".
+
+Info: Checking netlist component footprint "D1:/55AB3ADF/55B40CD4:Diodes_SMD:SOD-323".
+
+Info: Checking netlist component footprint "D2:/55AB3ADF/56046C18:Diodes_SMD:SOD-323".
+
+Info: Checking netlist component footprint "D3:/55AB3ADF/56049F71:LEDs:LED-0805".
+
+Info: Checking netlist component footprint "D4:/55AB3ADF/5604A2CE:LEDs:LED-0805".
+
+Info: Checking netlist component footprint "D5:/55AB3ADF/56049D6C:LEDs:LED-0805".
+
+Info: Checking netlist component footprint "D6:/55AB3ADF/56049D74:LEDs:LED-0805".
+
+Info: Checking netlist component footprint "D7:/55AB3ADF/5605B14B:Diodes_SMD:SOD-323".
+
+Info: Checking netlist component footprint "D8:/55AB3ADF/5605B7C0:Diodes_SMD:SOD-323".
+
+Info: Checking netlist component footprint "D9:/55AB3ADF/5605AAE2:Diodes_SMD:SOD-323".
+
+Info: Checking netlist component footprint "D10:/55AB3850/55AAA128:Diodes_SMD:Diode-SMC_Standard".
+
+Error: Cannot add new component "D10:/55AB3850/55AAA128" due to missing footprint "Diodes_SMD:Diode-SMC_Standard".
+
+Info: Checking netlist component footprint "D11:/55AB3850/55AAA079:Diodes_SMD:SOD-323".
+
+Info: Checking netlist component footprint "D12:/55AB3850/5607A783:Diodes_SMD:SOD-123".
+
+Info: Checking netlist component footprint "D13:/55AB3850/55FB8D0B:Diodes_SMD:SOD-123".
+
+Info: Checking netlist component footprint "D14:/55AB3850/5607A667:Diodes_SMD:SOD-123".
+
+Info: Checking netlist component footprint "D15:/55AB3850/56018746:Diodes_SMD:SOD-123".
+
+Info: Checking netlist component footprint "D16:/55F91B74/55FD725A:LEDs:LED-0805".
+
+Info: Checking netlist component footprint "D17:/55F91B74/55FD764E:LEDs:LED-0805".
+
+Info: Checking netlist component footprint "F1:/55AB3850/55A6CDC7:Resistors_SMD:R_1812".
+
+Info: Checking netlist component footprint "F2:/55AB3850/55C7D59B:Resistors_SMD:R_1812".
+
+Info: Checking netlist component footprint "FB1:/55AB1D0F/55AD81E1:Resistors_SMD:R_0603".
+
+Info: Checking netlist component footprint "FB2:/55AB1D0F/5607395E:Resistors_SMD:R_0603".
+
+Info: Checking netlist component footprint "FB3:/55AF97E0/55FD6CB2:Resistors_SMD:R_0603".
+
+Info: Checking netlist component footprint "FB4:/55AB3ADF/5604928A:Resistors_SMD:R_0603".
+
+Info: Checking netlist component footprint "FB5:/55AFC3B8/55B571EB:Resistors_SMD:R_0603".
+
+Info: Checking netlist component footprint "FB6:/55F91B74/56059F9F:Resistors_SMD:R_0603".
+
+Info: Checking netlist component footprint "IC1:/55F91B74/55F86EE3:Housings_QFP:TQFP-44_10x10mm_Pitch0.8mm".
+
+Changing component "IC1:/55F91B74/55F86EE3" pin "5" net name from "" to "Net-(IC1-Pad5)".
+
+Changing component "IC1:/55F91B74/55F86EE3" pin "13" net name from "" to "CAN_RXD_BUF".
+
+Changing component "IC1:/55F91B74/55F86EE3" pin "20" net name from "" to "SEQ_LED1".
+
+Changing component "IC1:/55F91B74/55F86EE3" pin "21" net name from "" to "SEQ_LED2".
+
+Changing component "IC1:/55F91B74/55F86EE3" pin "24" net name from "" to "Net-(IC1-Pad24)".
+
+Changing component "IC1:/55F91B74/55F86EE3" pin "25" net name from "" to "SEQ_BUTTON".
+
+Changing component "IC1:/55F91B74/55F86EE3" pin "36" net name from "" to "Net-(IC1-Pad36)".
+
+Changing component "IC1:/55F91B74/55F86EE3" pin "37" net name from "" to "Net-(IC1-Pad37)".
+
+Info: Checking netlist component footprint "J1:/55AB3ADF/55B3C04C:Custom Parts:D09P13B4PA00LF".
+
+Info: Checking netlist component footprint "L1:/55AF97E0/55A9A7AD:Capacitors_SMD:C_0805".
+
+Info: Checking netlist component footprint "L2:/55AF97E0/5603E335:Capacitors_SMD:C_0805".
+
+Info: Checking netlist component footprint "L3:/55AB3850/5607B402:Custom Parts:4.5x4.5mm_Ind".
+
+Info: Checking netlist component footprint "L4:/55AB3850/5607AFB8:Custom Parts:4.5x4.5mm_Ind".
+
+Info: Checking netlist component footprint "L5:/55AB3850/55FBD5FF:Custom Parts:4.5x4.5mm_Ind".
+
+Info: Checking netlist component footprint "P1:/55AF97E0/55A754E2:Custom Parts:47553-1001".
+
+Info: Checking netlist component footprint "P2:/55AF97E0/5603F238:Custom Parts:SMA-RA_142-0701-801".
+
+Info: Checking netlist component footprint "P3:/55AF97E0/55A9FAEF:Custom Parts:SMA-RA_142-0701-801".
+
+Info: Checking netlist component footprint "P4:/55AB3ADF/55B92A71:".
+
+Error: Cannot add new component "P4:/55AB3ADF/55B92A71" due to missing footprint "".
+
+Info: Checking netlist component footprint "P5:/55AB3ADF/55AA08F9:Connect:PINHEAD1-2".
+
+Info: Checking netlist component footprint "P6:/55AB3850/55C35935:Mounting_Holes:MountingHole_3mm".
+
+Changing component "P6:/55AB3850/55C35935" pin "1" net name from "" to "Net-(P6-Pad1)".
+
+Info: Checking netlist component footprint "P7:/55AB3850/55C35919:Fiducials:Fiducial_1mm_Dia_2.54mm_Outer_CopperTop".
+
+Info: Checking netlist component footprint "P8:/55AB3850/55C3590B:Symbols:Symbol_OSHW-Logo_CopperTop_BIG".
+
+Info: Checking netlist component footprint "P9:/55AB3850/5604F7F7:Custom Parts:USB_Micro-B-DX4R005JJ2R1800".
+
+Changing component "P9:/55AB3850/5604F7F7" pin "4" net name from "" to "Net-(P9-Pad4)".
+
+Info: Checking netlist component footprint "P10:/55AB3850/55C3593C:Mounting_Holes:MountingHole_3mm".
+
+Changing component "P10:/55AB3850/55C3593C" pin "1" net name from "" to "Net-(P10-Pad1)".
+
+Info: Checking netlist component footprint "P11:/55AB3850/55C35920:Fiducials:Fiducial_1mm_Dia_2.54mm_Outer_CopperTop".
+
+Info: Checking netlist component footprint "P12:/55AB3850/55C35943:Mounting_Holes:MountingHole_3mm".
+
+Changing component "P12:/55AB3850/55C35943" pin "1" net name from "" to "Net-(P12-Pad1)".
+
+Info: Checking netlist component footprint "P13:/55AB3850/55C35927:Fiducials:Fiducial_1mm_Dia_2.54mm_Outer_CopperTop".
+
+Info: Checking netlist component footprint "P14:/55AB3850/55C7C94F:Connect:USB_A".
+
+Changing component "P14:/55AB3850/55C7C94F" pin "3" net name from "" to "Net-(P14-Pad3)".
+
+Changing component "P14:/55AB3850/55C7C94F" pin "2" net name from "" to "Net-(P14-Pad2)".
+
+Info: Checking netlist component footprint "P15:/55AB3850/55C3594A:Mounting_Holes:MountingHole_3mm".
+
+Changing component "P15:/55AB3850/55C3594A" pin "1" net name from "" to "Net-(P15-Pad1)".
+
+Info: Checking netlist component footprint "P16:/55AB3850/55C3592E:Fiducials:Fiducial_1mm_Dia_2.54mm_Outer_CopperTop".
+
+Info: Checking netlist component footprint "P17:/55AB3850/560753C0:Connect:PINHEAD1-2".
+
+Info: Checking netlist component footprint "P18:/55AB3850/560752AC:Connect:PINHEAD1-2".
+
+Info: Checking netlist component footprint "P19:/55AB3850/5607345C:Connect:PINHEAD1-2".
+
+Info: Checking netlist component footprint "P20:/55F91B74/5609B537:Fiducials:Fiducial_classic_big_CopperTop_Type1".
+
+Info: Checking netlist component footprint "P21:/55F91B74/5609B8CA:Fiducials:Fiducial_classic_big_CopperTop_Type1".
+
+Info: Checking netlist component footprint "P22:/55F91B74/56037434:Pin_Headers:Pin_Header_Straight_2x04".
+
+Info: Checking netlist component footprint "P23:/55F91B74/5609B9F5:Fiducials:Fiducial_classic_big_CopperTop_Type1".
+
+Info: Checking netlist component footprint "P24:/55F91B74/5609B9FC:Fiducials:Fiducial_classic_big_CopperTop_Type1".
+
+Info: Checking netlist component footprint "Q1:/55AB3ADF/560643DB:Housings_SOT-23_SOT-143_TSOT-6:SOT-23".
+
+Info: Checking netlist component footprint "Q2:/55AB3ADF/560521FD:Housings_SOT-23_SOT-143_TSOT-6:SOT-23".
+
+Info: Checking netlist component footprint "Q3:/55AB3ADF/560520AD:Housings_SOT-23_SOT-143_TSOT-6:SOT-23".
+
+Info: Checking netlist component footprint "Q4:/55AB3ADF/55B7C06D:Housings_SOT-23_SOT-143_TSOT-6:SOT-23".
+
+Info: Checking netlist component footprint "Q5:/55AB3ADF/55B35FD6:Housings_SOT-23_SOT-143_TSOT-6:SOT-23".
+
+Info: Checking netlist component footprint "Q6:/55AB3ADF/55B35B80:Housings_SOT-23_SOT-143_TSOT-6:SOT-23".
+
+Info: Checking netlist component footprint "Q7:/55AB3ADF/56052C71:Housings_SOT-23_SOT-143_TSOT-6:SOT-23".
+
+Info: Checking netlist component footprint "Q8:/55AB3ADF/5605DFA8:Housings_SOT-23_SOT-143_TSOT-6:SOT-23".
+
+Info: Checking netlist component footprint "Q9:/55AB3ADF/5605E65B:Housings_SOT-23_SOT-143_TSOT-6:SOT-23".
+
+Info: Checking netlist component footprint "Q10:/55AB3ADF/5605E101:Housings_SOT-23_SOT-143_TSOT-6:SOT-23".
+
+Info: Checking netlist component footprint "Q11:/55AB3850/5607ABF7:Housings_SOIC:SOIC-8_3.9x4.9mm_Pitch1.27mm".
+
+Info: Checking netlist component footprint "Q12:/55AB3850/5607AADD:Housings_SOIC:SOIC-8_3.9x4.9mm_Pitch1.27mm".
+
+Info: Checking netlist component footprint "Q13:/55AB3850/56082DA7:Housings_SOT-23_SOT-143_TSOT-6:SOT-23".
+
+Info: Checking netlist component footprint "Q14:/55AB3850/55FBD5F0:Housings_SOIC:SOIC-8_3.9x4.9mm_Pitch1.27mm".
+
+Info: Checking netlist component footprint "Q15:/55AB3850/56082DBD:Housings_SOT-23_SOT-143_TSOT-6:SOT-23".
+
+Info: Checking netlist component footprint "Q16:/55F91B74/55FE0BA7:Housings_SOT-23_SOT-143_TSOT-6:SOT-23".
+
+Info: Checking netlist component footprint "Q17:/55F91B74/5605B89E:Housings_SOT-23_SOT-143_TSOT-6:SOT-23".
+
+Info: Checking netlist component footprint "Q18:/55F91B74/5605B808:Housings_SOT-23_SOT-143_TSOT-6:SOT-23".
+
+Info: Checking netlist component footprint "R1:/55AB1D0F/56053E03:Resistors_SMD:R_0603".
+
+Info: Checking netlist component footprint "R2:/55AB1D0F/56090D92:Resistors_SMD:R_0603".
+
+Info: Checking netlist component footprint "R3:/55AB1D0F/5606A910:Resistors_SMD:R_0603".
+
+Info: Checking netlist component footprint "R4:/55AB1D0F/55ADB52A:Resistors_SMD:R_0603".
+
+Info: Checking netlist component footprint "R5:/55AB1D0F/5605478C:Resistors_SMD:R_0603".
+
+Info: Checking netlist component footprint "R6:/55AB1D0F/56054902:Resistors_SMD:R_0603".
+
+Info: Checking netlist component footprint "R7:/55AB1D0F/56054A05:Resistors_SMD:R_0603".
+
+Info: Checking netlist component footprint "R8:/55AF97E0/55A75EF8:Resistors_SMD:R_0603".
+
+Info: Checking netlist component footprint "R9:/55AF97E0/5602F7C8:Resistors_SMD:R_0603".
+
+Info: Checking netlist component footprint "R10:/55AF97E0/56069D19:Resistors_SMD:R_0603".
+
+Info: Checking netlist component footprint "R11:/55AF97E0/56069C77:Resistors_SMD:R_0603".
+
+Info: Checking netlist component footprint "R12:/55AF97E0/55A77FC7:Resistors_SMD:R_0603".
+
+Info: Checking netlist component footprint "R13:/55AF97E0/5603C783:Resistors_SMD:R_0603".
+
+Info: Checking netlist component footprint "R14:/55AF97E0/5603C7FB:Resistors_SMD:R_0603".
+
+Info: Checking netlist component footprint "R15:/55AB3ADF/55BD0AC0:Resistors_SMD:R_0603".
+
+Info: Checking netlist component footprint "R16:/55AB3ADF/55A9FC84:Resistors_SMD:R_0603".
+
+Info: Checking netlist component footprint "R17:/55AB3ADF/5604C238:Resistors_SMD:R_0603".
+
+Info: Checking netlist component footprint "R18:/55AB3ADF/5604C35F:Resistors_SMD:R_0603".
+
+Info: Checking netlist component footprint "R19:/55AB3ADF/5604C48B:Resistors_SMD:R_0603".
+
+Info: Checking netlist component footprint "R20:/55AB3ADF/55BD137A:Resistors_SMD:R_0603".
+
+Info: Checking netlist component footprint "R21:/55AB3ADF/5605C36B:Resistors_SMD:R_0603".
+
+Info: Checking netlist component footprint "R22:/55AB3ADF/5605C4B6:Resistors_SMD:R_0603".
+
+Info: Checking netlist component footprint "R23:/55AB3ADF/5605C5FE:Resistors_SMD:R_0603".
+
+Info: Checking netlist component footprint "R24:/55AB3ADF/55B35518:Resistors_SMD:R_0603".
+
+Info: Checking netlist component footprint "R25:/55AB3ADF/55B34CA2:Resistors_SMD:R_0603".
+
+Info: Checking netlist component footprint "R26:/55AB3ADF/56068A93:Resistors_SMD:R_0603".
+
+Info: Checking netlist component footprint "R27:/55AB3ADF/5605C1F3:Resistors_SMD:R_0603".
+
+Info: Checking netlist component footprint "R28:/55AB3ADF/56052FD9:Resistors_SMD:R_0603".
+
+Info: Checking netlist component footprint "R29:/55AB3ADF/5605361F:Resistors_SMD:R_0603".
+
+Info: Checking netlist component footprint "R30:/55AB3ADF/560537AD:Resistors_SMD:R_0603".
+
+Info: Checking netlist component footprint "R31:/55AB3ADF/55B355D8:Resistors_SMD:R_0603".
+
+Info: Checking netlist component footprint "R32:/55AB3ADF/5605BE37:Resistors_SMD:R_0603".
+
+Info: Checking netlist component footprint "R33:/55AB3ADF/55B2AB74:Resistors_SMD:R_0603".
+
+Info: Checking netlist component footprint "R34:/55AB3ADF/5605C791:Resistors_SMD:R_0603".
+
+Info: Checking netlist component footprint "R35:/55AB3ADF/55BC4846:Resistors_SMD:R_0603".
+
+Info: Checking netlist component footprint "R36:/55AB3ADF/56054144:Resistors_SMD:R_0603".
+
+Info: Checking netlist component footprint "R37:/55AB3ADF/56054398:Resistors_SMD:R_0603".
+
+Info: Checking netlist component footprint "R38:/55AB3ADF/5605BC94:Resistors_SMD:R_0603".
+
+Info: Checking netlist component footprint "R39:/55AB3ADF/5605393B:Resistors_SMD:R_0603".
+
+Info: Checking netlist component footprint "R40:/55AB3ADF/5605BA35:Resistors_SMD:R_0603".
+
+Info: Checking netlist component footprint "R41:/55AB3ADF/55AA1169:Resistors_SMD:R_0603".
+
+Changing component "R41:/55AB3ADF/55AA1169" pin "2" net name from "" to "PB1".
+
+Info: Checking netlist component footprint "R42:/55AB3ADF/56058495:Resistors_SMD:R_0603".
+
+Info: Checking netlist component footprint "R43:/55AB3ADF/5605879F:Resistors_SMD:R_0603".
+
+Info: Checking netlist component footprint "R44:/55AB3ADF/5605B2E0:Resistors_SMD:R_0603".
+
+Info: Checking netlist component footprint "R45:/55AB3ADF/56061D1B:Resistors_SMD:R_0603".
+
+Info: Checking netlist component footprint "R46:/55AB3ADF/56060ABE:Resistors_SMD:R_0603".
+
+Info: Checking netlist component footprint "R47:/55AB3ADF/56059C7F:Resistors_SMD:R_0603".
+
+Info: Checking netlist component footprint "R48:/55AB3ADF/560629BB:Resistors_SMD:R_0603".
+
+Info: Checking netlist component footprint "R49:/55AB3ADF/55B20162:Resistors_SMD:R_1210".
+
+Info: Checking netlist component footprint "R50:/55AB3ADF/5605D779:Resistors_SMD:R_0603".
+
+Info: Checking netlist component footprint "R51:/55AB3ADF/5605D8F7:Resistors_SMD:R_0603".
+
+Info: Checking netlist component footprint "R52:/55AB3ADF/55B1F414:Resistors_SMD:R_0603".
+
+Info: Checking netlist component footprint "R53:/55AB3ADF/5606AA56:Resistors_SMD:R_0603".
+
+Info: Checking netlist component footprint "R54:/55AB3ADF/5606B363:Resistors_SMD:R_0603".
+
+Info: Checking netlist component footprint "R55:/55AB3ADF/56062E2E:Resistors_SMD:R_1210".
+
+Info: Checking netlist component footprint "R56:/55AB3ADF/5605DA36:Resistors_SMD:R_0603".
+
+Info: Checking netlist component footprint "R57:/55AB3ADF/5605DB8E:Resistors_SMD:R_0603".
+
+Info: Checking netlist component footprint "R58:/55AB3ADF/56062B17:Resistors_SMD:R_0603".
+
+Info: Checking netlist component footprint "R59:/55AB3850/5607EA95:Resistors_SMD:R_0603".
+
+Info: Checking netlist component footprint "R60:/55AB3850/5607F2D8:Resistors_SMD:R_0603".
+
+Info: Checking netlist component footprint "R61:/55AB3850/5608085B:Resistors_SMD:R_0603".
+
+Info: Checking netlist component footprint "R62:/55AB3850/5608BED0:Resistors_SMD:R_0603".
+
+Info: Checking netlist component footprint "R63:/55AB3850/56080C83:Resistors_SMD:R_0603".
+
+Info: Checking netlist component footprint "R64:/55AB3850/56084F11:Resistors_SMD:R_0603".
+
+Info: Checking netlist component footprint "R65:/55AB3850/56080F5F:Resistors_SMD:R_0603".
+
+Info: Checking netlist component footprint "R66:/55AB3850/560811F0:Resistors_SMD:R_0603".
+
+Info: Checking netlist component footprint "R67:/55AB3850/5607F3FA:Resistors_SMD:R_0603".
+
+Info: Checking netlist component footprint "R68:/55AB3850/5607F747:Resistors_SMD:R_0603".
+
+Info: Checking netlist component footprint "R69:/55AB3850/56081053:Resistors_SMD:R_0603".
+
+Info: Checking netlist component footprint "R70:/55AB3850/56081EB1:Resistors_SMD:R_0603".
+
+Info: Checking netlist component footprint "R71:/55AB3850/56081C97:Resistors_SMD:R_0603".
+
+Changing component "R71:/55AB3850/56081C97" pin "2" net name from "" to "BUTTON".
+
+Info: Checking netlist component footprint "R72:/55AB3850/56084474:Resistors_SMD:R_0603".
+
+Info: Checking netlist component footprint "R73:/55AB3850/5608243D:Resistors_SMD:R_0603".
+
+Info: Checking netlist component footprint "R74:/55AB3850/56081A63:Resistors_SMD:R_0603".
+
+Info: Checking netlist component footprint "R75:/55AB3850/56080D89:Resistors_SMD:R_0603".
+
+Info: Checking netlist component footprint "R76:/55AB3850/5607F851:Resistors_SMD:R_0603".
+
+Info: Checking netlist component footprint "R77:/55F8B2F2/55F89CC5:Resistors_SMD:R_0603".
+
+Info: Checking netlist component footprint "R78:/55F8B2F2/56070A28:Resistors_SMD:R_0603".
+
+Info: Checking netlist component footprint "R79:/55F8B2F2/55F89B1E:Resistors_SMD:R_0603".
+
+Info: Checking netlist component footprint "R80:/55F8B2F2/5607098B:Resistors_SMD:R_0603".
+
+Info: Checking netlist component footprint "R81:/55F8B2F2/55F8A6E8:Resistors_SMD:R_0603".
+
+Info: Checking netlist component footprint "R82:/55F8B2F2/56070A80:Resistors_SMD:R_0603".
+
+Info: Checking netlist component footprint "R83:/55F8B2F2/55F8A750:Resistors_SMD:R_0603".
+
+Info: Checking netlist component footprint "R84:/55F91B74/56033FC8:Resistors_SMD:R_0603".
+
+Info: Checking netlist component footprint "R85:/55F91B74/56034254:Resistors_SMD:R_0603".
+
+Changing component "R85:/55F91B74/56034254" pin "2" net name from "" to "SEQ_WAKE".
+
+Info: Checking netlist component footprint "R86:/55F91B74/56035DF6:Resistors_SMD:R_0603".
+
+Info: Checking netlist component footprint "R87:/55F91B74/5605AFDD:Resistors_SMD:R_0603".
+
+Info: Checking netlist component footprint "R88:/55F91B74/5605AB9B:Resistors_SMD:R_0603".
+
+Info: Checking netlist component footprint "R89:/55F91B74/5605AB0D:Resistors_SMD:R_0603".
+
+Info: Checking netlist component footprint "R90:/55F91B74/5605C9A1:Resistors_SMD:R_0603".
+
+Info: Checking netlist component footprint "R91:/55F91B74/55FD7666:Resistors_SMD:R_0603".
+
+Info: Checking netlist component footprint "R92:/55F91B74/55FD727D:Resistors_SMD:R_0603".
+
+Info: Checking netlist component footprint "R93:/55F91B74/5605AA49:Resistors_SMD:R_0603".
+
+Info: Checking netlist component footprint "SW1:/55AB3ADF/55F7E47B:Custom Parts:SW_SPST_A6TN_TH".
+
+Info: Checking netlist component footprint "SW2:/55AB3850/5600CE81:Custom Parts:SW_SPST_FSMSM_SM".
+
+Info: Checking netlist component footprint "U1:/55AB1D0F/55AD78AF:Housings_QFP:LQFP-64_10x10mm_Pitch0.5mm".
+
+Changing component "U1:/55AB1D0F/55AD78AF" pin "18" net name from "" to "Net-(U1-Pad18)".
+
+Changing component "U1:/55AB1D0F/55AD78AF" pin "19" net name from "" to "Net-(U1-Pad19)".
+
+Changing component "U1:/55AB1D0F/55AD78AF" pin "21" net name from "" to "Net-(U1-Pad21)".
+
+Changing component "U1:/55AB1D0F/55AD78AF" pin "22" net name from "" to "Net-(U1-Pad22)".
+
+Changing component "U1:/55AB1D0F/55AD78AF" pin "23" net name from "" to "Net-(U1-Pad23)".
+
+Changing component "U1:/55AB1D0F/55AD78AF" pin "24" net name from "" to "Net-(U1-Pad24)".
+
+Changing component "U1:/55AB1D0F/55AD78AF" pin "28" net name from "" to "Net-(U1-Pad28)".
+
+Changing component "U1:/55AB1D0F/55AD78AF" pin "29" net name from "" to "Net-(U1-Pad29)".
+
+Changing component "U1:/55AB1D0F/55AD78AF" pin "30" net name from "" to "Net-(U1-Pad30)".
+
+Changing component "U1:/55AB1D0F/55AD78AF" pin "32" net name from "" to "Net-(U1-Pad32)".
+
+Changing component "U1:/55AB1D0F/55AD78AF" pin "33" net name from "" to "Net-(U1-Pad33)".
+
+Changing component "U1:/55AB1D0F/55AD78AF" pin "34" net name from "" to "Net-(U1-Pad34)".
+
+Changing component "U1:/55AB1D0F/55AD78AF" pin "40" net name from "" to "Net-(U1-Pad40)".
+
+Changing component "U1:/55AB1D0F/55AD78AF" pin "41" net name from "" to "Net-(U1-Pad41)".
+
+Changing component "U1:/55AB1D0F/55AD78AF" pin "43" net name from "" to "Net-(U1-Pad43)".
+
+Changing component "U1:/55AB1D0F/55AD78AF" pin "44" net name from "" to "Net-(U1-Pad44)".
+
+Changing component "U1:/55AB1D0F/55AD78AF" pin "45" net name from "" to "Net-(U1-Pad45)".
+
+Changing component "U1:/55AB1D0F/55AD78AF" pin "46" net name from "" to "Net-(U1-Pad46)".
+
+Changing component "U1:/55AB1D0F/55AD78AF" pin "48" net name from "" to "Net-(U1-Pad48)".
+
+Changing component "U1:/55AB1D0F/55AD78AF" pin "52" net name from "" to "Net-(U1-Pad52)".
+
+Changing component "U1:/55AB1D0F/55AD78AF" pin "53" net name from "" to "Net-(U1-Pad53)".
+
+Changing component "U1:/55AB1D0F/55AD78AF" pin "54" net name from "" to "Net-(U1-Pad54)".
+
+Changing component "U1:/55AB1D0F/55AD78AF" pin "55" net name from "" to "Net-(U1-Pad55)".
+
+Changing component "U1:/55AB1D0F/55AD78AF" pin "57" net name from "" to "Net-(U1-Pad57)".
+
+Changing component "U1:/55AB1D0F/55AD78AF" pin "58" net name from "" to "Net-(U1-Pad58)".
+
+Changing component "U1:/55AB1D0F/55AD78AF" pin "59" net name from "" to "Net-(U1-Pad59)".
+
+Info: Checking netlist component footprint "U2:/55AB1D0F/55ADA8E8:Housings_SOIC:SOIC-8_3.9x4.9mm_Pitch1.27mm".
+
+Info: Checking netlist component footprint "U3:/55AF97E0/56099894:Housings_SOT-23_SOT-143_TSOT-6:SOT-23-6".
+
+Info: Checking netlist component footprint "U4:/55AF97E0/55A744B0:Custom Parts:SIM5320".
+
+Changing component "U4:/55AF97E0/55A744B0" pin "4" net name from "" to "SIM_RESET".
+
+Changing component "U4:/55AF97E0/55A744B0" pin "6" net name from "" to "Net-(U4-Pad6)".
+
+Changing component "U4:/55AF97E0/55A744B0" pin "7" net name from "" to "Net-(U4-Pad7)".
+
+Changing component "U4:/55AF97E0/55A744B0" pin "8" net name from "" to "Net-(U4-Pad8)".
+
+Changing component "U4:/55AF97E0/55A744B0" pin "9" net name from "" to "Net-(U4-Pad9)".
+
+Changing component "U4:/55AF97E0/55A744B0" pin "15" net name from "" to "Net-(U4-Pad15)".
+
+Changing component "U4:/55AF97E0/55A744B0" pin "16" net name from "" to "Net-(U4-Pad16)".
+
+Changing component "U4:/55AF97E0/55A744B0" pin "21" net name from "" to "Net-(U4-Pad21)".
+
+Changing component "U4:/55AF97E0/55A744B0" pin "22" net name from "" to "Net-(U4-Pad22)".
+
+Changing component "U4:/55AF97E0/55A744B0" pin "23" net name from "" to "Net-(U4-Pad23)".
+
+Changing component "U4:/55AF97E0/55A744B0" pin "24" net name from "" to "Net-(U4-Pad24)".
+
+Changing component "U4:/55AF97E0/55A744B0" pin "25" net name from "" to "Net-(U4-Pad25)".
+
+Changing component "U4:/55AF97E0/55A744B0" pin "26" net name from "" to "Net-(U4-Pad26)".
+
+Changing component "U4:/55AF97E0/55A744B0" pin "27" net name from "" to "Net-(U4-Pad27)".
+
+Changing component "U4:/55AF97E0/55A744B0" pin "28" net name from "" to "Net-(U4-Pad28)".
+
+Changing component "U4:/55AF97E0/55A744B0" pin "29" net name from "" to "Net-(U4-Pad29)".
+
+Changing component "U4:/55AF97E0/55A744B0" pin "30" net name from "" to "Net-(U4-Pad30)".
+
+Changing component "U4:/55AF97E0/55A744B0" pin "31" net name from "" to "Net-(U4-Pad31)".
+
+Changing component "U4:/55AF97E0/55A744B0" pin "32" net name from "" to "Net-(U4-Pad32)".
+
+Changing component "U4:/55AF97E0/55A744B0" pin "33" net name from "" to "Net-(U4-Pad33)".
+
+Changing component "U4:/55AF97E0/55A744B0" pin "34" net name from "" to "Net-(U4-Pad34)".
+
+Changing component "U4:/55AF97E0/55A744B0" pin "35" net name from "" to "Net-(U4-Pad35)".
+
+Changing component "U4:/55AF97E0/55A744B0" pin "36" net name from "" to "Net-(U4-Pad36)".
+
+Changing component "U4:/55AF97E0/55A744B0" pin "44" net name from "" to "Net-(U4-Pad44)".
+
+Changing component "U4:/55AF97E0/55A744B0" pin "45" net name from "" to "Net-(U4-Pad45)".
+
+Changing component "U4:/55AF97E0/55A744B0" pin "46" net name from "" to "Net-(U4-Pad46)".
+
+Changing component "U4:/55AF97E0/55A744B0" pin "47" net name from "" to "Net-(U4-Pad47)".
+
+Changing component "U4:/55AF97E0/55A744B0" pin "48" net name from "" to "Net-(U4-Pad48)".
+
+Changing component "U4:/55AF97E0/55A744B0" pin "50" net name from "" to "SIM_WAKE".
+
+Changing component "U4:/55AF97E0/55A744B0" pin "52" net name from "" to "PC_WAKE".
+
+Changing component "U4:/55AF97E0/55A744B0" pin "53" net name from "" to "Net-(U4-Pad53)".
+
+Changing component "U4:/55AF97E0/55A744B0" pin "55" net name from "" to "Net-(U4-Pad55)".
+
+Changing component "U4:/55AF97E0/55A744B0" pin "56" net name from "" to "Net-(U4-Pad56)".
+
+Changing component "U4:/55AF97E0/55A744B0" pin "66" net name from "" to "Net-(U4-Pad66)".
+
+Changing component "U4:/55AF97E0/55A744B0" pin "67" net name from "" to "Net-(U4-Pad67)".
+
+Changing component "U4:/55AF97E0/55A744B0" pin "70" net name from "" to "Net-(U4-Pad70)".
+
+Changing component "U4:/55AF97E0/55A744B0" pin "73" net name from "" to "Net-(U4-Pad73)".
+
+Changing component "U4:/55AF97E0/55A744B0" pin "74" net name from "" to "Net-(U4-Pad74)".
+
+Changing component "U4:/55AF97E0/55A744B0" pin "75" net name from "" to "Net-(U4-Pad75)".
+
+Changing component "U4:/55AF97E0/55A744B0" pin "76" net name from "" to "Net-(U4-Pad76)".
+
+Info: Checking netlist component footprint "U5:/55AB3ADF/55C1089B:Housings_SOT-23_SOT-143_TSOT-6:SOT-23-6".
+
+Info: Checking netlist component footprint "U6:/55AB3ADF/5604541F:Housings_SOT-23_SOT-143_TSOT-6:SOT-23-6".
+
+Changing component "U6:/55AB3ADF/5604541F" pin "3" net name from "" to "Net-(U6-Pad3)".
+
+Info: Checking netlist component footprint "U7:/55AB3ADF/55A9EA92:Housings_SOIC:SOIC-28_7.5x17.9mm_Pitch1.27mm".
+
+Changing component "U7:/55AB3ADF/55A9EA92" pin "9" net name from "" to "CAN_CLK".
+
+Changing component "U7:/55AB3ADF/55A9EA92" pin "10" net name from "" to "CAN_CLKN".
+
+Info: Checking netlist component footprint "U8:/55AB3ADF/55B2A9F7:Housings_SOIC:SOIC-14_3.9x8.7mm_Pitch1.27mm".
+
+Info: Checking netlist component footprint "U9:/55AB3ADF/55B33F41:SMD_Packages:SOT-223".
+
+Error: Cannot add new component "U9:/55AB3ADF/55B33F41" due to missing footprint "SMD_Packages:SOT-223".
+
+Info: Checking netlist component footprint "U10:/55AB3ADF/55B1E71A:Housings_SOIC:SOIC-8_3.9x4.9mm_Pitch1.27mm".
+
+Changing component "U10:/55AB3ADF/55B1E71A" pin "5" net name from "" to "Net-(U10-Pad5)".
+
+Info: Checking netlist component footprint "U11:/55AB3850/5607E4F1:Housings_SOT-23_SOT-143_TSOT-6:SOT-23-5".
+
+Info: Checking netlist component footprint "U12:/55AB3850/5605680F:Custom Parts:STDFN-4".
+
+Info: Checking netlist component footprint "U13:/55AB3850/56056DDD:Custom Parts:STDFN-4".
+
+Changing component "U13:/55AB3850/56056DDD" pin "3" net name from "" to "5V0_C".
+
+Info: Checking netlist component footprint "U14:/55AB3850/5607E3D9:Housings_SOT-23_SOT-143_TSOT-6:SOT-23-5".
+
+Info: Checking netlist component footprint "U15:/55AB3850/55FCEBF5:Custom Parts:STDFN-4".
+
+Info: Checking netlist component footprint "U16:/55AB3850/56056235:Custom Parts:STDFN-4".
+
+Info: Checking netlist component footprint "U17:/55AB3850/55FBD5E9:Housings_SOT-23_SOT-143_TSOT-6:SOT-23-5".
+
+Info: Checking netlist component footprint "U18:/55AB3850/560566DF:Custom Parts:STDFN-4".
+
+Info: Checking netlist component footprint "U19:/55AFC3B8/55B56FB6:Custom Parts:LGA-14_5x3mm".
+
+Info: Checking netlist component footprint "U20:/55F8B2F2/55F88FA9:Housings_DFN_QFN:QFN-24-1EP_4x4mm_Pitch0.5mm".
+
+Changing component "U20:/55F8B2F2/55F88FA9" pin "6" net name from "" to "Net-(U20-Pad6)".
+
+Changing component "U20:/55F8B2F2/55F88FA9" pin "8" net name from "" to "Net-(U20-Pad8)".
+
+Changing component "U20:/55F8B2F2/55F88FA9" pin "12" net name from "" to "Net-(U20-Pad12)".
+
+Changing component "U20:/55F8B2F2/55F88FA9" pin "21" net name from "" to "HUB_CLKN".
+
+Changing component "U20:/55F8B2F2/55F88FA9" pin "22" net name from "" to "HUB_CLK".
+
+Info: Checking netlist component footprint "U21:/55F91B74/55FA0066:Housings_SOIC:SOIC-14_3.9x8.7mm_Pitch1.27mm".
+
+Changing component "U21:/55F91B74/55FA0066" pin "2" net name from "" to "CAN_RXD_PS_BUF".
+
+Info: Checking netlist component footprint "U22:/55F91B74/55FA3B36:Housings_SOIC:SOIC-16_3.9x9.9mm_Pitch1.27mm".
+
+Info: Checking netlist component footprint "U23:/55F91B74/5605BAAA:Housings_SOIC:SOIC-16_3.9x9.9mm_Pitch1.27mm".
+
+Changing component "U23:/55F91B74/5605BAAA" pin "4" net name from "" to "~SIM_RESET".
+
+Changing component "U23:/55F91B74/5605BAAA" pin "9" net name from "" to "Net-(U23-Pad9)".
+
+Info: Checking netlist component footprint "W1:/55AF97E0/55B86B7A:".
+
+Error: Cannot add new component "W1:/55AF97E0/55B86B7A" due to missing footprint "".
+
+Info: Checking netlist component footprint "W2:/55AF97E0/55B87E9D:".
+
+Error: Cannot add new component "W2:/55AF97E0/55B87E9D" due to missing footprint "".
+
+Info: Checking netlist component footprint "X1:/55AB1D0F/55B7E82F:Custom Parts:ABLS7M".
+
+Info: Checking netlist component footprint "X2:/55AB3ADF/55B75E65:".
+
+Error: Cannot add new component "X2:/55AB3ADF/55B75E65" due to missing footprint "".
+
+Info: Checking netlist component footprint "X3:/55F8B2F2/56092E15:".
+
+Error: Cannot add new component "X3:/55F8B2F2/56092E15" due to missing footprint "".
+
+Remove single pad net "5V0_C" on "U13" pad '3'
+
+Remove single pad net "BUTTON" on "R71" pad '2'
+
+Remove single pad net "CAN_CLK" on "U7" pad '9'
+
+Remove single pad net "CAN_CLKN" on "U7" pad '10'
+
+Remove single pad net "CAN_RXD_BUF" on "IC1" pad '13'
+
+Remove single pad net "CAN_RXD_PS_BUF" on "U21" pad '2'
+
+Remove single pad net "HUB_CLK" on "U20" pad '22'
+
+Remove single pad net "HUB_CLKN" on "U20" pad '21'
+
+Remove single pad net "Net-(A2-Pad6)" on "C65" pad '2'
+
+Remove single pad net "Net-(CON1-Pad3)" on "CON1" pad '3'
+
+Remove single pad net "Net-(CON1-Pad4)" on "CON1" pad '4'
+
+Remove single pad net "Net-(IC1-Pad24)" on "IC1" pad '24'
+
+Remove single pad net "Net-(IC1-Pad36)" on "IC1" pad '36'
+
+Remove single pad net "Net-(IC1-Pad37)" on "IC1" pad '37'
+
+Remove single pad net "Net-(IC1-Pad5)" on "IC1" pad '5'
+
+Remove single pad net "Net-(P10-Pad1)" on "P10" pad '1'
+
+Remove single pad net "Net-(P12-Pad1)" on "P12" pad '1'
+
+Remove single pad net "Net-(P14-Pad2)" on "P14" pad '2'
+
+Remove single pad net "Net-(P14-Pad3)" on "P14" pad '3'
+
+Remove single pad net "Net-(P15-Pad1)" on "P15" pad '1'
+
+Remove single pad net "Net-(P6-Pad1)" on "P6" pad '1'
+
+Remove single pad net "Net-(P9-Pad4)" on "P9" pad '4'
+
+Remove single pad net "Net-(U1-Pad18)" on "U1" pad '18'
+
+Remove single pad net "Net-(U1-Pad19)" on "U1" pad '19'
+
+Remove single pad net "Net-(U1-Pad21)" on "U1" pad '21'
+
+Remove single pad net "Net-(U1-Pad22)" on "U1" pad '22'
+
+Remove single pad net "Net-(U1-Pad23)" on "U1" pad '23'
+
+Remove single pad net "Net-(U1-Pad24)" on "U1" pad '24'
+
+Remove single pad net "Net-(U1-Pad28)" on "U1" pad '28'
+
+Remove single pad net "Net-(U1-Pad29)" on "U1" pad '29'
+
+Remove single pad net "Net-(U1-Pad30)" on "U1" pad '30'
+
+Remove single pad net "Net-(U1-Pad32)" on "U1" pad '32'
+
+Remove single pad net "Net-(U1-Pad33)" on "U1" pad '33'
+
+Remove single pad net "Net-(U1-Pad34)" on "U1" pad '34'
+
+Remove single pad net "Net-(U1-Pad40)" on "U1" pad '40'
+
+Remove single pad net "Net-(U1-Pad41)" on "U1" pad '41'
+
+Remove single pad net "Net-(U1-Pad43)" on "U1" pad '43'
+
+Remove single pad net "Net-(U1-Pad44)" on "U1" pad '44'
+
+Remove single pad net "Net-(U1-Pad45)" on "U1" pad '45'
+
+Remove single pad net "Net-(U1-Pad46)" on "U1" pad '46'
+
+Remove single pad net "Net-(U1-Pad48)" on "U1" pad '48'
+
+Remove single pad net "Net-(U1-Pad52)" on "U1" pad '52'
+
+Remove single pad net "Net-(U1-Pad53)" on "U1" pad '53'
+
+Remove single pad net "Net-(U1-Pad54)" on "U1" pad '54'
+
+Remove single pad net "Net-(U1-Pad55)" on "U1" pad '55'
+
+Remove single pad net "Net-(U1-Pad57)" on "U1" pad '57'
+
+Remove single pad net "Net-(U1-Pad58)" on "U1" pad '58'
+
+Remove single pad net "Net-(U1-Pad59)" on "U1" pad '59'
+
+Remove single pad net "Net-(U10-Pad5)" on "U10" pad '5'
+
+Remove single pad net "Net-(U20-Pad12)" on "U20" pad '12'
+
+Remove single pad net "Net-(U20-Pad6)" on "U20" pad '6'
+
+Remove single pad net "Net-(U20-Pad8)" on "U20" pad '8'
+
+Remove single pad net "Net-(U23-Pad9)" on "U23" pad '9'
+
+Remove single pad net "Net-(U4-Pad15)" on "U4" pad '15'
+
+Remove single pad net "Net-(U4-Pad16)" on "U4" pad '16'
+
+Remove single pad net "Net-(U4-Pad21)" on "U4" pad '21'
+
+Remove single pad net "Net-(U4-Pad22)" on "U4" pad '22'
+
+Remove single pad net "Net-(U4-Pad23)" on "U4" pad '23'
+
+Remove single pad net "Net-(U4-Pad24)" on "U4" pad '24'
+
+Remove single pad net "Net-(U4-Pad25)" on "U4" pad '25'
+
+Remove single pad net "Net-(U4-Pad26)" on "U4" pad '26'
+
+Remove single pad net "Net-(U4-Pad27)" on "U4" pad '27'
+
+Remove single pad net "Net-(U4-Pad28)" on "U4" pad '28'
+
+Remove single pad net "Net-(U4-Pad29)" on "U4" pad '29'
+
+Remove single pad net "Net-(U4-Pad30)" on "U4" pad '30'
+
+Remove single pad net "Net-(U4-Pad31)" on "U4" pad '31'
+
+Remove single pad net "Net-(U4-Pad32)" on "U4" pad '32'
+
+Remove single pad net "Net-(U4-Pad33)" on "U4" pad '33'
+
+Remove single pad net "Net-(U4-Pad34)" on "U4" pad '34'
+
+Remove single pad net "Net-(U4-Pad35)" on "U4" pad '35'
+
+Remove single pad net "Net-(U4-Pad36)" on "U4" pad '36'
+
+Remove single pad net "Net-(U4-Pad44)" on "U4" pad '44'
+
+Remove single pad net "Net-(U4-Pad45)" on "U4" pad '45'
+
+Remove single pad net "Net-(U4-Pad46)" on "U4" pad '46'
+
+Remove single pad net "Net-(U4-Pad47)" on "U4" pad '47'
+
+Remove single pad net "Net-(U4-Pad48)" on "U4" pad '48'
+
+Remove single pad net "Net-(U4-Pad53)" on "U4" pad '53'
+
+Remove single pad net "Net-(U4-Pad55)" on "U4" pad '55'
+
+Remove single pad net "Net-(U4-Pad56)" on "U4" pad '56'
+
+Remove single pad net "Net-(U4-Pad6)" on "U4" pad '6'
+
+Remove single pad net "Net-(U4-Pad66)" on "U4" pad '66'
+
+Remove single pad net "Net-(U4-Pad67)" on "U4" pad '67'
+
+Remove single pad net "Net-(U4-Pad7)" on "U4" pad '7'
+
+Remove single pad net "Net-(U4-Pad70)" on "U4" pad '70'
+
+Remove single pad net "Net-(U4-Pad73)" on "U4" pad '73'
+
+Remove single pad net "Net-(U4-Pad74)" on "U4" pad '74'
+
+Remove single pad net "Net-(U4-Pad75)" on "U4" pad '75'
+
+Remove single pad net "Net-(U4-Pad76)" on "U4" pad '76'
+
+Remove single pad net "Net-(U4-Pad8)" on "U4" pad '8'
+
+Remove single pad net "Net-(U4-Pad9)" on "U4" pad '9'
+
+Remove single pad net "Net-(U6-Pad3)" on "U6" pad '3'
+
+Remove single pad net "PB1" on "R41" pad '2'
+
+Remove single pad net "PC_WAKE" on "U4" pad '52'
+
+Remove single pad net "SEQ_BUTTON" on "IC1" pad '25'
+
+Remove single pad net "SEQ_LED1" on "IC1" pad '20'
+
+Remove single pad net "SEQ_LED2" on "IC1" pad '21'
+
+Remove single pad net "SEQ_WAKE" on "R85" pad '2'
+
+Remove single pad net "SIM_RESET" on "U4" pad '4'
+
+Remove single pad net "SIM_WAKE" on "U4" pad '50'
+
+Remove single pad net "~SIM_RESET" on "U23" pad '4'
+
+Error: Component 'P7' pad '1' not found in footprint 'Fiducials:Fiducial_1mm_Dia_2.54mm_Outer_CopperTop'
+
+Error: Component 'P8' pad '1' not found in footprint 'Symbols:Symbol_OSHW-Logo_CopperTop_BIG'
+
+Error: Component 'P11' pad '1' not found in footprint 'Fiducials:Fiducial_1mm_Dia_2.54mm_Outer_CopperTop'
+
+Error: Component 'P13' pad '1' not found in footprint 'Fiducials:Fiducial_1mm_Dia_2.54mm_Outer_CopperTop'
+
+Error: Component 'P16' pad '1' not found in footprint 'Fiducials:Fiducial_1mm_Dia_2.54mm_Outer_CopperTop'
+
+Error: Component 'P20' pad '1' not found in footprint 'Fiducials:Fiducial_classic_big_CopperTop_Type1'
+
+Error: Component 'P21' pad '1' not found in footprint 'Fiducials:Fiducial_classic_big_CopperTop_Type1'
+
+Error: Component 'P23' pad '1' not found in footprint 'Fiducials:Fiducial_classic_big_CopperTop_Type1'
+
+Error: Component 'P24' pad '1' not found in footprint 'Fiducials:Fiducial_classic_big_CopperTop_Type1'
+
+Error: Component 'X1' pad '3' not found in footprint 'Custom Parts:ABLS7M'
+
