@@ -228,8 +228,6 @@ F 4 "579-93LC46BISN" H 2200 7050 60  0001 C CNN "Mouse PN"
 	1    2200 7050
 	1    0    0    -1  
 $EndComp
-Text GLabel 1550 6900 0    67   Input ~ 0
-EECS
 Text GLabel 3300 7100 2    67   Input ~ 0
 EEDATA
 Text GLabel 2850 6700 2    67   Input ~ 0
@@ -572,7 +570,7 @@ Wire Wire Line
 Wire Notes Line
 	2650 4000 2650 500 
 Wire Wire Line
-	900  6600 950  6600
+	900  6600 1550 6600
 Wire Notes Line
 	500  4000 2650 4000
 Wire Notes Line
@@ -814,8 +812,6 @@ F 4 "71-CRCW0603-22K-E3" H 3150 7100 60  0001 C CNN "Mouse PN"
 $EndComp
 Text GLabel 900  6600 0    60   Input ~ 0
 3V3_B
-Text GLabel 1550 6600 0    60   Input ~ 0
-3V3_B
 Text GLabel 2850 7300 2    60   Input ~ 0
 3V3_B
 Text GLabel 3300 6900 2    60   Input ~ 0
@@ -843,4 +839,7 @@ F 3 "" H 5350 6950 60  0000 C CNN
 	1    5350 6950
 	-1   0    0    -1  
 $EndComp
+Text GLabel 1550 6900 0    67   Input ~ 0
+EECS
+Connection ~ 950  6600
 $EndSCHEMATC

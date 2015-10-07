@@ -1078,8 +1078,6 @@ Text GLabel 2050 6050 0    60   Input ~ 0
 SIM_DP
 Text GLabel 5900 5950 2    60   Input ~ 0
 SIM_RI
-Text GLabel 5900 6100 2    60   Input ~ 0
-SEQ_WAKE
 $Comp
 L R R84
 U 1 1 560EE6AC
@@ -1401,4 +1399,6 @@ F 3 "" H 2050 5650 60  0000 C CNN
 	1    2050 5650
 	0    1    -1   0   
 $EndComp
+Text GLabel 5900 6100 2    69   Input ~ 0
+PC_WAKE
 $EndSCHEMATC
