@@ -1,1 +1,2 @@
 hardware\Research\.pdf
+*.bak
