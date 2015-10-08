@@ -1,16 +1,6 @@
-update=10/2/2015 3:20:48 PM
+update=10/8/2015 10:58:46 AM
 version=1
-last_client=pcbnew
-[schematic_editor]
-version=1
-PageLayoutDescrFile=
-PlotDirectoryName=
-SubpartIdSeparator=0
-SubpartFirstId=65
-NetFmtName=Pcbnew
-SpiceForceRefPrefix=0
-SpiceUseNetNumbers=0
-LabSize=69
+last_client=kicad
 [eeschema]
 version=1
 LibDir=C:/Users/jbanks2/Documents/Projects/Kicad_Custom_Parts
@@ -119,3 +109,13 @@ SolderMaskMinWidth=0
 DrawSegmentWidth=0.2
 BoardOutlineThickness=0.09999999999999999
 ModuleOutlineThickness=0.15
+[schematic_editor]
+version=1
+PageLayoutDescrFile=
+PlotDirectoryName=
+SubpartIdSeparator=0
+SubpartFirstId=65
+NetFmtName=Pcbnew
+SpiceForceRefPrefix=0
+SpiceUseNetNumbers=0
+LabSize=69

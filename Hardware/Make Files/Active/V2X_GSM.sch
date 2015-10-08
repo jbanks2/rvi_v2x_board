@@ -625,8 +625,7 @@ F 0 "U4" H 2150 4900 60  0000 C CNN
 F 1 "SIM5320" H 3400 3600 60  0000 C CNN
 F 2 "Custom Parts:SIM5320" H 2800 4100 60  0001 C CNN
 F 3 "http://www.simcom.ee/modules/wcdma-hspa/sim5320/" H 2800 4100 60  0001 C CNN
-F 4 "#" H 4150 3300 60  0001 C CNN "Mouse PN"
-F 5 "SIM5320A" H 4150 3300 60  0001 C CNN "AliExpress PN"
+F 4 "SIM5320A" H 4150 3300 60  0001 C CNN "AliExpress PN"
 	1    4150 3300
 	1    0    0    -1  
 $EndComp
@@ -796,7 +795,6 @@ F 1 "220U" H 2875 7300 50  0000 L CNN
 F 2 "Capacitors_SMD:c_elec_6.3x5.8" H 2888 7250 30  0001 C CNN
 F 3 "http://www.mouser.com/ds/2/445/875105244013-540575.pdf" H 2850 7400 60  0001 C CNN
 F 4 "710-875105244013" H 2850 7400 60  0001 C CNN "Mouse PN"
-F 5 "D6.3x5.8mm" H 2850 7400 60  0001 C CNN "Size"
 	1    2850 7400
 	-1   0    0    -1  
 $EndComp
@@ -989,7 +987,6 @@ F 1 "220U" H 4425 7300 50  0000 L CNN
 F 2 "Capacitors_SMD:c_elec_6.3x5.8" H 4438 7250 30  0001 C CNN
 F 3 "http://www.mouser.com/ds/2/445/875105244013-540575.pdf" H 4400 7400 60  0001 C CNN
 F 4 "710-875105244013" H 4400 7400 60  0001 C CNN "Mouse PN"
-F 5 "D6.3x5.8mm" H 4400 7400 60  0001 C CNN "Size"
 	1    4400 7400
 	-1   0    0    -1  
 $EndComp

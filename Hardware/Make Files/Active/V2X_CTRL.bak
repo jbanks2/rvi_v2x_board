@@ -208,7 +208,7 @@ $EndComp
 Wire Wire Line
 	4100 1150 4350 1150
 Text GLabel 4550 1200 1    60   Input ~ 0
-3V3_D
+3V3_F
 Text GLabel 3350 1600 0    60   Input ~ 0
 PDI
 Text GLabel 9200 4650 0    60   Input ~ 0
@@ -498,7 +498,7 @@ Wire Wire Line
 Text GLabel 5150 2200 2    69   Input ~ 0
 HUB_SUSP
 Text GLabel 10650 750  2    60   Input ~ 0
-3V3_D
+3V3_F
 Wire Wire Line
 	10450 750  10650 750 
 Wire Wire Line

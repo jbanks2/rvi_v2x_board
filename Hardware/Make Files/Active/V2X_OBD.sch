@@ -102,7 +102,6 @@ F 0 "U7" H 7300 2300 60  0000 C CNN
 F 1 "STN1110" H 8450 700 60  0000 C CNN
 F 2 "Housings_SOIC:SOIC-28_7.5x17.9mm_Pitch1.27mm" H 7550 1750 60  0001 C CNN
 F 3 "https://www.scantool.net/dev-tools/stn11xx/stn1110.html?utm_source=obdsol&utm_medium=btn&utm_campaign=stn1110-order" H 7550 1750 60  0001 C CNN
-F 4 "SOIC-28" H 7550 1750 60  0001 C CNN "Mouse PN"
 	1    7550 1750
 	1    0    0    -1  
 $EndComp
@@ -1123,7 +1122,6 @@ F 0 "P4" H 750 1650 50  0000 C CNN
 F 1 "DB-9 to OBD2" V 850 1550 50  0000 C CNN
 F 2 "" H 750 1550 60  0001 C CNN
 F 3 "http://www.amazon.com/Adapter-Cable--Connecting-Diagnostic-Interface-Compliant/dp/B007UKTW8E/ref=sr_1_1?ie=UTF8&qid=1443117694&sr=8-1" H 750 1550 60  0001 C CNN
-F 4 "NA" H 750 1550 60  0001 C CNN "Mouse PN"
 	1    750  1550
 	1    0    0    -1  
 $EndComp
@@ -1877,4 +1875,6 @@ Wire Wire Line
 	10200 2050 8800 2050
 Text GLabel 9950 4550 3    60   Input ~ 0
 CAN_TXD
+Entry Bus Bus
+	6700 200  6800 300 
 $EndSCHEMATC
