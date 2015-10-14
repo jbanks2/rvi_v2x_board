@@ -84,7 +84,7 @@ EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 2 8
+Sheet 2 7
 Title "V2X - Open source RVI over SMS daughter card"
 Date "2015-07-17"
 Rev "1.2"
@@ -220,7 +220,7 @@ $Comp
 L 9346 U2
 U 1 1 55ADA8E8
 P 2200 7050
-F 0 "U2" H 2200 7150 70  0000 C CNN
+F 0 "U2" H 2200 7150 70  0001 C CNN
 F 1 "93C46" H 2200 6950 70  0000 C CNN
 F 2 "Housings_SOIC:SOIC-8_3.9x4.9mm_Pitch1.27mm" H 2200 7050 60  0001 C CNN
 F 3 "http://www.mouser.com/ds/2/268/21749d-6388.pdf" H 2200 7050 60  0001 C CNN
@@ -569,8 +569,6 @@ Wire Wire Line
 	2100 3250 2100 3350
 Wire Notes Line
 	2650 4000 2650 500 
-Wire Wire Line
-	900  6600 1550 6600
 Wire Notes Line
 	500  4000 2650 4000
 Wire Notes Line
@@ -810,7 +808,7 @@ F 4 "71-CRCW0603-22K-E3" H 3150 7100 60  0001 C CNN "Mouse PN"
 	1    3150 7100
 	0    -1   -1   0   
 $EndComp
-Text GLabel 900  6600 0    60   Input ~ 0
+Text GLabel 950  6600 0    60   Input ~ 0
 3V3_B
 Text GLabel 2850 7300 2    60   Input ~ 0
 3V3_B
@@ -841,5 +839,6 @@ F 3 "" H 5350 6950 60  0000 C CNN
 $EndComp
 Text GLabel 1550 6900 0    67   Input ~ 0
 EECS
-Connection ~ 950  6600
+Wire Wire Line
+	1550 6600 950  6600
 $EndSCHEMATC

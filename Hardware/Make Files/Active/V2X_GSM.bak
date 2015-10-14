@@ -1,90 +1,40 @@
 EESchema Schematic File Version 2
-LIBS:V2X-rescue
-LIBS:sim5320_KICAD_PART
-LIBS:CUSTOM_KICAD_PART
-LIBS:74xgxx
-LIBS:74xx
-LIBS:ac-dc
-LIBS:actel
-LIBS:adc-dac
-LIBS:Altera
-LIBS:analog_devices
-LIBS:analog_switches
-LIBS:atmel
-LIBS:audio
-LIBS:brooktre
-LIBS:cmos_ieee
-LIBS:cmos4000
-LIBS:conn
-LIBS:contrib
-LIBS:cypress
-LIBS:dc-dc
-LIBS:device
-LIBS:digital-audio
-LIBS:diode
-LIBS:display
-LIBS:dsp
-LIBS:elec-unifil
-LIBS:ESD_Protection
-LIBS:ftdi
-LIBS:gennum
-LIBS:graphic
-LIBS:hc11
-LIBS:intel
-LIBS:interface
-LIBS:ir
-LIBS:Lattice
-LIBS:linear
-LIBS:logo
-LIBS:maxim
-LIBS:memory
-LIBS:microchip
-LIBS:microchip_dspic33dsc
-LIBS:microchip_pic10mcu
-LIBS:microchip_pic12mcu
-LIBS:microchip_pic16mcu
-LIBS:microchip_pic18mcu
-LIBS:microchip_pic32mcu
-LIBS:microcontrollers
-LIBS:motor_drivers
-LIBS:motorola
-LIBS:msp430
-LIBS:nordicsemi
-LIBS:nxp_armmcu
-LIBS:onsemi
-LIBS:opto
-LIBS:Oscillators
-LIBS:philips
 LIBS:power
-LIBS:Power_Management
-LIBS:powerint
-LIBS:pspice
-LIBS:references
-LIBS:regul
-LIBS:relays
-LIBS:rfcom
-LIBS:sensors
-LIBS:silabs
-LIBS:siliconi
-LIBS:stm8
-LIBS:stm32
-LIBS:supertex
-LIBS:switches
-LIBS:texas
-LIBS:transf
+LIBS:device
 LIBS:transistors
-LIBS:ttl_ieee
-LIBS:valves
-LIBS:video
-LIBS:Xicor
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
 LIBS:xilinx
-LIBS:Zilog
-LIBS:V2X-cache
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:CUSTOM_KICAD_PART
+LIBS:sim5320_KICAD_PART
 EELAYER 25 0
 EELAYER END
 $Descr USLetter 11000 8500
 encoding utf-8
-Sheet 3 8
+Sheet 1 1
 Title "V2X - Open source RVI over SMS daughter card"
 Date "2015-07-17"
 Rev "1.2"
@@ -553,8 +503,6 @@ $EndComp
 NoConn ~ 9300 4450
 NoConn ~ 8900 4450
 NoConn ~ 3600 11100
-Text GLabel 2050 5750 0    60   Input ~ 0
-SIMCARD
 Text GLabel 9000 5650 0    60   Input ~ 0
 GSM
 Text GLabel 7000 5650 0    60   Input ~ 0
@@ -615,10 +563,8 @@ Wire Notes Line
 	8550 3650 8550 6700
 Wire Notes Line
 	6550 3650 10500 3650
-Text GLabel 1550 5200 0    60   Input ~ 0
-SIM_VBUS
 $Comp
-L SIM5320-RESCUE-V2X U4
+L SIM5320 U4
 U 1 1 55A744B0
 P 4150 3300
 F 0 "U4" H 2150 4900 60  0000 C CNN
@@ -796,7 +742,6 @@ F 1 "220U" H 2875 7300 50  0000 L CNN
 F 2 "Capacitors_SMD:c_elec_6.3x5.8" H 2888 7250 30  0001 C CNN
 F 3 "http://www.mouser.com/ds/2/445/875105244013-540575.pdf" H 2850 7400 60  0001 C CNN
 F 4 "710-875105244013" H 2850 7400 60  0001 C CNN "Mouse PN"
-F 5 "D6.3x5.8mm" H 2850 7400 60  0001 C CNN "Size"
 	1    2850 7400
 	-1   0    0    -1  
 $EndComp
@@ -939,39 +884,8 @@ F 4 "810-C1608X7R1E104K" H 9000 3100 60  0001 C CNN "Mouse PN"
 	-1   0    0    -1  
 $EndComp
 Connection ~ 9250 2950
-Text GLabel 1550 5350 0    69   Input ~ 0
-HUB_PWR_PRT2
-$Comp
-L R R11
-U 1 1 56069C77
-P 1700 5350
-F 0 "R11" V 1780 5350 50  0000 C CNN
-F 1 "0" V 1700 5350 50  0000 C CNN
-F 2 "Custom Parts:R_0603_sm" V 1630 5350 30  0001 C CNN
-F 3 "http://www.mouser.com/ds/2/427/dcrcwe3-109170.pdf" H 1700 5350 30  0001 C CNN
-F 4 "71-CRCW0603-0-E3" H 1700 5350 60  0001 C CNN "Mouse PN"
-	1    1700 5350
-	0    1    1    0   
-$EndComp
-$Comp
-L R R10
-U 1 1 56069D19
-P 1700 5200
-F 0 "R10" V 1780 5200 50  0000 C CNN
-F 1 "DNS" V 1700 5200 50  0000 C CNN
-F 2 "Custom Parts:R_0603_sm" V 1630 5200 30  0001 C CNN
-F 3 "http://www.mouser.com/ds/2/427/dcrcwe3-109170.pdf" H 1700 5200 30  0001 C CNN
-F 4 "71-CRCW0603-22.1-E3" H 1700 5200 60  0001 C CNN "Mouse PN"
-	1    1700 5200
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	1850 5200 1900 5200
 Wire Wire Line
 	1950 3100 1950 3100
-Wire Wire Line
-	1850 5350 1950 5350
-Connection ~ 1900 5350
 Text GLabel 7150 1700 1    60   Input ~ 0
 SIMCARD_DATA
 Text GLabel 7450 2500 3    60   Input ~ 0
@@ -989,7 +903,6 @@ F 1 "220U" H 4425 7300 50  0000 L CNN
 F 2 "Capacitors_SMD:c_elec_6.3x5.8" H 4438 7250 30  0001 C CNN
 F 3 "http://www.mouser.com/ds/2/445/875105244013-540575.pdf" H 4400 7400 60  0001 C CNN
 F 4 "710-875105244013" H 4400 7400 60  0001 C CNN "Mouse PN"
-F 5 "D6.3x5.8mm" H 4400 7400 60  0001 C CNN "Size"
 	1    4400 7400
 	-1   0    0    -1  
 $EndComp
@@ -1032,35 +945,6 @@ F 3 "" H 7300 1700 60  0000 C CNN
 	1    7300 1700
 	-1   0    0    1   
 $EndComp
-Text GLabel 2550 5850 2    60   Input ~ 0
-SIM_PWR_ON
-Text GLabel 2550 5950 2    60   Input ~ 0
-SIM_RESET
-Text GLabel 1950 5350 2    69   Input ~ 0
-SIM_USB_DET
-Text GLabel 2550 6250 2    60   Input ~ 0
-SIM_PWR
-Text GLabel 2550 6150 2    60   Input ~ 0
-SIM_NET
-Text GLabel 2550 5750 2    69   Input ~ 0
-SIM_RF_OFF
-Text GLabel 2050 6150 0    60   Input ~ 0
-SIM_RXD
-Text GLabel 2050 6250 0    60   Input ~ 0
-SIM_TXD
-Text GLabel 2050 6350 0    60   Input ~ 0
-4V1_A
-$Comp
-L GND #PWR056
-U 1 1 560E6C5F
-P 2050 6450
-F 0 "#PWR056" H 2050 6200 50  0001 C CNN
-F 1 "GND" H 2050 6300 50  0000 C CNN
-F 2 "" H 2050 6450 60  0000 C CNN
-F 3 "" H 2050 6450 60  0000 C CNN
-	1    2050 6450
-	0    1    -1   0   
-$EndComp
 $Comp
 L C C22
 U 1 1 560A25B5
@@ -1072,120 +956,106 @@ F 3 "" H 9350 5650 60  0000 C CNN
 	1    9350 5650
 	0    -1   -1   0   
 $EndComp
-Text GLabel 2050 5950 0    60   Input ~ 0
-SIM_DM
-Text GLabel 2050 6050 0    60   Input ~ 0
-SIM_DP
-Text GLabel 5900 5950 2    60   Input ~ 0
+Text GLabel 4000 5900 2    60   Input ~ 0
 SIM_RI
 $Comp
 L R R84
 U 1 1 560EE6AC
-P 5650 5950
-F 0 "R84" V 5730 5950 50  0000 C CNN
-F 1 "DNS" V 5650 5950 50  0000 C CNN
-F 2 "Custom Parts:R_0603_sm" V 5580 5950 30  0001 C CNN
-F 3 "" H 5650 5950 30  0000 C CNN
-	1    5650 5950
+P 3750 5900
+F 0 "R84" V 3830 5900 50  0000 C CNN
+F 1 "DNS" V 3750 5900 50  0000 C CNN
+F 2 "Custom Parts:R_0603_sm" V 3680 5900 30  0001 C CNN
+F 3 "" H 3750 5900 30  0000 C CNN
+	1    3750 5900
 	0    -1   1    0   
 $EndComp
 $Comp
 L R R85
 U 1 1 560EE6B4
-P 5650 6100
-F 0 "R85" V 5730 6100 50  0000 C CNN
-F 1 "0" V 5650 6100 50  0000 C CNN
-F 2 "Custom Parts:R_0603_sm" V 5580 6100 30  0001 C CNN
-F 3 "http://www.mouser.com/ds/2/427/dcrcwe3-109170.pdf" H 5650 6100 30  0001 C CNN
-F 4 "71-CRCW0603-0-E3" H 5650 6100 60  0001 C CNN "Mouse PN"
-	1    5650 6100
+P 3750 6050
+F 0 "R85" V 3830 6050 50  0000 C CNN
+F 1 "0" V 3750 6050 50  0000 C CNN
+F 2 "Custom Parts:R_0603_sm" V 3680 6050 30  0001 C CNN
+F 3 "http://www.mouser.com/ds/2/427/dcrcwe3-109170.pdf" H 3750 6050 30  0001 C CNN
+F 4 "71-CRCW0603-0-E3" H 3750 6050 60  0001 C CNN "Mouse PN"
+	1    3750 6050
 	0    -1   1    0   
 $EndComp
 Wire Wire Line
-	5900 5950 5800 5950
+	4000 5900 3900 5900
 Wire Wire Line
-	5800 6100 5900 6100
+	3900 6050 4000 6050
 Wire Wire Line
-	5500 5950 5500 6100
-Connection ~ 5500 6050
+	3600 5900 3600 6050
+Connection ~ 3600 6000
 $Comp
 L R R86
 U 1 1 560EE6BF
-P 5650 6250
-F 0 "R86" V 5730 6250 50  0000 C CNN
-F 1 "DNS" V 5650 6250 50  0000 C CNN
-F 2 "Custom Parts:R_0603_sm" V 5580 6250 30  0001 C CNN
-F 3 "" H 5650 6250 30  0000 C CNN
-	1    5650 6250
+P 3750 6200
+F 0 "R86" V 3830 6200 50  0000 C CNN
+F 1 "DNS" V 3750 6200 50  0000 C CNN
+F 2 "Custom Parts:R_0603_sm" V 3680 6200 30  0001 C CNN
+F 3 "" H 3750 6200 30  0000 C CNN
+	1    3750 6200
 	0    -1   1    0   
 $EndComp
-Text GLabel 5900 6250 2    60   Input ~ 0
+Text GLabel 4000 6200 2    60   Input ~ 0
 SIM_DTR
 Wire Wire Line
-	5900 6250 5800 6250
+	4000 6200 3900 6200
 Wire Wire Line
-	5450 6250 5500 6250
+	3550 6200 3600 6200
 Wire Wire Line
-	5450 6250 5450 6050
-Connection ~ 5450 6050
+	3550 6200 3550 6000
+Connection ~ 3550 6000
 Wire Wire Line
-	4700 6050 5500 6050
-Text GLabel 2550 6050 2    69   Input ~ 0
-SEQ_WAKE
-Wire Wire Line
-	1900 5200 1900 5350
-Wire Wire Line
-	2550 6450 2550 6450
-Text GLabel 2050 5850 0    69   Input ~ 0
-SIM_USB_DET
-Text GLabel 4700 5850 2    60   Input ~ 0
+	2800 6000 3600 6000
+Text GLabel 2800 5800 2    60   Input ~ 0
 SIM_PWR_ON_B
-Text GLabel 4700 5950 2    60   Input ~ 0
+Text GLabel 2800 5900 2    60   Input ~ 0
 SIM_RESET_B
-Text GLabel 4700 6250 2    60   Input ~ 0
+Text GLabel 2800 6200 2    60   Input ~ 0
 SIM_PWR_B
-Text GLabel 4700 6150 2    60   Input ~ 0
+Text GLabel 2800 6100 2    60   Input ~ 0
 SIM_NET_B
-Text GLabel 4700 5750 2    60   Input ~ 0
+Text GLabel 2800 5700 2    60   Input ~ 0
 SIM_RF_OFF_B
-Text GLabel 4200 6150 0    60   Input ~ 0
+Text GLabel 2300 6100 0    60   Input ~ 0
 SIM_RXD_B
-Text GLabel 4200 6250 0    60   Input ~ 0
+Text GLabel 2300 6200 0    60   Input ~ 0
 SIM_TXD_B
-Text GLabel 4200 6350 0    60   Input ~ 0
+Text GLabel 2300 6300 0    60   Input ~ 0
 4V1_B
 $Comp
 L GND #PWR057
 U 1 1 560F2C2B
-P 4200 6450
-F 0 "#PWR057" H 4200 6200 50  0001 C CNN
-F 1 "GND" H 4200 6300 50  0000 C CNN
-F 2 "" H 4200 6450 60  0000 C CNN
-F 3 "" H 4200 6450 60  0000 C CNN
-	1    4200 6450
+P 2300 6400
+F 0 "#PWR057" H 2300 6150 50  0001 C CNN
+F 1 "GND" H 2300 6250 50  0000 C CNN
+F 2 "" H 2300 6400 60  0000 C CNN
+F 3 "" H 2300 6400 60  0000 C CNN
+	1    2300 6400
 	0    1    -1   0   
 $EndComp
-Text GLabel 4200 5950 0    60   Input ~ 0
+Text GLabel 2300 5900 0    60   Input ~ 0
 SIM_DM_B
-Text GLabel 4200 6050 0    60   Input ~ 0
+Text GLabel 2300 6000 0    60   Input ~ 0
 SIM_DP_B
 $Comp
 L CONN_02X10 P26
 U 1 1 560F2C34
-P 4450 6100
-F 0 "P26" H 4450 6550 50  0000 C CNN
-F 1 "CONN_02X08" V 4450 6100 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_2x10" H 4450 4900 60  0001 C CNN
-F 3 "http://www.mouser.com/ProductDetail/FCI/77313-824-20LF/?qs=sGAEpiMZZMs%252bGHln7q6pm24n0txessAMJKIe4p3QHSo%3d" H 4450 4900 60  0001 C CNN
-F 4 "649-77313-824-20LF" H 4450 6100 60  0001 C CNN "Mouse PN"
-	1    4450 6100
+P 2550 6050
+F 0 "P26" H 2550 6500 50  0000 C CNN
+F 1 "CONN_02X08" V 2550 6050 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_2x10" H 2550 4850 60  0001 C CNN
+F 3 "http://www.mouser.com/ProductDetail/FCI/77313-824-20LF/?qs=sGAEpiMZZMs%252bGHln7q6pm24n0txessAMJKIe4p3QHSo%3d" H 2550 4850 60  0001 C CNN
+F 4 "649-77313-824-20LF" H 2550 6050 60  0001 C CNN "Mouse PN"
+	1    2550 6050
 	1    0    0    -1  
 $EndComp
-Text GLabel 4200 5850 0    60   Input ~ 0
+Text GLabel 2300 5800 0    60   Input ~ 0
 SIM_USB_DET_B
-Text Notes 2050 5600 0    69   ~ 0
-SEQ side
-Text Notes 4250 5600 0    69   ~ 0
+Text Notes 2350 5550 0    69   ~ 0
 SIM side
 Text GLabel 4850 2700 2    60   Input ~ 0
 SIM_RF_OFF_B
@@ -1209,7 +1079,7 @@ Text GLabel 1950 3100 0    60   Input ~ 0
 SIM_USB_DET_B
 Text GLabel 4250 4650 3    60   Input ~ 0
 4V1_B
-Text GLabel 4200 5750 0    60   Input ~ 0
+Text GLabel 2300 5700 0    60   Input ~ 0
 SIMCARD_B
 Text GLabel 8650 1700 0    60   Input ~ 0
 SIMCARD_B
@@ -1309,96 +1179,45 @@ $EndComp
 Wire Wire Line
 	9000 5000 9000 4900
 Connection ~ 9000 5650
-Text GLabel 2550 6350 2    60   Input ~ 0
-4V1_EN
-Text GLabel 2550 6550 2    60   Input ~ 0
-12V0_B
-Text GLabel 4700 6550 2    60   Input ~ 0
+Text GLabel 2800 6500 2    60   Input ~ 0
 12V0_C
-Text GLabel 4700 6350 2    60   Input ~ 0
+Text GLabel 2800 6300 2    60   Input ~ 0
 4V1_EN_B
-$Comp
-L CONN_02X10 P25
-U 1 1 560EFE9F
-P 2300 6100
-F 0 "P25" H 2300 6550 50  0000 C CNN
-F 1 "CONN_02X08" V 2300 6100 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_2x10" H 2300 4900 60  0001 C CNN
-F 3 "" H 2300 4900 60  0000 C CNN
-F 4 "517-929852-01-10-RA" H 2300 6100 60  0001 C CNN "Mouse PN"
-	1    2300 6100
-	1    0    0    -1  
-$EndComp
-Text GLabel 4200 6550 0    60   Input ~ 0
+Text GLabel 2300 6500 0    60   Input ~ 0
 12V0_C
 $Comp
 L GND #PWR060
 U 1 1 56105586
-P 4700 6450
-F 0 "#PWR060" H 4700 6200 50  0001 C CNN
-F 1 "GND" H 4700 6300 50  0000 C CNN
-F 2 "" H 4700 6450 60  0000 C CNN
-F 3 "" H 4700 6450 60  0000 C CNN
-	1    4700 6450
+P 2800 6400
+F 0 "#PWR060" H 2800 6150 50  0001 C CNN
+F 1 "GND" H 2800 6250 50  0000 C CNN
+F 2 "" H 2800 6400 60  0000 C CNN
+F 3 "" H 2800 6400 60  0000 C CNN
+	1    2800 6400
 	0    -1   1    0   
 $EndComp
 $Comp
 L GND #PWR061
 U 1 1 56105CE3
-P 4200 5650
-F 0 "#PWR061" H 4200 5400 50  0001 C CNN
-F 1 "GND" H 4200 5500 50  0000 C CNN
-F 2 "" H 4200 5650 60  0000 C CNN
-F 3 "" H 4200 5650 60  0000 C CNN
-	1    4200 5650
+P 2300 5600
+F 0 "#PWR061" H 2300 5350 50  0001 C CNN
+F 1 "GND" H 2300 5450 50  0000 C CNN
+F 2 "" H 2300 5600 60  0000 C CNN
+F 3 "" H 2300 5600 60  0000 C CNN
+	1    2300 5600
 	0    1    -1   0   
 $EndComp
 $Comp
 L GND #PWR062
 U 1 1 56105D60
-P 4700 5650
-F 0 "#PWR062" H 4700 5400 50  0001 C CNN
-F 1 "GND" H 4700 5500 50  0000 C CNN
-F 2 "" H 4700 5650 60  0000 C CNN
-F 3 "" H 4700 5650 60  0000 C CNN
-	1    4700 5650
+P 2800 5600
+F 0 "#PWR062" H 2800 5350 50  0001 C CNN
+F 1 "GND" H 2800 5450 50  0000 C CNN
+F 2 "" H 2800 5600 60  0000 C CNN
+F 3 "" H 2800 5600 60  0000 C CNN
+	1    2800 5600
 	0    -1   1    0   
 $EndComp
-Text GLabel 2050 6550 0    60   Input ~ 0
-12V0_B
-$Comp
-L GND #PWR063
-U 1 1 56106409
-P 2550 6450
-F 0 "#PWR063" H 2550 6200 50  0001 C CNN
-F 1 "GND" H 2550 6300 50  0000 C CNN
-F 2 "" H 2550 6450 60  0000 C CNN
-F 3 "" H 2550 6450 60  0000 C CNN
-	1    2550 6450
-	0    -1   1    0   
-$EndComp
-$Comp
-L GND #PWR064
-U 1 1 561064FA
-P 2550 5650
-F 0 "#PWR064" H 2550 5400 50  0001 C CNN
-F 1 "GND" H 2550 5500 50  0000 C CNN
-F 2 "" H 2550 5650 60  0000 C CNN
-F 3 "" H 2550 5650 60  0000 C CNN
-	1    2550 5650
-	0    -1   1    0   
-$EndComp
-$Comp
-L GND #PWR065
-U 1 1 56106577
-P 2050 5650
-F 0 "#PWR065" H 2050 5400 50  0001 C CNN
-F 1 "GND" H 2050 5500 50  0000 C CNN
-F 2 "" H 2050 5650 60  0000 C CNN
-F 3 "" H 2050 5650 60  0000 C CNN
-	1    2050 5650
-	0    1    -1   0   
-$EndComp
-Text GLabel 5900 6100 2    69   Input ~ 0
+Text GLabel 4000 6050 2    69   Input ~ 0
 PC_WAKE
 $EndSCHEMATC
