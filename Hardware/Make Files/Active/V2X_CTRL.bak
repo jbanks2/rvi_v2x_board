@@ -84,7 +84,7 @@ EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 7 7
+Sheet 7 8
 Title "V2X - Open source RVI over SMS daughter card"
 Date "2015-07-17"
 Rev "1.2"
@@ -128,8 +128,8 @@ Text GLabel 2500 6650 2    60   Input ~ 0
 ~CAN_SLEEP
 Text GLabel 2500 6750 2    60   Input ~ 0
 ~CAN_RESET
-Text Notes 5900 3550 0    69   ~ 0
-SR clear outputs\nSR latch serial data \nCAN TXD to SEQ and FTDI\nCAN RXD to SEQ Buffer\nACL SPI Chip Select\nSR and ACL SPI Data OUT\nACL SPI Data IN\nSR and ACL Clock
+Text Notes 6050 3600 0    69   ~ 0
+SR Clear Serial Data, Output\nSR Latch Serial Data, Output\nCAN TXD to SEQ and FTDI, UART\nSEQ TXD to CAN RXD BUFFER, UART\nACL SPI Chip Select, SPI\nSR and ACL SPI Data Output, SPI\nACL SPI Data Input, SPI\nSR and ACL Clock Output, SPI
 Text GLabel 5150 1500 2    60   Input ~ 0
 BUTTON
 Text GLabel 5150 2100 2    60   Input ~ 0
@@ -191,8 +191,8 @@ Text GLabel 8900 5900 0    60   Input ~ 0
 HOST_SC
 Text GLabel 5150 2450 2    60   Input ~ 0
 HOST_SC
-Text Notes 9100 6100 0    60   ~ 0
-Short Circuit Detection\n5V0_USB is post poly fuse\nSample using A2D \n(maybe logic level for simplier detection)\nLow voltage (<2.4V) indicates\nfuse is set, host is short circuit.\nA value that is too high might \nindicate the Host is not attached.
+Text Notes 9150 6300 0    60   ~ 0
+Short Circuit Detection\n5V0_B_OUT is post poly fuse\nSample using logic level (maybe A2D)\nLogic '0' signal (<1.5V) indicates poly\nfuse is set, host output is in protect.\nLogic '1' signal (approx 2.4V) indicates\npoly fuse is clear, normal opperation.\nAn A2D value that is too high might \nindicate the Host is not attached.
 $Comp
 L ATXMEGA16A4U-A IC1
 U 1 1 55F86EE3
@@ -255,20 +255,18 @@ HUB_SCL
 Text GLabel 3350 2350 0    60   Input ~ 0
 HUB_SDA
 Text Notes 9150 4400 0    60   ~ 0
-PDI Programing port
+PDI (a-wire) Programing port
 Text GLabel 3350 2650 0    60   Input ~ 0
 ACCEL_TXD
 Text GLabel 3350 2550 0    60   Input ~ 0
 ACCEL_RXD
 Text Notes 3150 7300 0    69   ~ 0
 HUB /RESET\nELM/STN /Reset\nELM/STN /Sleep\nSIM Module "Power On"\nSIM Module /Reset\nSIM "Airplane Mode"\nSIM USB detect\nFTDI USB detect /RESET
-Text Notes 3100 5900 0    69   ~ 0
-3V3 Power Supply Enable (SEQ)\nHUB/FTDI 3V3 Enable\nCAN 3V3 Enable\nAccel 3V3 Enable\n4V1 Power Supply Enable (SIM)\n5V0 Power Supply Enable (LEDs)\n5V0 HOST Enable \n5V0 CAN Enable
-Text Notes 1350 2700 0    69   ~ 0
-HUB  Serial Data I2C/SMB\nHUB  Serial Clock I2C/SMB\nACL Stream RXD to FTDI\nACL Stream TXD to FTDI
-Text Notes 1350 3550 0    69   ~ 0
-SEQ LED1 PWM Output\nSEQ LED2 PWM Output\nSIM TXD to SEQ\nSIM RXD to SEQ\nCHARGE PUMP SW\nButton (pwr/soft) input\nSEQ RXD to FTDI\nSEQ TXD to FTDI
-Text Notes 1650 1650 0    69   ~ 0
+Text Notes 3150 5800 0    69   ~ 0
+3V3 Power Supply Enable (SEQ)\nHUB/FTDI 3V3 Enable\nCAN 3V3 Enable\nAccel 3V3 Enable\n4V1 Power Supply Enable (SIM)\n5V0 Power Supply Enable (LEDs)\n5V0 HOST Enable \n
+Text Notes 950  2700 0    69   ~ 0
+HUB Serial Config Data I2C/SMB\nHUB Serial Config Clock I2C/SMB\nSEQ RXD to FTDI: ACL Data UART\nSEQ TXD to FTDI: ACL Data UART
+Text Notes 1700 1650 0    69   ~ 0
 SEQ  Reset/PDI_CLK\nSEQ  PDI Data
 Text GLabel 2500 6550 2    60   Input ~ 0
 ~HUB_RESET
@@ -336,8 +334,6 @@ Wire Wire Line
 	2500 6300 1100 6300
 Wire Wire Line
 	1100 6300 1100 6550
-Text Notes 5900 2250 0    69   ~ 0
-SIM Network Status Input\nSIM Power status Input\nSIMCARD (insterted) detect input\nSIM Host Wake-up input\nAccelerometer Interupt 1 input\nAccelerometer Interupt 2 input\nHUB Power State Status input\nHUB Suspend state input
 Text GLabel 1100 7050 0    60   Input ~ 0
 SR_LATCH
 Text GLabel 1100 6850 0    60   Input ~ 0
@@ -350,8 +346,8 @@ Text GLabel 5150 1800 2    69   Input ~ 0
 ACL_INT1
 Text GLabel 5150 1700 2    69   Input ~ 0
 ACL_INT2
-Text Notes 5900 2700 0    69   ~ 0
-Host Power Short Circuit detect\nSEQ LED3 Output\nCAN Ctrl RXD from SEQ\nCAN Ctrl RXD from FTDI
+Text Notes 6050 2700 0    69   ~ 0
+SEQ LED3 Output\nHost Short Circuit, Input/A2D\nCAN RXD BUFFER: SEQ to CAN \nCAN RXD BUFFER: FTDI to CAN 
 Text Notes 700  4800 0    69   ~ 0
 Serial shift registers Outputs:\nSR_CLEAR + SR_LATCH sets all outputs to 0, default\nsafe boot state. Accelerometer data on SPI just passes\nthrough into the bit bucket until R_LATCH is clocked.\nThe Accelerometer ignores the shift data while SEQ_SS is high.\n
 Text GLabel 2500 7250 2    60   Input ~ 0
@@ -483,8 +479,8 @@ F 3 "" H 6400 4600 60  0000 C CNN
 	1    6400 4600
 	1    0    0    -1  
 $EndComp
-Text Notes 7850 5150 2    69   ~ 0
-Power-On expected negative pulse becomes \na SR positive pulse so default SR default 0 \nstate doesn't false start the SIM module.
+Text Notes 7100 5500 2    69   ~ 0
+GSM chip "Power-On" input\nexpects normally high input\nwith a negative pulse to \nstart/stop the module.\nThis circuit inverts signal so \nthe default SR state of 0 \ndoesn't false start the GSM module.
 Text GLabel 5150 1900 2    69   Input ~ 0
 HUB_STATUS
 Wire Wire Line
@@ -616,68 +612,68 @@ Text GLabel 7050 4200 2    60   Input ~ 0
 Text GLabel 9550 2600 0    60   Input ~ 0
 CAN_RXD_FTDI
 Text GLabel 9550 2000 0    60   Input ~ 0
-CAN_RXD_PS
+CAN_RXD_SEQ
 Text GLabel 2500 5450 2    60   Input ~ 0
 3V3_D_EN
 Text GLabel 5150 2550 2    60   Input ~ 0
-CAN_RXD_PS
+CAN_RXD_SEQ
 Text GLabel 5150 2650 2    60   Input ~ 0
 CAN_RXD_FTDI
-Text GLabel 8850 3000 0    60   Input ~ 0
+Text GLabel 8850 3200 0    60   Input ~ 0
 USB_INT_DM
-Text GLabel 9350 3000 2    60   Input ~ 0
+Text GLabel 9350 3200 2    60   Input ~ 0
 USB_INT_DP
 $Comp
 L CONN_02X04 P22
 U 1 1 56037434
-P 9100 3050
-F 0 "P22" H 9100 3300 50  0000 C CNN
-F 1 "CONN_02X04" H 9100 2800 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_2x04" H 9100 1850 60  0001 C CNN
-F 3 "http://www.mouser.com/ds/2/418/NG_CD_146130_L_146130_c.dwg-684736.pdf" H 9100 1850 60  0001 C CNN
-F 4 "571-146130-3" H 9100 3050 60  0001 C CNN "Mouse PN"
-	1    9100 3050
+P 9100 3250
+F 0 "P22" H 9100 3500 50  0000 C CNN
+F 1 "CONN_02X04" H 9100 3000 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_2x04" H 9100 2050 60  0001 C CNN
+F 3 "http://www.mouser.com/ds/2/418/NG_CD_146130_L_146130_c.dwg-684736.pdf" H 9100 2050 60  0001 C CNN
+F 4 "571-146130-3" H 9100 3250 60  0001 C CNN "Mouse PN"
+	1    9100 3250
 	1    0    0    -1  
 $EndComp
-Text GLabel 8850 2900 0    69   Input ~ 0
+Text GLabel 8850 3100 0    69   Input ~ 0
 FTDI_DM
-Text GLabel 9350 2900 2    69   Input ~ 0
+Text GLabel 9350 3100 2    69   Input ~ 0
 FTDI_DP
-Text GLabel 8850 3100 0    60   Input ~ 0
+Text GLabel 8850 3300 0    60   Input ~ 0
 SEQ_RXD_DM
-Text GLabel 9350 3100 2    60   Input ~ 0
+Text GLabel 9350 3300 2    60   Input ~ 0
 SEQ_TXD_DP
-Text GLabel 8850 3200 0    60   Input ~ 0
+Text GLabel 8850 3400 0    60   Input ~ 0
 SEQ_RXD
-Text GLabel 9350 3200 2    60   Input ~ 0
+Text GLabel 9350 3400 2    60   Input ~ 0
 SEQ_TXD
 Wire Notes Line
-	8300 3600 8400 3600
+	8300 3800 8400 3800
 Wire Notes Line
-	8400 3600 8400 3400
+	8400 3800 8400 3600
 Wire Notes Line
-	8400 3400 8300 3400
+	8400 3600 8300 3600
 Wire Notes Line
-	8300 3400 8300 3600
+	8300 3600 8300 3800
 Wire Notes Line
-	8350 3600 8350 3400
+	8350 3800 8350 3600
 Wire Notes Line
-	8300 3500 8400 3500
+	8300 3700 8400 3700
 Wire Notes Line
-	8300 3700 8300 3900
+	8300 3900 8300 4100
 Wire Notes Line
-	8300 3900 8400 3900
+	8300 4100 8400 4100
 Wire Notes Line
-	8400 3900 8400 3700
+	8400 4100 8400 3900
 Wire Notes Line
-	8400 3700 8300 3700
+	8400 3900 8300 3900
 Wire Notes Line
-	8300 3750 8400 3750
+	8300 3950 8400 3950
 Wire Notes Line
-	8300 3850 8400 3850
+	8300 4050 8400 4050
 Wire Notes Line
-	8350 3750 8350 3850
-Text Notes 8450 3900 0    69   ~ 0
+	8350 3950 8350 4050
+Text Notes 8450 4100 0    69   ~ 0
 JUMPERS = 1-3, 2-4, 5-7, 6-8\nFTDI is USB with FTDI to SEQ control channel open\n\nJUMPERS = 3-5, 4-6\nAtmel is USB and FTDI disabled
 Text GLabel 1100 5150 0    60   Input ~ 0
 SEQ_MOSI
@@ -692,7 +688,7 @@ SEQ_SCK
 Wire Notes Line
 	5000 4200 500  4200
 Wire Notes Line
-	5000 5350 7950 5350
+	5000 5700 7950 5700
 Wire Notes Line
 	7950 500  7950 6500
 Wire Notes Line
@@ -704,7 +700,7 @@ Wire Notes Line
 Wire Notes Line
 	7950 2700 11200 2700
 Wire Notes Line
-	7950 1400 11200 1400
+	5350 1400 11200 1400
 $Comp
 L C C59
 U 1 1 56052557
@@ -902,49 +898,49 @@ $EndComp
 $Comp
 L CONN_01X01 P20
 U 1 1 5609B537
-P 10500 2900
-F 0 "P20" H 10500 3000 50  0000 C CNN
-F 1 "Jumper 1" H 10500 2800 50  0000 C CNN
-F 2 "Fiducials:Fiducial_1mm_Dia_2.54mm_Outer_CopperTop" H 10500 2900 60  0001 C CNN
-F 3 "http://www.mouser.com/ds/2/418/NG_CD_382811_L-625140.pdf" H 10500 2900 60  0001 C CNN
-F 4 "571-3828118" H 10500 2900 60  0001 C CNN "Mouse PN"
-	1    10500 2900
+P 10500 3100
+F 0 "P20" H 10500 3200 50  0000 C CNN
+F 1 "Jumper 1" H 10500 3000 50  0000 C CNN
+F 2 "Fiducials:Fiducial_1mm_Dia_2.54mm_Outer_CopperTop" H 10500 3100 60  0001 C CNN
+F 3 "http://www.mouser.com/ds/2/418/NG_CD_382811_L-625140.pdf" H 10500 3100 60  0001 C CNN
+F 4 "571-3828118" H 10500 3100 60  0001 C CNN "Mouse PN"
+	1    10500 3100
 	-1   0    0    1   
 $EndComp
 $Comp
 L CONN_01X01 P21
 U 1 1 5609B8CA
-P 10950 2900
-F 0 "P21" H 10950 3000 50  0000 C CNN
-F 1 "Jumper 2" H 10950 2800 50  0000 C CNN
-F 2 "Fiducials:Fiducial_1mm_Dia_2.54mm_Outer_CopperTop" H 10950 2900 60  0001 C CNN
-F 3 "http://www.mouser.com/ds/2/418/NG_CD_382811_L-625140.pdf" H 10950 2900 60  0001 C CNN
-F 4 "571-3828118" H 10950 2900 60  0001 C CNN "Mouse PN"
-	1    10950 2900
+P 10950 3100
+F 0 "P21" H 10950 3200 50  0000 C CNN
+F 1 "Jumper 2" H 10950 3000 50  0000 C CNN
+F 2 "Fiducials:Fiducial_1mm_Dia_2.54mm_Outer_CopperTop" H 10950 3100 60  0001 C CNN
+F 3 "http://www.mouser.com/ds/2/418/NG_CD_382811_L-625140.pdf" H 10950 3100 60  0001 C CNN
+F 4 "571-3828118" H 10950 3100 60  0001 C CNN "Mouse PN"
+	1    10950 3100
 	-1   0    0    1   
 $EndComp
 $Comp
 L CONN_01X01 P23
 U 1 1 5609B9F5
-P 10500 3150
-F 0 "P23" H 10500 3250 50  0000 C CNN
-F 1 "Jumper 3" H 10500 3050 50  0000 C CNN
-F 2 "Fiducials:Fiducial_1mm_Dia_2.54mm_Outer_CopperTop" H 10500 3150 60  0001 C CNN
-F 3 "http://www.mouser.com/ds/2/418/NG_CD_382811_L-625140.pdf" H 10500 3150 60  0001 C CNN
-F 4 "571-3828118" H 10500 3150 60  0001 C CNN "Mouse PN"
-	1    10500 3150
+P 10500 3350
+F 0 "P23" H 10500 3450 50  0000 C CNN
+F 1 "Jumper 3" H 10500 3250 50  0000 C CNN
+F 2 "Fiducials:Fiducial_1mm_Dia_2.54mm_Outer_CopperTop" H 10500 3350 60  0001 C CNN
+F 3 "http://www.mouser.com/ds/2/418/NG_CD_382811_L-625140.pdf" H 10500 3350 60  0001 C CNN
+F 4 "571-3828118" H 10500 3350 60  0001 C CNN "Mouse PN"
+	1    10500 3350
 	-1   0    0    1   
 $EndComp
 $Comp
 L CONN_01X01 P24
 U 1 1 5609B9FC
-P 10950 3150
-F 0 "P24" H 10950 3250 50  0000 C CNN
-F 1 "Jumper 4" H 10950 3050 50  0000 C CNN
-F 2 "Fiducials:Fiducial_1mm_Dia_2.54mm_Outer_CopperTop" H 10950 3150 60  0001 C CNN
-F 3 "http://www.mouser.com/ds/2/418/NG_CD_382811_L-625140.pdf" H 10950 3150 60  0001 C CNN
-F 4 "571-3828118" H 10950 3150 60  0001 C CNN "Mouse PN"
-	1    10950 3150
+P 10950 3350
+F 0 "P24" H 10950 3450 50  0000 C CNN
+F 1 "Jumper 4" H 10950 3250 50  0000 C CNN
+F 2 "Fiducials:Fiducial_1mm_Dia_2.54mm_Outer_CopperTop" H 10950 3350 60  0001 C CNN
+F 3 "http://www.mouser.com/ds/2/418/NG_CD_382811_L-625140.pdf" H 10950 3350 60  0001 C CNN
+F 4 "571-3828118" H 10950 3350 60  0001 C CNN "Mouse PN"
+	1    10950 3350
 	-1   0    0    1   
 $EndComp
 Text GLabel 9200 4850 0    60   Input ~ 0
@@ -1028,87 +1024,85 @@ F 4 "71-CRCW0603-330-E3" H 5000 6400 60  0001 C CNN "Mouse PN"
 	1    5000 6400
 	-1   0    0    1   
 $EndComp
-Text GLabel 1050 1900 3    69   Input ~ 0
+Text GLabel 6350 1150 0    69   Input ~ 0
 SEQ-CHGPUMP
 $Comp
 L R R94
 U 1 1 560DBE98
-P 1050 1750
-F 0 "R94" V 1130 1750 50  0000 C CNN
-F 1 "22.1" V 1050 1750 50  0000 C CNN
-F 2 "Custom Parts:R_0603_sm" V 980 1750 30  0001 C CNN
-F 3 "http://www.vishay.com/doc?20035" H 1050 1750 30  0001 C CNN
-F 4 "71-CRCW0603-22.1-E3" H 1050 1750 60  0001 C CNN "Mouse PN"
-	1    1050 1750
-	1    0    0    -1  
+P 6500 1150
+F 0 "R94" V 6580 1150 50  0000 C CNN
+F 1 "22.1" V 6500 1150 50  0000 C CNN
+F 2 "Custom Parts:R_0603_sm" V 6430 1150 30  0001 C CNN
+F 3 "http://www.vishay.com/doc?20035" H 6500 1150 30  0001 C CNN
+F 4 "71-CRCW0603-22.1-E3" H 6500 1150 60  0001 C CNN "Mouse PN"
+	1    6500 1150
+	0    1    1    0   
 $EndComp
 $Comp
 L GND #PWR0110
 U 1 1 560DBE9F
-P 1650 1300
-F 0 "#PWR0110" H 1650 1050 50  0001 C CNN
-F 1 "GND" H 1650 1150 50  0000 C CNN
-F 2 "" H 1650 1300 60  0000 C CNN
-F 3 "" H 1650 1300 60  0000 C CNN
-	1    1650 1300
+P 7550 1150
+F 0 "#PWR0110" H 7550 900 50  0001 C CNN
+F 1 "GND" H 7550 1000 50  0000 C CNN
+F 2 "" H 7550 1150 60  0000 C CNN
+F 3 "" H 7550 1150 60  0000 C CNN
+	1    7550 1150
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	-1200 1750 -1200 1700
 $Comp
 L D D19
 U 1 1 560DBEA9
-P 1350 1150
-F 0 "D19" H 1350 1250 50  0000 C CNN
-F 1 "4148" H 1350 1050 50  0000 C CNN
-F 2 "Custom Parts:Diode_0805_12_SM" H 1350 1150 60  0001 C CNN
-F 3 "http://www.mouser.com/ds/2/395/taiwansemiconductor_TS4148RY-553424.pdf" H 1350 1150 60  0001 C CNN
-F 4 "821-TS4148-0805-RY" H 1350 1150 60  0001 C CNN "Mouse PN"
-	1    1350 1150
+P 7250 1000
+F 0 "D19" H 7250 1100 50  0000 C CNN
+F 1 "4148" H 7250 900 50  0000 C CNN
+F 2 "Custom Parts:Diode_0805_12_SM" H 7250 1000 60  0001 C CNN
+F 3 "http://www.mouser.com/ds/2/395/taiwansemiconductor_TS4148RY-553424.pdf" H 7250 1000 60  0001 C CNN
+F 4 "821-TS4148-0805-RY" H 7250 1000 60  0001 C CNN "Mouse PN"
+	1    7250 1000
 	0    1    1    0   
 $EndComp
 $Comp
 L C C69
 U 1 1 560DBEB4
-P 1050 1450
-F 0 "C69" H 1075 1550 50  0000 L CNN
-F 1 "100N" H 1075 1350 50  0000 L CNN
-F 2 "Custom Parts:C_0603_SM" H 1088 1300 30  0001 C CNN
-F 3 "http://www.mouser.com/ds/2/400/mlcc_commercial_general_en-266370.pdf" H 1050 1450 60  0001 C CNN
-F 4 "810-C1608X7R1E104K" H 1050 1450 60  0001 C CNN "Mouse PN"
-	1    1050 1450
-	-1   0    0    -1  
+P 6800 1150
+F 0 "C69" H 6825 1250 50  0000 L CNN
+F 1 "100N" H 6825 1050 50  0000 L CNN
+F 2 "Custom Parts:C_0603_SM" H 6838 1000 30  0001 C CNN
+F 3 "http://www.mouser.com/ds/2/400/mlcc_commercial_general_en-266370.pdf" H 6800 1150 60  0001 C CNN
+F 4 "810-C1608X7R1E104K" H 6800 1150 60  0001 C CNN "Mouse PN"
+	1    6800 1150
+	0    1    -1   0   
 $EndComp
 $Comp
 L D D18
 U 1 1 560DBEBC
-P 1050 1150
-F 0 "D18" H 1050 1250 50  0000 C CNN
-F 1 "4148" H 1050 1050 50  0000 C CNN
-F 2 "Custom Parts:Diode_0805_12_SM" H 1050 1150 60  0001 C CNN
-F 3 "http://www.mouser.com/ds/2/395/taiwansemiconductor_TS4148RY-553424.pdf" H 1050 1150 60  0001 C CNN
-F 4 "821-TS4148-0805-RY" H 1050 1150 60  0001 C CNN "Mouse PN"
-	1    1050 1150
+P 6950 1000
+F 0 "D18" H 6950 1100 50  0000 C CNN
+F 1 "4148" H 6950 900 50  0000 C CNN
+F 2 "Custom Parts:Diode_0805_12_SM" H 6950 1000 60  0001 C CNN
+F 3 "http://www.mouser.com/ds/2/395/taiwansemiconductor_TS4148RY-553424.pdf" H 6950 1000 60  0001 C CNN
+F 4 "821-TS4148-0805-RY" H 6950 1000 60  0001 C CNN "Mouse PN"
+	1    6950 1000
 	0    -1   -1   0   
 $EndComp
-Text GLabel 1050 1000 1    60   Input ~ 0
+Text GLabel 6950 850  1    60   Input ~ 0
 3V3_A
-Text GLabel 1350 1000 1    60   Input ~ 0
+Text GLabel 7250 850  1    60   Input ~ 0
 3V3_E
 Wire Wire Line
-	1050 1300 1350 1300
+	6950 1150 7250 1150
 Wire Wire Line
-	1650 1000 1350 1000
+	7550 850  7250 850 
 $Comp
 L C C68
 U 1 1 560DF642
-P 1650 1150
-F 0 "C68" H 1675 1250 50  0000 L CNN
-F 1 "1U" H 1675 1050 50  0000 L CNN
-F 2 "Custom Parts:C_0603_SM" H 1688 1000 30  0001 C CNN
-F 3 "http://www.mouser.com/ds/2/447/UPY-GPHC_X7R_6.3V-to-50V_8-12304.pdf" H 1650 1150 60  0001 C CNN
-F 4 "603-CC603KRX7R7BB105" H 1650 1150 60  0001 C CNN "Mouse PN"
-	1    1650 1150
+P 7550 1000
+F 0 "C68" H 7575 1100 50  0000 L CNN
+F 1 "1U" H 7575 900 50  0000 L CNN
+F 2 "Custom Parts:C_0603_SM" H 7588 850 30  0001 C CNN
+F 3 "http://www.mouser.com/ds/2/447/UPY-GPHC_X7R_6.3V-to-50V_8-12304.pdf" H 7550 1000 60  0001 C CNN
+F 4 "603-CC603KRX7R7BB105" H 7550 1000 60  0001 C CNN "Mouse PN"
+	1    7550 1000
 	1    0    0    -1  
 $EndComp
 Text GLabel 5000 6250 1    60   Input ~ 0
@@ -1127,4 +1121,24 @@ Text GLabel 6350 7000 1    60   Input ~ 0
 SEQ_LED3
 Text GLabel 5150 3100 2    60   Input ~ 0
 CAN_RXD_PS_BUF
+Text Notes 8100 1550 0    69   ~ 0
+CAN RXD BUFFER
+Text Notes 950  3550 0    69   ~ 0
+SEQ "Wake" input, from GSM\nGSM Network Status input\nSEQ RXD to GSM, UART \nSEQ TXD to GSM, UART\nGSM Power State, Input\nSIMCARD Detect, Input w/ PU\nSEQ RXD to FTDI or DM to HUB\nSEQ TXD to FTDI or DP to HUB
+Text Notes 6050 2250 0    69   ~ 0
+BUTTON Input\nLED Charge pump Output\nAccelerometer Interupt 2 input\nAccelerometer Interupt 1 input\nHUB Suspend state input\nHUB Power State Status input\nSEQ LED 1 Output\nSEQ LED 2 Output
+Wire Notes Line
+	5000 3800 5000 5700
+Wire Notes Line
+	5000 5700 4450 6250
+Wire Notes Line
+	4450 6250 4450 7750
+Wire Notes Line
+	5350 550  5350 1400
+Text Notes 8150 2950 0    69   ~ 0
+USB/UART signal Routing\nIf SW allows, FTDI can be removed from the system
+Text Notes 950  4050 0    69   ~ 0
+CAN_RXD_SEQ and CAN_RXD_FTDI\nare mutually exclusive siganls, only 1\ncan be logig high at any time.\nAllows only routing 2 TX source to CAN RXD 
+Text Notes 5550 900  0    69   ~ 0
+LED Charge pump. \nToggle pin state \nat approx 100khz
 $EndSCHEMATC

@@ -84,7 +84,7 @@ EELAYER 25 0
 EELAYER END
 $Descr USLetter 11000 8500
 encoding utf-8
-Sheet 1 7
+Sheet 1 8
 Title "V2X - Open source RVI over SMS daughter card"
 Date "2015-07-17"
 Rev "1.2"
@@ -229,4 +229,10 @@ Wire Notes Line
 	8800 2700 7450 2700
 Text Notes 7600 3300 0    69   ~ 0
 GSM GPS Sheet\nMoved to seperate\nKicad project
+$Sheet
+S 3750 6600 1350 800 
+U 562004BB
+F0 "Sheet562004BA" 69
+F1 "V2X_GSM.sch" 69
+$EndSheet
 $EndSCHEMATC

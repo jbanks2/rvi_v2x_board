@@ -84,7 +84,7 @@ EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 2 7
+Sheet 2 8
 Title "V2X - Open source RVI over SMS daughter card"
 Date "2015-07-17"
 Rev "1.2"
@@ -98,6 +98,8 @@ $Comp
 L FT4232H U1
 U 1 1 55AD78AF
 P 6700 3050
+AR Path="/55AD78AF" Ref="U1"  Part="1" 
+AR Path="/55AB1D0F/55AD78AF" Ref="U1"  Part="1" 
 F 0 "U1" H 5900 4900 60  0000 C CNN
 F 1 "FT4232H" H 6700 3050 60  0000 C CNN
 F 2 "Housings_QFP:LQFP-64_10x10mm_Pitch0.5mm" H 6700 3050 60  0001 C CNN
@@ -220,6 +222,8 @@ $Comp
 L 9346 U2
 U 1 1 55ADA8E8
 P 2200 7050
+AR Path="/55ADA8E8" Ref="U2"  Part="1" 
+AR Path="/55AB1D0F/55ADA8E8" Ref="U2"  Part="1" 
 F 0 "U2" H 2200 7150 70  0001 C CNN
 F 1 "93C46" H 2200 6950 70  0000 C CNN
 F 2 "Housings_SOIC:SOIC-8_3.9x4.9mm_Pitch1.27mm" H 2200 7050 60  0001 C CNN

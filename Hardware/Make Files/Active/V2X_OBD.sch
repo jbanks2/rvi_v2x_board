@@ -84,7 +84,7 @@ EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 3 7
+Sheet 3 8
 Title "V2X - Open source RVI over SMS daughter card"
 Date "2015-07-17"
 Rev "1.2"
@@ -1877,4 +1877,16 @@ Text GLabel 9950 4550 3    60   Input ~ 0
 CAN_TXD
 Entry Bus Bus
 	6700 200  6800 300 
+$Comp
+L LM339 U8
+U 4 1 561EFD20
+P 3800 5050
+F 0 "U8" H 3850 5250 60  0000 C CNN
+F 1 "LM339" H 3900 4850 50  0000 C CNN
+F 2 "Housings_SOIC:SOIC-14_3.9x8.7mm_Pitch1.27mm" H 3800 5050 60  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/lm339a" H 3800 5050 60  0001 C CNN
+F 4 "LM339ADR" H 3800 5050 60  0001 C CNN "Mouse PN"
+	4    3800 5050
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
