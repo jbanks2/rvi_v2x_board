@@ -1,7 +1,5 @@
 EESchema Schematic File Version 2
 LIBS:V2X-rescue
-LIBS:sim5320_KICAD_PART
-LIBS:CUSTOM_KICAD_PART
 LIBS:74xgxx
 LIBS:74xx
 LIBS:ac-dc
@@ -79,12 +77,13 @@ LIBS:video
 LIBS:Xicor
 LIBS:xilinx
 LIBS:Zilog
+LIBS:CUSTOM_KICAD_PART
 LIBS:V2X-cache
 EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 7 8
+Sheet 6 8
 Title "V2X - Open source RVI over SMS daughter card"
 Date "2015-07-17"
 Rev "1.2"

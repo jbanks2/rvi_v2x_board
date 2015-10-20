@@ -1,7 +1,5 @@
 EESchema Schematic File Version 2
 LIBS:V2X-rescue
-LIBS:sim5320_KICAD_PART
-LIBS:CUSTOM_KICAD_PART
 LIBS:74xgxx
 LIBS:74xx
 LIBS:ac-dc
@@ -79,6 +77,7 @@ LIBS:video
 LIBS:Xicor
 LIBS:xilinx
 LIBS:Zilog
+LIBS:CUSTOM_KICAD_PART
 LIBS:V2X-cache
 EELAYER 25 0
 EELAYER END

@@ -1,7 +1,5 @@
 EESchema Schematic File Version 2
 LIBS:V2X-rescue
-LIBS:sim5320_KICAD_PART
-LIBS:CUSTOM_KICAD_PART
 LIBS:74xgxx
 LIBS:74xx
 LIBS:ac-dc
@@ -79,6 +77,7 @@ LIBS:video
 LIBS:Xicor
 LIBS:xilinx
 LIBS:Zilog
+LIBS:CUSTOM_KICAD_PART
 LIBS:V2X-cache
 EELAYER 25 0
 EELAYER END
@@ -97,40 +96,40 @@ $EndDescr
 $Comp
 L FT4232H U1
 U 1 1 55AD78AF
-P 6700 3050
+P 6500 3300
 AR Path="/55AD78AF" Ref="U1"  Part="1" 
 AR Path="/55AB1D0F/55AD78AF" Ref="U1"  Part="1" 
-F 0 "U1" H 5900 4900 60  0000 C CNN
-F 1 "FT4232H" H 6700 3050 60  0000 C CNN
-F 2 "Housings_QFP:LQFP-64_10x10mm_Pitch0.5mm" H 6700 3050 60  0001 C CNN
-F 3 "http://www.mouser.com/ds/2/163/DS_FT4232H-9150.pdf" H 6700 3050 60  0001 C CNN
-F 4 "895-FT4232HL" H 6700 3050 60  0001 C CNN "Mouse PN"
-	1    6700 3050
+F 0 "U1" H 5450 5400 50  0000 L CNN
+F 1 "FT4232H" H 7250 5400 50  0000 L CNN
+F 2 "Housings_QFP:LQFP-64_10x10mm_Pitch0.5mm" H 6500 3300 50  0000 C CNN
+F 3 "http://www.mouser.com/ds/2/163/DS_FT4232H-9150.pdf" H 6500 3300 50  0000 C CNN
+F 4 "895-FT4232HL" H 6500 3300 60  0001 C CNN "Mouse PN"
+	1    6500 3300
 	1    0    0    -1  
 $EndComp
-Text Notes 8750 3000 0    67   ~ 0
+Text Notes 8750 3050 0    67   ~ 0
 TXD\nRXD\n~RTS\n~CTS\n~DTR\n~DSR\n~DCD\n~RI
 $Comp
 L GND #PWR01
 U 1 1 55AD7D06
-P 7700 4950
-F 0 "#PWR01" H 7700 4700 50  0001 C CNN
-F 1 "GND" V 7700 4750 50  0000 C CNN
-F 2 "" H 7700 4950 60  0000 C CNN
-F 3 "" H 7700 4950 60  0000 C CNN
-	1    7700 4950
+P 7700 5000
+F 0 "#PWR01" H 7700 4750 50  0001 C CNN
+F 1 "GND" V 7700 4800 50  0000 C CNN
+F 2 "" H 7700 5000 60  0000 C CNN
+F 3 "" H 7700 5000 60  0000 C CNN
+	1    7700 5000
 	0    -1   -1   0   
 $EndComp
 $Comp
 L GND #PWR02
 U 1 1 55AD7D39
-P 5600 5050
-F 0 "#PWR02" H 5600 4800 50  0001 C CNN
-F 1 "GND" V 5600 4850 50  0000 C CNN
-F 2 "" H 5600 5050 60  0000 C CNN
-F 3 "" H 5600 5050 60  0000 C CNN
-	1    5600 5050
-	0    1    1    0   
+P 5900 5500
+F 0 "#PWR02" H 5900 5250 50  0001 C CNN
+F 1 "GND" V 5900 5300 50  0000 C CNN
+F 2 "" H 5900 5500 60  0000 C CNN
+F 3 "" H 5900 5500 60  0000 C CNN
+	1    5900 5500
+	1    0    0    -1  
 $EndComp
 $Comp
 L FILTER FB1
@@ -193,33 +192,22 @@ Power Filtering
 $Comp
 L GND #PWR07
 U 1 1 55AD97DA
-P 5200 3050
-F 0 "#PWR07" H 5200 2800 50  0001 C CNN
-F 1 "GND" V 5200 2850 50  0000 C CNN
-F 2 "" H 5200 3050 60  0000 C CNN
-F 3 "" H 5200 3050 60  0000 C CNN
-	1    5200 3050
+P 4800 2700
+F 0 "#PWR07" H 4800 2450 50  0001 C CNN
+F 1 "GND" V 4800 2500 50  0000 C CNN
+F 2 "" H 4800 2700 60  0000 C CNN
+F 3 "" H 4800 2700 60  0000 C CNN
+	1    4800 2700
 	0    1    1    0   
 $EndComp
-$Comp
-L GND #PWR08
-U 1 1 55AD9B20
-P 5700 3750
-F 0 "#PWR08" H 5700 3500 50  0001 C CNN
-F 1 "GND" H 5700 3600 50  0000 C CNN
-F 2 "" H 5700 3750 60  0000 C CNN
-F 3 "" H 5700 3750 60  0000 C CNN
-	1    5700 3750
-	0    1    1    0   
-$EndComp
-Text GLabel 5700 3350 0    67   Input ~ 0
+Text GLabel 5300 4000 0    67   Input ~ 0
 EECS
-Text GLabel 5700 3450 0    67   Input ~ 0
+Text GLabel 5300 4100 0    67   Input ~ 0
 EECLK
-Text GLabel 5700 3550 0    67   Input ~ 0
+Text GLabel 5300 4200 0    67   Input ~ 0
 EEDATA
 $Comp
-L 9346 U2
+L 9346_noVcc U2
 U 1 1 55ADA8E8
 P 2200 7050
 AR Path="/55ADA8E8" Ref="U2"  Part="1" 
@@ -239,10 +227,10 @@ EEDATA
 Text GLabel 1550 7200 0    67   Input ~ 0
 EECLK
 $Comp
-L GND #PWR09
+L GND #PWR08
 U 1 1 55ADAE78
 P 1550 7500
-F 0 "#PWR09" H 1550 7250 50  0001 C CNN
+F 0 "#PWR08" H 1550 7250 50  0001 C CNN
 F 1 "GND" V 1550 7300 50  0000 C CNN
 F 2 "" H 1550 7500 60  0000 C CNN
 F 3 "" H 1550 7500 60  0000 C CNN
@@ -268,10 +256,10 @@ $EndComp
 Text Notes 750  6400 0    67   ~ 0
 FTDI Device Configuration EEPROM
 $Comp
-L GND #PWR010
+L GND #PWR09
 U 1 1 55ADBFB3
 P 1950 1250
-F 0 "#PWR010" H 1950 1000 50  0001 C CNN
+F 0 "#PWR09" H 1950 1000 50  0001 C CNN
 F 1 "GND" H 1950 1100 50  0000 C CNN
 F 2 "" H 1950 1250 60  0000 C CNN
 F 3 "" H 1950 1250 60  0000 C CNN
@@ -279,10 +267,10 @@ F 3 "" H 1950 1250 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR011
+L GND #PWR010
 U 1 1 55ADBFF1
 P 1950 2100
-F 0 "#PWR011" H 1950 1850 50  0001 C CNN
+F 0 "#PWR010" H 1950 1850 50  0001 C CNN
 F 1 "GND" H 1950 1950 50  0000 C CNN
 F 2 "" H 1950 2100 60  0000 C CNN
 F 3 "" H 1950 2100 60  0000 C CNN
@@ -290,10 +278,10 @@ F 3 "" H 1950 2100 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR012
+L GND #PWR011
 U 1 1 55ADC2B9
 P 1500 3650
-F 0 "#PWR012" H 1500 3400 50  0001 C CNN
+F 0 "#PWR011" H 1500 3400 50  0001 C CNN
 F 1 "GND" H 1500 3500 50  0000 C CNN
 F 2 "" H 1500 3650 60  0000 C CNN
 F 3 "" H 1500 3650 60  0000 C CNN
@@ -301,10 +289,10 @@ F 3 "" H 1500 3650 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR013
+L GND #PWR012
 U 1 1 55ADC2C5
 P 1350 2850
-F 0 "#PWR013" H 1350 2600 50  0001 C CNN
+F 0 "#PWR012" H 1350 2600 50  0001 C CNN
 F 1 "GND" H 1350 2700 50  0000 C CNN
 F 2 "" H 1350 2850 60  0000 C CNN
 F 3 "" H 1350 2850 60  0000 C CNN
@@ -312,10 +300,10 @@ F 3 "" H 1350 2850 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR014
+L GND #PWR013
 U 1 1 55ADC34F
 P 1800 3650
-F 0 "#PWR014" H 1800 3400 50  0001 C CNN
+F 0 "#PWR013" H 1800 3400 50  0001 C CNN
 F 1 "GND" H 1800 3500 50  0000 C CNN
 F 2 "" H 1800 3650 60  0000 C CNN
 F 3 "" H 1800 3650 60  0000 C CNN
@@ -323,10 +311,10 @@ F 3 "" H 1800 3650 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR015
+L GND #PWR014
 U 1 1 55ADC35B
 P 1650 2850
-F 0 "#PWR015" H 1650 2600 50  0001 C CNN
+F 0 "#PWR014" H 1650 2600 50  0001 C CNN
 F 1 "GND" H 1650 2700 50  0000 C CNN
 F 2 "" H 1650 2850 60  0000 C CNN
 F 3 "" H 1650 2850 60  0000 C CNN
@@ -334,10 +322,10 @@ F 3 "" H 1650 2850 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR016
+L GND #PWR015
 U 1 1 55ADC37F
 P 1950 2850
-F 0 "#PWR016" H 1950 2600 50  0001 C CNN
+F 0 "#PWR015" H 1950 2600 50  0001 C CNN
 F 1 "GND" H 1950 2700 50  0000 C CNN
 F 2 "" H 1950 2850 60  0000 C CNN
 F 3 "" H 1950 2850 60  0000 C CNN
@@ -345,10 +333,10 @@ F 3 "" H 1950 2850 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR017
+L GND #PWR016
 U 1 1 55ADC373
 P 2100 3650
-F 0 "#PWR017" H 2100 3400 50  0001 C CNN
+F 0 "#PWR016" H 2100 3400 50  0001 C CNN
 F 1 "GND" H 2100 3500 50  0000 C CNN
 F 2 "" H 2100 3650 60  0000 C CNN
 F 3 "" H 2100 3650 60  0000 C CNN
@@ -356,21 +344,21 @@ F 3 "" H 2100 3650 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR018
+L GND #PWR017
 U 1 1 55ADC68C
 P 2250 2850
-F 0 "#PWR018" H 2250 2600 50  0001 C CNN
+F 0 "#PWR017" H 2250 2600 50  0001 C CNN
 F 1 "GND" H 2250 2700 50  0000 C CNN
 F 2 "" H 2250 2850 60  0000 C CNN
 F 3 "" H 2250 2850 60  0000 C CNN
 	1    2250 2850
 	1    0    0    -1  
 $EndComp
-Text GLabel 5700 2850 0    67   Input ~ 0
+Text GLabel 5300 2400 0    67   Input ~ 0
 FTDI_DM
-Text GLabel 5700 2950 0    67   Input ~ 0
+Text GLabel 5300 2500 0    67   Input ~ 0
 FTDI_DP
-Text GLabel 4750 3150 0    60   Input ~ 0
+Text GLabel 4350 2900 0    60   Input ~ 0
 ~FTDI_RESET
 Text GLabel 900  950  0    60   Input ~ 0
 3V3_B
@@ -380,23 +368,23 @@ Text GLabel 2100 1800 2    60   Input ~ 0
 FT3V3PHY
 Text GLabel 1150 3250 0    60   Input ~ 0
 FT1V8
-Text GLabel 5700 2650 0    60   Input ~ 0
+Text GLabel 5300 1600 0    60   Input ~ 0
 FT1V8
-Text GLabel 5700 2250 0    60   Input ~ 0
+Text GLabel 6100 1050 1    60   Input ~ 0
 FT3V3PLL
-Text GLabel 5700 2350 0    60   Input ~ 0
+Text GLabel 6000 1050 1    60   Input ~ 0
 FT3V3PHY
-Text GLabel 5600 1850 0    60   Input ~ 0
+Text GLabel 6500 900  1    60   Input ~ 0
 FT1V8
 Text Notes 4850 6700 0    60   ~ 0
 12MHz FTDI USB Clock
 Text GLabel 5550 6850 2    60   Input ~ 0
 FT_CLK
-Text GLabel 5700 3950 0    60   Input ~ 0
+Text GLabel 5300 4500 0    60   Input ~ 0
 FT_CLK
 Text GLabel 5150 6850 0    60   Input ~ 0
 FT_CLKN
-Text GLabel 5700 4050 0    60   Input ~ 0
+Text GLabel 5300 4900 0    60   Input ~ 0
 FT_CLKN
 $Comp
 L CRYSTAL_SMD X1
@@ -412,100 +400,49 @@ F 4 "815-AWSCR-12.00CV-T" H 5350 6850 60  0001 C CNN "Mouse PN"
 $EndComp
 Text GLabel 950  2500 0    60   Input ~ 0
 3V3_B
-Text GLabel 7700 5050 2    60   Input ~ 0
+Text GLabel 7700 5100 2    60   Input ~ 0
 3V3_B
-Text GLabel 8050 2250 2    60   Input ~ 0
+Text GLabel 8050 2300 2    60   Input ~ 0
 CAN_RXD_FTDI
-Text GLabel 8050 2350 2    60   Input ~ 0
+Text GLabel 8050 2400 2    60   Input ~ 0
 CAN_TXD
-Text Notes 8600 2100 0    67   ~ 0
+Text Notes 8600 2150 0    67   ~ 0
 TXD\nRXD\n~RTS\n~CTS\n~DTR\n~DSR\n~DCD\n~RI
-Text Notes 8750 3900 0    67   ~ 0
+Text Notes 8750 3950 0    67   ~ 0
 TXD\nRXD\n~RTS\n~CTS\n~DTR\n~DSR\n~DCD\n~RI
-Text GLabel 8050 1350 2    60   Input ~ 0
+Text GLabel 8050 1400 2    60   Input ~ 0
 SEQ_RXD
-Text GLabel 8050 1450 2    60   Input ~ 0
+Text GLabel 8050 1500 2    60   Input ~ 0
 SEQ_TXD
-Text GLabel 8050 3150 2    60   Input ~ 0
+Text GLabel 8050 3200 2    60   Input ~ 0
 ACCEL_RXD
-Text GLabel 8050 3250 2    60   Input ~ 0
+Text GLabel 8050 3300 2    60   Input ~ 0
 ACCEL_TXD
-Text Notes 8950 1400 0    60   ~ 0
+Text Notes 8950 1450 0    60   ~ 0
 Serial channel for Power Sequencer control\n
-Text Notes 9100 2300 0    60   ~ 0
+Text Notes 9100 2350 0    60   ~ 0
 Serial channel for OBD interface control\n
-Text Notes 9150 3200 0    60   ~ 0
+Text Notes 9150 3250 0    60   ~ 0
 Serial channel for Accelerometer data\n
-Text GLabel 4750 3300 0    69   Input ~ 0
+Text GLabel 4350 3050 0    69   Input ~ 0
 HUB_PWR_PRT1
 $Comp
 L R R3
 U 1 1 5606A910
-P 4900 3300
-F 0 "R3" V 4980 3300 50  0000 C CNN
-F 1 "DNS" V 4900 3300 50  0000 C CNN
-F 2 "Custom Parts:R_0603_sm" V 4830 3300 30  0001 C CNN
-F 3 "" H 4900 3300 30  0000 C CNN
-	1    4900 3300
+P 4500 3050
+F 0 "R3" V 4580 3050 50  0000 C CNN
+F 1 "DNS" V 4500 3050 50  0000 C CNN
+F 2 "Custom Parts:R_0603_sm" V 4430 3050 30  0001 C CNN
+F 3 "" H 4500 3050 30  0000 C CNN
+	1    4500 3050
 	0    1    1    0   
 $EndComp
-Wire Wire Line
-	5700 4250 5650 4250
-Wire Wire Line
-	5650 4250 5650 5050
-Wire Wire Line
-	5600 5050 5700 5050
-Connection ~ 5650 5050
-Wire Wire Line
-	5700 4950 5650 4950
-Connection ~ 5650 4950
-Wire Wire Line
-	5650 4850 5700 4850
-Connection ~ 5650 4850
-Wire Wire Line
-	5700 4750 5650 4750
-Connection ~ 5650 4750
-Wire Wire Line
-	5700 4650 5650 4650
-Connection ~ 5650 4650
-Wire Wire Line
-	5650 4550 5700 4550
-Connection ~ 5650 4550
-Wire Wire Line
-	5700 4450 5650 4450
-Connection ~ 5650 4450
-Wire Wire Line
-	5650 4350 5700 4350
-Connection ~ 5650 4350
-Wire Wire Line
-	5600 1350 5700 1350
-Wire Wire Line
-	5650 1350 5650 1650
-Wire Wire Line
-	5650 1450 5700 1450
-Connection ~ 5650 1350
-Wire Wire Line
-	5650 1550 5700 1550
-Connection ~ 5650 1450
-Wire Wire Line
-	5650 1650 5700 1650
-Connection ~ 5650 1550
-Wire Wire Line
-	5600 1850 5700 1850
-Wire Wire Line
-	5650 1850 5650 2050
-Wire Wire Line
-	5650 1950 5700 1950
-Connection ~ 5650 1850
-Wire Wire Line
-	5650 2050 5700 2050
-Connection ~ 5650 1950
 Wire Wire Line
 	1600 950  2100 950 
 Wire Wire Line
 	1600 1800 2100 1800
 Wire Wire Line
-	5700 3050 5500 3050
+	5300 2700 5100 2700
 Wire Wire Line
 	750  6850 750  6900
 Wire Wire Line
@@ -527,13 +464,13 @@ Connection ~ 2950 7000
 Wire Wire Line
 	750  6850 950  6850
 Wire Wire Line
-	7700 2250 8050 2250
+	7700 2300 8050 2300
 Wire Wire Line
-	8050 2350 7700 2350
+	8050 2400 7700 2400
 Wire Wire Line
-	7700 3150 8050 3150
+	7700 3200 8050 3200
 Wire Wire Line
-	8050 3250 7700 3250
+	8050 3300 7700 3300
 Connection ~ 1950 1800
 Connection ~ 1950 950 
 Wire Wire Line
@@ -578,16 +515,16 @@ Wire Notes Line
 Wire Notes Line
 	6950 6200 6950 6550
 Wire Wire Line
-	8050 1350 7700 1350
+	8050 1400 7700 1400
 Wire Wire Line
-	7700 1450 8050 1450
+	7700 1500 8050 1500
 Wire Wire Line
-	5050 3300 5100 3300
+	4650 3050 4700 3050
 Wire Wire Line
-	5100 3300 5100 3150
+	4700 3050 4700 2900
 Wire Wire Line
-	5050 3150 5700 3150
-Connection ~ 5100 3150
+	4650 2900 5300 2900
+Connection ~ 4700 2900
 $Comp
 L FILTER FB2
 U 1 1 5607395E
@@ -602,9 +539,9 @@ F 4 "810-MPZ1608S221ATA00" H 1250 1800 60  0001 C CNN "Mouse PN"
 $EndComp
 Text GLabel 900  1800 0    60   Input ~ 0
 3V3_B
-Text GLabel 5600 1350 0    60   Input ~ 0
+Text GLabel 7000 900  1    60   Input ~ 0
 3V3_B
-Text GLabel 5700 2550 0    60   Input ~ 0
+Text GLabel 5300 1400 0    60   Input ~ 0
 3V3_B
 Connection ~ 1200 3250
 Connection ~ 1050 2500
@@ -767,13 +704,13 @@ $EndComp
 $Comp
 L R R1
 U 1 1 56053E03
-P 5350 3050
-F 0 "R1" V 5430 3050 50  0000 C CNN
-F 1 "12K" V 5350 3050 50  0000 C CNN
-F 2 "Custom Parts:R_0603_sm" V 5280 3050 30  0001 C CNN
-F 3 "http://www.mouser.com/ds/2/427/dcrcwe3-109170.pdf" H 5350 3050 30  0001 C CNN
-F 4 "71-CRCW0603-12K-E3" H 5350 3050 60  0001 C CNN "Mouse PN"
-	1    5350 3050
+P 4950 2700
+F 0 "R1" V 5030 2700 50  0000 C CNN
+F 1 "12K" V 4950 2700 50  0000 C CNN
+F 2 "Custom Parts:R_0603_sm" V 4880 2700 30  0001 C CNN
+F 3 "http://www.mouser.com/ds/2/427/dcrcwe3-109170.pdf" H 4950 2700 30  0001 C CNN
+F 4 "71-CRCW0603-12K-E3" H 4950 2700 60  0001 C CNN "Mouse PN"
+	1    4950 2700
 	0    1    1    0   
 $EndComp
 $Comp
@@ -821,20 +758,20 @@ Text GLabel 3300 6900 2    60   Input ~ 0
 $Comp
 L R R2
 U 1 1 56090D92
-P 4900 3150
-F 0 "R2" V 4980 3150 50  0000 C CNN
-F 1 "0" V 4900 3150 50  0000 C CNN
-F 2 "Custom Parts:R_0603_sm" V 4830 3150 30  0001 C CNN
-F 3 "http://www.mouser.com/ds/2/427/dcrcwe3-109170.pdf" H 4900 3150 30  0001 C CNN
-F 4 "71-CRCW0603-0-E3" H 4900 3150 60  0001 C CNN "Mouse PN"
-	1    4900 3150
+P 4500 2900
+F 0 "R2" V 4580 2900 50  0000 C CNN
+F 1 "0" V 4500 2900 50  0000 C CNN
+F 2 "Custom Parts:R_0603_sm" V 4430 2900 30  0001 C CNN
+F 3 "http://www.mouser.com/ds/2/427/dcrcwe3-109170.pdf" H 4500 2900 30  0001 C CNN
+F 4 "71-CRCW0603-0-E3" H 4500 2900 60  0001 C CNN "Mouse PN"
+	1    4500 2900
 	0    -1   1    0   
 $EndComp
 $Comp
-L GND #PWR019
+L GND #PWR018
 U 1 1 55B7E844
 P 5350 6950
-F 0 "#PWR019" H 5350 6700 50  0001 C CNN
+F 0 "#PWR018" H 5350 6700 50  0001 C CNN
 F 1 "GND" H 5350 6800 50  0000 C CNN
 F 2 "" H 5350 6950 60  0000 C CNN
 F 3 "" H 5350 6950 60  0000 C CNN
@@ -845,4 +782,61 @@ Text GLabel 1550 6900 0    67   Input ~ 0
 EECS
 Wire Wire Line
 	1550 6600 950  6600
+Wire Wire Line
+	5900 5400 5900 5500
+Wire Wire Line
+	5300 5450 6800 5450
+Wire Wire Line
+	6100 5450 6100 5400
+Connection ~ 5900 5450
+Wire Wire Line
+	6200 5450 6200 5400
+Connection ~ 6100 5450
+Wire Wire Line
+	6300 5450 6300 5400
+Connection ~ 6200 5450
+Wire Wire Line
+	6400 5450 6400 5400
+Connection ~ 6300 5450
+Wire Wire Line
+	6500 5450 6500 5400
+Connection ~ 6400 5450
+Wire Wire Line
+	6600 5450 6600 5400
+Connection ~ 6500 5450
+Wire Wire Line
+	6700 5450 6700 5400
+Connection ~ 6600 5450
+Wire Wire Line
+	6800 5450 6800 5400
+Connection ~ 6700 5450
+Wire Wire Line
+	5300 5450 5300 5100
+Wire Wire Line
+	7000 900  7000 1100
+Wire Wire Line
+	6700 1050 7000 1050
+Wire Wire Line
+	6900 1050 6900 1100
+Connection ~ 7000 1050
+Wire Wire Line
+	6800 1050 6800 1100
+Connection ~ 6900 1050
+Wire Wire Line
+	6700 1050 6700 1100
+Connection ~ 6800 1050
+Wire Wire Line
+	6500 900  6500 1100
+Wire Wire Line
+	6300 1050 6500 1050
+Wire Wire Line
+	6300 1050 6300 1100
+Connection ~ 6500 1050
+Wire Wire Line
+	6400 1050 6400 1100
+Connection ~ 6400 1050
+Wire Wire Line
+	6100 1050 6100 1100
+Wire Wire Line
+	6000 1050 6000 1100
 $EndSCHEMATC
