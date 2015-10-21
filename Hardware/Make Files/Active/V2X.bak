@@ -181,11 +181,11 @@ Wire Notes Line
 Wire Notes Line
 	6100 1900 5700 1900
 Text Notes 6150 2350 0    60   ~ 0
-Enable
+Enable, \nSMB config,\nUSB
 Text Notes 6300 1400 0    60   ~ 0
-USB Path
+USB
 Text Notes 6350 1650 0    60   ~ 0
-USB Path
+USB
 Text Notes 9000 1350 0    60   ~ 0
 Serial
 Text Notes 9000 1650 0    60   ~ 0
@@ -211,7 +211,7 @@ Wire Notes Line
 Text Notes 4600 5650 0    60   ~ 0
 Power
 Text Notes 5750 2900 0    60   ~ 0
-Serial, enable, interupts
+2x Serial, enable
 Wire Notes Line
 	5600 2950 7050 2950
 Wire Notes Line
