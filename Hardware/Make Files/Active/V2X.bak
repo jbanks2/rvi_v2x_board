@@ -224,14 +224,14 @@ Wire Notes Line
 	7450 3700 8800 3700
 Wire Notes Line
 	8800 3700 8800 2700
-Wire Notes Line
-	8800 2700 7450 2700
 Text Notes 7600 3300 0    69   ~ 0
-GSM GPS Sheet\nMoved to seperate\nKicad project
+GSM GPS Sheet\nMoved to seperate\nKicad project and \nseperate PCB
 $Sheet
-S 3750 6600 1350 800 
+S 7450 2700 1350 1000
 U 562004BB
-F0 "Sheet562004BA" 69
+F0 "GSM+GPS" 69
 F1 "V2X_GSM.sch" 69
 $EndSheet
+Wire Notes Line
+	8800 2700 7450 2700
 $EndSCHEMATC

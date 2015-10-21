@@ -711,7 +711,7 @@ Text GLabel 7050 4750 0    60   Input ~ 0
 Text GLabel 7450 4750 2    60   Input ~ 0
 3V3_A
 Text Notes 6250 5250 0    69   ~ 0
-SEQ will siphon power from 4V1\nand disable the 3V3 Supply while \nin Cell standby recieve power state.
+SEQ will disable the 3V3 Supply\nand siphon power from 4V1 while \nin SMS standby recieve power state.
 Connection ~ 3450 4700
 Wire Wire Line
 	3400 4450 3500 4450
@@ -1223,4 +1223,139 @@ F 3 "" H 8100 3100 60  0000 C CNN
 $EndComp
 Text GLabel 9450 2300 0    60   Input ~ 0
 5V0_HOST
+Text GLabel 2550 6950 0    60   Input ~ 0
+SIMCARD
+Text GLabel 4950 7250 0    60   Input ~ 0
+SIM_VBUS
+Text GLabel 4950 7400 0    69   Input ~ 0
+HUB_PWR_PRT2
+$Comp
+L R R?
+U 1 1 5626E519
+P 5100 7400
+F 0 "R?" V 5180 7400 50  0000 C CNN
+F 1 "0" V 5100 7400 50  0000 C CNN
+F 2 "Custom Parts:R_0603_sm" V 5030 7400 30  0001 C CNN
+F 3 "http://www.mouser.com/ds/2/427/dcrcwe3-109170.pdf" H 5100 7400 30  0001 C CNN
+F 4 "71-CRCW0603-0-E3" H 5100 7400 60  0001 C CNN "Mouse PN"
+	1    5100 7400
+	0    1    1    0   
+$EndComp
+$Comp
+L R R?
+U 1 1 5626E521
+P 5100 7250
+F 0 "R?" V 5180 7250 50  0000 C CNN
+F 1 "DNS" V 5100 7250 50  0000 C CNN
+F 2 "Custom Parts:R_0603_sm" V 5030 7250 30  0001 C CNN
+F 3 "http://www.mouser.com/ds/2/427/dcrcwe3-109170.pdf" H 5100 7250 30  0001 C CNN
+F 4 "71-CRCW0603-22.1-E3" H 5100 7250 60  0001 C CNN "Mouse PN"
+	1    5100 7250
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5250 7250 5300 7250
+Wire Wire Line
+	5250 7400 5350 7400
+Connection ~ 5300 7400
+Text GLabel 3050 7050 2    60   Input ~ 0
+~SIM_PWR_ON
+Text GLabel 3050 7150 2    60   Input ~ 0
+~SIM_RESET
+Text GLabel 5350 7400 2    69   Input ~ 0
+SIM_USB_DET
+Text GLabel 3050 7450 2    60   Input ~ 0
+SIM_PWR
+Text GLabel 3050 7350 2    60   Input ~ 0
+SIM_NET
+Text GLabel 3050 6950 2    69   Input ~ 0
+SIM_RF_OFF
+Text GLabel 2550 7350 0    60   Input ~ 0
+SIM_RXD
+Text GLabel 2550 7450 0    60   Input ~ 0
+SIM_TXD
+Text GLabel 2550 7550 0    60   Input ~ 0
+4V1_A
+$Comp
+L GND #PWR?
+U 1 1 5626E534
+P 2550 7650
+F 0 "#PWR?" H 2550 7400 50  0001 C CNN
+F 1 "GND" H 2550 7500 50  0000 C CNN
+F 2 "" H 2550 7650 60  0000 C CNN
+F 3 "" H 2550 7650 60  0000 C CNN
+	1    2550 7650
+	0    1    -1   0   
+$EndComp
+Text GLabel 2550 7150 0    60   Input ~ 0
+SIM_DM
+Text GLabel 2550 7250 0    60   Input ~ 0
+SIM_DP
+Text GLabel 3050 7250 2    69   Input ~ 0
+SEQ_WAKE
+Wire Wire Line
+	5300 7250 5300 7400
+Wire Wire Line
+	3050 7650 3050 7650
+Text GLabel 2550 7050 0    69   Input ~ 0
+SIM_USB_DET
+Text Notes 2550 6800 0    69   ~ 0
+SEQ side
+Text GLabel 3050 7550 2    60   Input ~ 0
+4V1_EN
+Text GLabel 3050 7750 2    60   Input ~ 0
+12V0_B
+$Comp
+L CONN_02X10 P?
+U 1 1 5626E544
+P 2800 7300
+F 0 "P?" H 2800 7750 50  0000 C CNN
+F 1 "CONN_02X08" V 2800 7300 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_2x10" H 2800 6100 60  0001 C CNN
+F 3 "" H 2800 6100 60  0000 C CNN
+F 4 "517-929852-01-10-RA" H 2800 7300 60  0001 C CNN "Mouse PN"
+	1    2800 7300
+	1    0    0    -1  
+$EndComp
+Text GLabel 2550 7750 0    60   Input ~ 0
+12V0_B
+$Comp
+L GND #PWR?
+U 1 1 5626E54C
+P 3050 7650
+F 0 "#PWR?" H 3050 7400 50  0001 C CNN
+F 1 "GND" H 3050 7500 50  0000 C CNN
+F 2 "" H 3050 7650 60  0000 C CNN
+F 3 "" H 3050 7650 60  0000 C CNN
+	1    3050 7650
+	0    -1   1    0   
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 5626E552
+P 3050 6850
+F 0 "#PWR?" H 3050 6600 50  0001 C CNN
+F 1 "GND" H 3050 6700 50  0000 C CNN
+F 2 "" H 3050 6850 60  0000 C CNN
+F 3 "" H 3050 6850 60  0000 C CNN
+	1    3050 6850
+	0    -1   1    0   
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 5626E558
+P 2550 6850
+F 0 "#PWR?" H 2550 6600 50  0001 C CNN
+F 1 "GND" H 2550 6700 50  0000 C CNN
+F 2 "" H 2550 6850 60  0000 C CNN
+F 3 "" H 2550 6850 60  0000 C CNN
+	1    2550 6850
+	0    1    -1   0   
+$EndComp
+Text Notes 2000 6550 0    69   ~ 0
+GSM+GPS board header
+Wire Notes Line
+	500  6300 6250 6300
+Wire Notes Line
+	6250 6300 6250 6750
 $EndSCHEMATC

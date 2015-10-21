@@ -181,11 +181,11 @@ Wire Notes Line
 Wire Notes Line
 	6100 1900 5700 1900
 Text Notes 6150 2350 0    60   ~ 0
-Enable
+Enable, \nSMB config,\nUSB
 Text Notes 6300 1400 0    60   ~ 0
-USB Path
+USB
 Text Notes 6350 1650 0    60   ~ 0
-USB Path
+USB
 Text Notes 9000 1350 0    60   ~ 0
 Serial
 Text Notes 9000 1650 0    60   ~ 0
@@ -211,7 +211,7 @@ Wire Notes Line
 Text Notes 4600 5650 0    60   ~ 0
 Power
 Text Notes 5750 2900 0    60   ~ 0
-Serial, enable, interupts
+2x Serial, enable
 Wire Notes Line
 	5600 2950 7050 2950
 Wire Notes Line
@@ -224,14 +224,14 @@ Wire Notes Line
 	7450 3700 8800 3700
 Wire Notes Line
 	8800 3700 8800 2700
-Wire Notes Line
-	8800 2700 7450 2700
 Text Notes 7600 3300 0    69   ~ 0
-GSM GPS Sheet\nMoved to seperate\nKicad project
+GSM GPS Sheet\nMoved to seperate\nKicad project and \nseperate PCB
 $Sheet
-S 3750 6600 1350 800 
+S 7450 2700 1350 1000
 U 562004BB
-F0 "Sheet562004BA" 69
+F0 "GSM+GPS" 69
 F1 "V2X_GSM.sch" 69
 $EndSheet
+Wire Notes Line
+	8800 2700 7450 2700
 $EndSCHEMATC
