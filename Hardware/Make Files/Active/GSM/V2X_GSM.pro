@@ -1,4 +1,4 @@
-update=10/12/2015 4:22:31 PM
+update=10/22/2015 10:47:47 AM
 version=1
 last_client=kicad
 [pcbnew]
@@ -58,5 +58,4 @@ LibName26=opto
 LibName27=atmel
 LibName28=contrib
 LibName29=valves
-LibName30=CUSTOM_KICAD_PART
-LibName31=sim5320_KICAD_PART
+LibName30=C:/Users/jbanks2/Documents/KiCad Libraries/Kicad_Custom_Parts/CUSTOM_KICAD_PART

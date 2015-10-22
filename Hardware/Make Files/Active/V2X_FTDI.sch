@@ -94,7 +94,7 @@ Comment3 "Manager: Magnus Feuer"
 Comment4 ""
 $EndDescr
 $Comp
-L FT4232H U1
+L FT4232H-RESCUE-V2X U1
 U 1 1 55AD78AF
 P 6500 3300
 AR Path="/55AD78AF" Ref="U1"  Part="1" 
@@ -841,4 +841,30 @@ Wire Wire Line
 	6000 1050 6000 1100
 Text Notes 3750 3500 0    69   ~ 0
 FTDI ~RESET~ signal is \nautomatically controlled \nby HUB port enabled signal
+NoConn ~ 7700 1600
+NoConn ~ 7700 1700
+NoConn ~ 7700 1800
+NoConn ~ 7700 1900
+NoConn ~ 7700 2000
+NoConn ~ 7700 2100
+NoConn ~ 7700 2500
+NoConn ~ 7700 2600
+NoConn ~ 7700 2700
+NoConn ~ 7700 2800
+NoConn ~ 7700 2900
+NoConn ~ 7700 3000
+NoConn ~ 7700 3400
+NoConn ~ 7700 3500
+NoConn ~ 7700 3600
+NoConn ~ 7700 3700
+NoConn ~ 7700 3800
+NoConn ~ 7700 3900
+NoConn ~ 7700 4100
+NoConn ~ 7700 4200
+NoConn ~ 7700 4300
+NoConn ~ 7700 4400
+NoConn ~ 7700 4500
+NoConn ~ 7700 4600
+NoConn ~ 7700 4700
+NoConn ~ 7700 4800
 $EndSCHEMATC

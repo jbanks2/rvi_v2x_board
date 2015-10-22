@@ -185,8 +185,6 @@ Text Notes 5750 3500 0    60   ~ 0
 SPI, enable, interupts
 Text Notes 3150 3050 0    60   ~ 0
 enable
-Text Notes 1950 1000 0    60   ~ 0
-All modules have switched power
 Wire Notes Line
 	7500 4800 6750 4800
 Wire Notes Line

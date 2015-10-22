@@ -94,7 +94,7 @@ Comment3 "Manager: Magnus Feuer"
 Comment4 ""
 $EndDescr
 $Comp
-L STN1110 U7
+L STN1110-RESCUE-V2X U7
 U 1 1 55A9EA92
 P 7550 1750
 F 0 "U7" H 7300 2300 60  0000 C CNN
@@ -1892,4 +1892,5 @@ NoConn ~ 8800 1950
 NoConn ~ 3450 5150
 NoConn ~ 3450 4950
 NoConn ~ 4150 5050
+NoConn ~ 3150 1850
 $EndSCHEMATC

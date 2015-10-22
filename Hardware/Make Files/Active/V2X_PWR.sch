@@ -122,10 +122,10 @@ L TVS_small D11
 U 1 1 55AAA079
 P 2400 1300
 F 0 "D11" H 2400 1450 50  0000 C CNN
-F 1 "SD15C" H 2400 1150 50  0000 C CNN
-F 2 "Diodes_SMD:SOD-323" H 2400 1300 60  0001 C CNN
-F 3 "http://www.mouser.com/ds/2/240/littelfuse_SD-C_datasheet-341330.pdf" H 2400 1300 60  0001 C CNN
-F 4 "576-SD15C-01FTG" H 2400 1300 60  0001 C CNN "Mouse PN"
+F 1 "SMBJ16A" H 2400 1150 50  0000 C CNN
+F 2 "Diodes_SMD:SMB_Standard" H 2400 1300 60  0001 C CNN
+F 3 "http://www.mouser.com/ds/2/389/CD00001366-310691.pdf" H 2400 1300 60  0001 C CNN
+F 4 "511-SMBJ16A" H 2400 1300 60  0001 C CNN "Mouse PN"
 	1    2400 1300
 	0    1    1    0   
 $EndComp
@@ -235,89 +235,89 @@ Text GLabel 5100 2500 0    60   Input ~ 0
 $Comp
 L CONN_01X01 P7
 U 1 1 55C35919
-P 9550 800
-F 0 "P7" H 9550 900 50  0000 C CNN
-F 1 "Ficudial1" H 9550 700 50  0000 C CNN
-F 2 "Fiducials:Fiducial_1mm_Dia_2.54mm_Outer_CopperTop" H 9550 800 60  0001 C CNN
-F 3 "" H 9550 800 60  0000 C CNN
-	1    9550 800 
+P 8900 800
+F 0 "P7" H 8900 900 50  0000 C CNN
+F 1 "Ficudial1" H 8900 700 50  0000 C CNN
+F 2 "Fiducials:Fiducial_1mm_Dia_2.54mm_Outer_CopperTop" H 8900 800 60  0001 C CNN
+F 3 "" H 8900 800 60  0000 C CNN
+	1    8900 800 
 	-1   0    0    1   
 $EndComp
 $Comp
 L CONN_01X01 P11
 U 1 1 55C35920
-P 9550 1050
-F 0 "P11" H 9550 1150 50  0000 C CNN
-F 1 "Ficudial2" H 9550 950 50  0000 C CNN
-F 2 "Fiducials:Fiducial_1mm_Dia_2.54mm_Outer_CopperTop" H 9550 1050 60  0001 C CNN
-F 3 "" H 9550 1050 60  0000 C CNN
-	1    9550 1050
+P 8900 1050
+F 0 "P11" H 8900 1150 50  0000 C CNN
+F 1 "Ficudial2" H 8900 950 50  0000 C CNN
+F 2 "Fiducials:Fiducial_1mm_Dia_2.54mm_Outer_CopperTop" H 8900 1050 60  0001 C CNN
+F 3 "" H 8900 1050 60  0000 C CNN
+	1    8900 1050
 	-1   0    0    1   
 $EndComp
 $Comp
 L CONN_01X01 P13
 U 1 1 55C35927
-P 9550 1300
-F 0 "P13" H 9550 1400 50  0000 C CNN
-F 1 "Ficudial3" H 9550 1200 50  0000 C CNN
-F 2 "Fiducials:Fiducial_1mm_Dia_2.54mm_Outer_CopperTop" H 9550 1300 60  0001 C CNN
-F 3 "" H 9550 1300 60  0000 C CNN
-	1    9550 1300
+P 8900 1300
+F 0 "P13" H 8900 1400 50  0000 C CNN
+F 1 "Ficudial3" H 8900 1200 50  0000 C CNN
+F 2 "Fiducials:Fiducial_1mm_Dia_2.54mm_Outer_CopperTop" H 8900 1300 60  0001 C CNN
+F 3 "" H 8900 1300 60  0000 C CNN
+	1    8900 1300
 	-1   0    0    1   
 $EndComp
 $Comp
 L CONN_01X01 P16
 U 1 1 55C3592E
-P 9550 1550
-F 0 "P16" H 9550 1650 50  0000 C CNN
-F 1 "Ficudial4" H 9550 1450 50  0000 C CNN
-F 2 "Fiducials:Fiducial_1mm_Dia_2.54mm_Outer_CopperTop" H 9550 1550 60  0001 C CNN
-F 3 "" H 9550 1550 60  0000 C CNN
-	1    9550 1550
+P 8900 1550
+F 0 "P16" H 8900 1650 50  0000 C CNN
+F 1 "Ficudial4" H 8900 1450 50  0000 C CNN
+F 2 "Fiducials:Fiducial_1mm_Dia_2.54mm_Outer_CopperTop" H 8900 1550 60  0001 C CNN
+F 3 "" H 8900 1550 60  0000 C CNN
+	1    8900 1550
 	-1   0    0    1   
 $EndComp
 $Comp
 L CONN_01X01 P6
 U 1 1 55C35935
-P 9000 800
-F 0 "P6" H 9000 900 50  0000 C CNN
-F 1 "Board Mount 1" H 9000 700 50  0000 C CNN
-F 2 "Mounting_Holes:MountingHole_3mm" H 9000 800 60  0001 C CNN
-F 3 "" H 9000 800 60  0000 C CNN
-	1    9000 800 
+P 8150 800
+F 0 "P6" H 8150 900 50  0000 C CNN
+F 1 "Board Mount 1" H 8150 700 50  0000 C CNN
+F 2 "Mounting_Holes:MountingHole_3mm" H 8150 800 60  0001 C CNN
+F 3 "" H 8150 800 60  0000 C CNN
+	1    8150 800 
 	-1   0    0    1   
 $EndComp
 $Comp
 L CONN_01X01 P10
 U 1 1 55C3593C
-P 9000 1050
-F 0 "P10" H 9000 1150 50  0000 C CNN
-F 1 "Board Mount 2" H 9000 950 50  0000 C CNN
-F 2 "Mounting_Holes:MountingHole_3mm" H 9000 1050 60  0001 C CNN
-F 3 "" H 9000 1050 60  0000 C CNN
-	1    9000 1050
+P 8150 1050
+F 0 "P10" H 8150 1150 50  0000 C CNN
+F 1 "Board Mount 2" H 8150 950 50  0000 C CNN
+F 2 "Mounting_Holes:MountingHole_3mm" H 8150 1050 60  0001 C CNN
+F 3 "" H 8150 1050 60  0000 C CNN
+	1    8150 1050
 	-1   0    0    1   
 $EndComp
 $Comp
 L CONN_01X01 P12
 U 1 1 55C35943
-P 9000 1300
-F 0 "P12" H 9000 1400 50  0000 C CNN
-F 1 "Board Mount 3" H 9000 1200 50  0000 C CNN
-F 2 "Mounting_Holes:MountingHole_3mm" H 9000 1300 60  0001 C CNN
-F 3 "" H 9000 1300 60  0000 C CNN
-	1    9000 1300
+P 8150 1300
+F 0 "P12" H 8150 1400 50  0000 C CNN
+F 1 "Board Mount 3" H 8150 1200 50  0000 C CNN
+F 2 "Mounting_Holes:MountingHole_3mm" H 8150 1300 60  0001 C CNN
+F 3 "" H 8150 1300 60  0000 C CNN
+	1    8150 1300
 	-1   0    0    1   
 $EndComp
 $Comp
 L CONN_01X01 P15
 U 1 1 55C3594A
-P 9000 1550
-F 0 "P15" H 9000 1650 50  0000 C CNN
-F 1 "Board Mount 4" H 9000 1450 50  0000 C CNN
-F 2 "Mounting_Holes:MountingHole_3mm" H 9000 1550 60  0001 C CNN
-F 3 "" H 9000 1550 60  0000 C CNN
-	1    9000 1550
+P 8150 1550
+F 0 "P15" H 8150 1650 50  0000 C CNN
+F 1 "Board Mount 4" H 8150 1450 50  0000 C CNN
+F 2 "Mounting_Holes:MountingHole_3mm" H 8150 1550 60  0001 C CNN
+F 3 "" H 8150 1550 60  0000 C CNN
+	1    8150 1550
 	-1   0    0    1   
 $EndComp
 Text GLabel 7600 2250 0    60   Input ~ 0
@@ -631,7 +631,7 @@ Text GLabel 7000 3800 0    60   Input ~ 0
 Text GLabel 2950 3650 2    69   Input ~ 0
 3V3_EN
 $Comp
-L SW_PUSH SW2
+L SW_PUSH_SLD SW2
 U 1 1 5600CE81
 P 2200 4900
 F 0 "SW2" H 2350 5010 50  0000 C CNN
@@ -653,7 +653,7 @@ F 3 "" H 2000 4300 60  0000 C CNN
 	1    2000 4300
 	1    0    0    -1  
 $EndComp
-Text GLabel 2150 4550 2    69   Input ~ 0
+Text GLabel 2550 4550 2    69   Input ~ 0
 BUTTON
 Wire Wire Line
 	1650 4550 1850 4550
@@ -715,7 +715,7 @@ SEQ will disable the 3V3 Supply\nand siphon power from 4V1 while \nin SMS standb
 Connection ~ 3450 4700
 Wire Wire Line
 	3400 4450 3500 4450
-Text Notes 800  5500 0    69   ~ 0
+Text Notes 800  5600 0    69   ~ 0
 Button force starts the 3V3 to start SEQ\nSEQ must hold 3V3_EN high to stay on\nBUTTON is soft button signal once running\n3V3_EN pulled low kills supply regaurdless if button pressed
 Wire Wire Line
 	2800 3650 2950 3650
@@ -1400,4 +1400,100 @@ Wire Notes Line
 	3700 1850 500  1850
 Text GLabel 3050 6850 2    69   Input ~ 0
 SIM_WAKE
+$Comp
+L C C65
+U 1 1 56290CF9
+P 2300 4400
+F 0 "C65" H 2325 4500 50  0000 L CNN
+F 1 "10N" H 2325 4300 50  0000 L CNN
+F 2 "Custom Parts:C_0603_SM" H 2338 4250 30  0001 C CNN
+F 3 "http://www.mouser.com/ds/2/427/vjw1bcbascomseries-223529.pdf" H 2300 4400 60  0001 C CNN
+F 4 "77-VJ0603Y103KXACBC" H 2300 4400 60  0001 C CNN "Mouse PN"
+	1    2300 4400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2150 4550 2550 4550
+Connection ~ 2300 4550
+$Comp
+L GND #PWR079
+U 1 1 562917CA
+P 2300 4250
+F 0 "#PWR079" H 2300 4000 50  0001 C CNN
+F 1 "GND" V 2400 4200 50  0000 C CNN
+F 2 "" H 2300 4250 60  0000 C CNN
+F 3 "" H 2300 4250 60  0000 C CNN
+	1    2300 4250
+	-1   0    0    1   
+$EndComp
+$Comp
+L GND #PWR080
+U 1 1 562939B7
+P 1900 5000
+F 0 "#PWR080" H 1900 4750 50  0001 C CNN
+F 1 "GND" H 1900 4850 50  0000 C CNN
+F 2 "" H 1900 5000 60  0000 C CNN
+F 3 "" H 1900 5000 60  0000 C CNN
+	1    1900 5000
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_01X01 P25
+U 1 1 562955D0
+P 9400 800
+F 0 "P25" H 9400 900 50  0000 C CNN
+F 1 "Ficudial1" H 9400 700 50  0000 C CNN
+F 2 "Fiducials:Fiducial_1mm_Dia_2.54mm_Outer_CopperTop" H 9400 800 60  0001 C CNN
+F 3 "" H 9400 800 60  0000 C CNN
+	1    9400 800 
+	-1   0    0    1   
+$EndComp
+$Comp
+L CONN_01X01 P27
+U 1 1 562955D6
+P 9400 1050
+F 0 "P27" H 9400 1150 50  0000 C CNN
+F 1 "Ficudial2" H 9400 950 50  0000 C CNN
+F 2 "Fiducials:Fiducial_1mm_Dia_2.54mm_Outer_CopperTop" H 9400 1050 60  0001 C CNN
+F 3 "" H 9400 1050 60  0000 C CNN
+	1    9400 1050
+	-1   0    0    1   
+$EndComp
+$Comp
+L CONN_01X01 P28
+U 1 1 562955DC
+P 9400 1300
+F 0 "P28" H 9400 1400 50  0000 C CNN
+F 1 "Ficudial3" H 9400 1200 50  0000 C CNN
+F 2 "Fiducials:Fiducial_1mm_Dia_2.54mm_Outer_CopperTop" H 9400 1300 60  0001 C CNN
+F 3 "" H 9400 1300 60  0000 C CNN
+	1    9400 1300
+	-1   0    0    1   
+$EndComp
+$Comp
+L CONN_01X01 P29
+U 1 1 562955E2
+P 9400 1550
+F 0 "P29" H 9400 1650 50  0000 C CNN
+F 1 "Ficudial4" H 9400 1450 50  0000 C CNN
+F 2 "Fiducials:Fiducial_1mm_Dia_2.54mm_Outer_CopperTop" H 9400 1550 60  0001 C CNN
+F 3 "" H 9400 1550 60  0000 C CNN
+	1    9400 1550
+	-1   0    0    1   
+$EndComp
+NoConn ~ 9100 800 
+NoConn ~ 9100 1050
+NoConn ~ 9100 1300
+NoConn ~ 9100 1550
+NoConn ~ 9600 1550
+NoConn ~ 9600 1300
+NoConn ~ 9600 1050
+NoConn ~ 9600 800 
+NoConn ~ 7700 2700
+NoConn ~ 7700 2800
+NoConn ~ 9450 2600
+NoConn ~ 8350 800 
+NoConn ~ 8350 1050
+NoConn ~ 8350 1300
+NoConn ~ 8350 1550
 $EndSCHEMATC
