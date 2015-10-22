@@ -94,12 +94,11 @@ Comment3 "Manager: Magnus Feuer"
 Comment4 ""
 $EndDescr
 $Sheet
-S 7400 1100 1400 850 
+S 7450 2750 1350 950 
 U 55AB1D0F
 F0 "V2X FTDI Sub" 59
 F1 "V2X_FTDI.sch" 59
 $EndSheet
-NoConn ~ 7500 4950
 $Sheet
 S 7500 4250 1400 850 
 U 55AB3ADF
@@ -139,18 +138,6 @@ Wire Notes Line
 Wire Notes Line
 	5700 1450 7400 1450
 Wire Notes Line
-	8800 1700 9300 1700
-Wire Notes Line
-	9300 1700 9300 3100
-Wire Notes Line
-	9300 3100 8800 3100
-Wire Notes Line
-	8800 1400 9700 1400
-Wire Notes Line
-	9700 1400 9700 4650
-Wire Notes Line
-	9700 4650 8900 4650
-Wire Notes Line
 	5600 3350 6750 3350
 Wire Notes Line
 	6750 3350 6750 4600
@@ -167,13 +154,13 @@ Wire Notes Line
 Wire Notes Line
 	7050 3150 7050 3400
 Wire Notes Line
-	7050 3400 7450 3400
+	7050 3400 7700 3400
 Wire Notes Line
 	5700 1700 7250 1700
 Wire Notes Line
 	7250 1700 7250 3050
 Wire Notes Line
-	7250 3050 7450 3050
+	7250 3050 7700 3050
 Wire Notes Line
 	5600 2800 6100 2800
 Wire Notes Line
@@ -181,16 +168,16 @@ Wire Notes Line
 Wire Notes Line
 	6100 1900 5700 1900
 Text Notes 6150 2350 0    60   ~ 0
-Enable, \nSMB config,\nUSB
+Enable, \nSMB config,\nUSB/Serial
 Text Notes 6300 1400 0    60   ~ 0
 USB
 Text Notes 6350 1650 0    60   ~ 0
 USB
-Text Notes 9000 1350 0    60   ~ 0
+Text Notes 8950 1550 0    60   ~ 0
 Serial
-Text Notes 9000 1650 0    60   ~ 0
+Text Notes 9000 4550 0    60   ~ 0
 Serial
-Text Notes 5750 3100 0    60   ~ 0
+Text Notes 5750 2900 0    60   ~ 0
 Serial, enable, interupts
 Text Notes 5750 3300 0    60   ~ 0
 Serial, enable
@@ -210,28 +197,34 @@ Wire Notes Line
 	2800 5700 2800 2000
 Text Notes 4600 5650 0    60   ~ 0
 Power
-Text Notes 5750 2900 0    60   ~ 0
-2x Serial, enable
+Text Notes 5750 3100 0    60   ~ 0
+2x Serial, enable, (USB?)
 Wire Notes Line
 	5600 2950 7050 2950
 Wire Notes Line
 	7050 2950 7050 1850
 Wire Notes Line
 	7050 1850 7400 1850
-Wire Notes Line
-	7450 2700 7450 3700
-Wire Notes Line
-	7450 3700 8800 3700
-Wire Notes Line
-	8800 3700 8800 2700
-Text Notes 7600 3300 0    69   ~ 0
+Text Notes 7600 1700 0    69   ~ 0
 GSM GPS Sheet\nMoved to seperate\nKicad project and \nseperate PCB
+Wire Notes Line
+	7700 3050 7700 3400
+Wire Notes Line
+	8900 4600 9350 4600
+Wire Notes Line
+	9350 4600 9350 3350
+Wire Notes Line
+	9350 3350 8800 3350
+Wire Notes Line
+	8800 1600 9350 1600
+Wire Notes Line
+	9350 1600 9350 3000
+Wire Notes Line
+	9350 3000 8800 3000
 $Sheet
-S 7450 2700 1350 1000
+S 7450 1100 1350 1000
 U 562004BB
 F0 "GSM+GPS" 69
 F1 "V2X_GSM.sch" 69
 $EndSheet
-Wire Notes Line
-	8800 2700 7450 2700
 $EndSCHEMATC

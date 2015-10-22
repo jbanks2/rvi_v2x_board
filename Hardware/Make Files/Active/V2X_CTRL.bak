@@ -136,10 +136,10 @@ SEQ_LED1
 Text GLabel 5150 2200 2    60   Input ~ 0
 SEQ_LED2
 $Comp
-L GND #PWR091
+L GND #PWR092
 U 1 1 55F86E9C
 P 4100 3900
-F 0 "#PWR091" H 4100 3650 50  0001 C CNN
+F 0 "#PWR092" H 4100 3650 50  0001 C CNN
 F 1 "GND" H 4100 3750 50  0000 C CNN
 F 2 "" H 4100 3900 60  0000 C CNN
 F 3 "" H 4100 3900 60  0000 C CNN
@@ -169,34 +169,13 @@ Connection ~ 4150 1150
 Wire Wire Line
 	4350 1150 4350 1200
 Connection ~ 4250 1150
-Text GLabel 8900 5450 0    60   Input ~ 0
-5V0_B_OUT
-Wire Wire Line
-	8900 5450 8900 5550
-Wire Wire Line
-	8900 5850 8900 5950
-$Comp
-L GND #PWR092
-U 1 1 55F86EC1
-P 8900 6250
-F 0 "#PWR092" H 8900 6000 50  0001 C CNN
-F 1 "GND" H 8900 6100 50  0000 C CNN
-F 2 "" H 8900 6250 60  0000 C CNN
-F 3 "" H 8900 6250 60  0000 C CNN
-	1    8900 6250
-	1    0    0    -1  
-$EndComp
-Text GLabel 8900 5900 0    60   Input ~ 0
-HOST_SC
 Text GLabel 5150 2450 2    60   Input ~ 0
 HOST_SC
-Text Notes 9150 6300 0    60   ~ 0
-Short Circuit Detection\n5V0_B_OUT is post poly fuse\nSample using logic level (maybe A2D)\nLogic '0' signal (<1.5V) indicates poly\nfuse is set, host output is in protect.\nLogic '1' signal (approx 2.4V) indicates\npoly fuse is clear, normal opperation.\nAn A2D value that is too high might \nindicate the Host is not attached.
 $Comp
-L ATXMEGA16A4U-A IC1
+L ATXMEGA16A4U-A U14
 U 1 1 55F86EE3
 P 4250 2500
-F 0 "IC1" H 3500 3700 40  0000 L BNN
+F 0 "U14" H 3500 3700 40  0000 L BNN
 F 1 "ATXMEGA16A4U-A" H 4600 1250 40  0000 L BNN
 F 2 "Housings_QFP:TQFP-44_10x10mm_Pitch0.8mm" H 4250 2500 35  0001 C CIN
 F 3 "http://www.mouser.com/ds/2/36/Atmel-8387-8-and16-bit-AVR-Microcontroller-XMEGA-A-259135.pdf" H 4250 2500 60  0001 C CNN
@@ -231,7 +210,7 @@ U 1 1 55F86EF7
 P 1575 1950
 F 0 "CON1" H 1495 2190 50  0000 C CNN
 F 1 "AVR-PDI-6" H 1365 1705 50  0000 L BNN
-F 2 "Pin_Headers:Pin_Header_Straight_2x03" V 1130 1985 50  0001 C CNN
+F 2 "Pin_Headers:Pin_Header_Angled_2x03" V 1130 1985 50  0001 C CNN
 F 3 "http://www.mouser.com/ds/2/418/NG_CD_146130_L_146130_c.dwg-614944.pdf" H 1575 1950 60  0001 C CNN
 F 4 "571-5-146130-2" H 1575 1950 60  0001 C CNN "Mouse PN"
 	1    1575 1950
@@ -261,8 +240,8 @@ Text GLabel 3350 2550 0    60   Input ~ 0
 ACCEL_RXD
 Text Notes 3150 7300 0    69   ~ 0
 HUB /RESET\nELM/STN /Reset\nELM/STN /Sleep\nSIM Module "Power On"\nSIM Module /Reset\nSIM "Airplane Mode"\nSIM USB detect\nFTDI USB detect /RESET
-Text Notes 3150 5800 0    69   ~ 0
-3V3 Power Supply Enable (SEQ)\nHUB/FTDI 3V3 Enable\nCAN 3V3 Enable\nAccel 3V3 Enable\n4V1 Power Supply Enable (SIM)\n5V0 Power Supply Enable (LEDs)\n5V0 HOST Enable \n
+Text Notes 3100 5900 0    69   ~ 0
+3V3 Power Supply Enable (SEQ)\nHUB/FTDI 3V3 Enable\nCAN 3V3 Enable\nAccel 3V3 Enable\n4V1 Power Supply Enable (SIM)\n5V0 Power Supply Enable (LEDs)\n5V0 HOST Enable \nGSM module wake up signal
 Text Notes 950  2700 0    69   ~ 0
 HUB Serial Config Data I2C/SMB\nHUB Serial Config Clock I2C/SMB\nSEQ RXD to FTDI: ACL Data UART\nSEQ TXD to FTDI: ACL Data UART
 Text Notes 1700 1650 0    69   ~ 0
@@ -284,10 +263,10 @@ F 4 "863-MC74HC126ADR2G" H 9550 1700 60  0001 C CNN "Mouse PN"
 	1    0    0    -1  
 $EndComp
 Text GLabel 9100 1700 0    60   Input ~ 0
-CAN_RXD_PS_BUF
+CAN_RXD_SEQ
 Text GLabel 9100 2300 0    60   Input ~ 0
 CAN_RXD_FTDI
-Text GLabel 10000 1700 2    60   Input ~ 0
+Text GLabel 10300 1700 2    60   Input ~ 0
 CAN_RXD
 Text GLabel 10000 2300 2    60   Input ~ 0
 CAN_RXD
@@ -609,15 +588,11 @@ Text GLabel 2000 1850 2    60   Input ~ 0
 Text GLabel 7050 4450 2    60   Input ~ 0
 3V3_A
 Text GLabel 9550 2600 0    60   Input ~ 0
-CAN_RXD_FTDI
+CAN_BUF_FTDI
 Text GLabel 9550 2000 0    60   Input ~ 0
-CAN_RXD_SEQ
+CAN_BUF_SEQ
 Text GLabel 2500 5450 2    60   Input ~ 0
 3V3_D_EN
-Text GLabel 5150 2550 2    60   Input ~ 0
-CAN_RXD_SEQ
-Text GLabel 5150 2650 2    60   Input ~ 0
-CAN_RXD_FTDI
 Text GLabel 8750 4150 0    60   Input ~ 0
 USB_INT_DM
 Text GLabel 9250 4150 2    60   Input ~ 0
@@ -807,30 +782,6 @@ F 4 "71-CRCW0603-47K-E3" H 6350 7350 60  0001 C CNN "Mouse PN"
 	-1   0    0    1   
 $EndComp
 $Comp
-L R R89
-U 1 1 5605AB0D
-P 8900 6100
-F 0 "R89" V 8980 6100 50  0000 C CNN
-F 1 "47K" V 8900 6100 50  0000 C CNN
-F 2 "Custom Parts:R_0603_sm" V 8830 6100 30  0001 C CNN
-F 3 "http://www.mouser.com/ds/2/427/dcrcwe3-109170.pdf" H 8900 6100 30  0001 C CNN
-F 4 "71-CRCW0603-47K-E3" H 8900 6100 60  0001 C CNN "Mouse PN"
-	1    8900 6100
-	-1   0    0    1   
-$EndComp
-$Comp
-L R R88
-U 1 1 5605AB9B
-P 8900 5700
-F 0 "R88" V 8980 5700 50  0000 C CNN
-F 1 "47K" V 8900 5700 50  0000 C CNN
-F 2 "Custom Parts:R_0603_sm" V 8830 5700 30  0001 C CNN
-F 3 "http://www.mouser.com/ds/2/427/dcrcwe3-109170.pdf" H 8900 5700 30  0001 C CNN
-F 4 "71-CRCW0603-47K-E3" H 8900 5700 60  0001 C CNN "Mouse PN"
-	1    8900 5700
-	-1   0    0    1   
-$EndComp
-$Comp
 L R R87
 U 1 1 5605AFDD
 P 6900 4450
@@ -945,7 +896,7 @@ SEQ_RESET
 Text GLabel 5150 2350 2    60   Input ~ 0
 SEQ_LED3
 Text GLabel 5150 1600 2    69   Input ~ 0
-SEQ-CHGPUMP
+SEQ_CHGPUMP
 $Comp
 L LED D20
 U 1 1 560D95B2
@@ -1022,7 +973,7 @@ F 4 "71-CRCW0603-330-E3" H 5000 6400 60  0001 C CNN "Mouse PN"
 	-1   0    0    1   
 $EndComp
 Text GLabel 6350 1150 0    69   Input ~ 0
-SEQ-CHGPUMP
+SEQ_CHGPUMP
 $Comp
 L R R94
 U 1 1 560DBE98
@@ -1116,8 +1067,6 @@ Text GLabel 5500 7050 1    60   Input ~ 0
 SEQ_LED2
 Text GLabel 6350 7000 1    60   Input ~ 0
 SEQ_LED3
-Text GLabel 5150 3100 2    60   Input ~ 0
-CAN_RXD_PS_BUF
 Text Notes 8100 1550 0    69   ~ 0
 CAN RXD BUFFER
 Text Notes 950  3550 0    69   ~ 0
@@ -1138,50 +1087,6 @@ Text Notes 8250 3300 0    69   ~ 0
 CAN_RXD_SEQ and CAN_RXD_FTDI\nare mutually exclusive siganls, only 1\ncan be logig high at any time.\nAllows only routing 2 TX source to CAN RXD 
 Text Notes 5550 900  0    69   ~ 0
 LED Charge pump. \nToggle pin state \nat approx 100khz
-Text GLabel 2000 700  2    60   Input ~ 0
-~HUB_RESET
-Text GLabel 1400 900  0    60   Input ~ 0
-5V0_HOST
-Text GLabel 1400 700  0    60   Input ~ 0
-HUB_ENABLE
-$Comp
-L R R19
-U 1 1 5621FEA5
-P 1650 900
-F 0 "R19" V 1730 900 50  0000 C CNN
-F 1 "0" V 1650 900 50  0000 C CNN
-F 2 "Custom Parts:R_0603_sm" V 1580 900 30  0001 C CNN
-F 3 "http://www.mouser.com/ds/2/427/dcrcwe3-109170.pdf" H 1650 900 30  0001 C CNN
-F 4 "71-CRCW0603-0-E3" H 1650 900 60  0001 C CNN "Mouse PN"
-	1    1650 900 
-	0    1    -1   0   
-$EndComp
-$Comp
-L R R18
-U 1 1 5622060B
-P 1650 700
-F 0 "R18" V 1730 700 50  0000 C CNN
-F 1 "DNS" V 1650 700 50  0000 C CNN
-F 2 "Custom Parts:R_0603_sm" V 1580 700 30  0001 C CNN
-F 3 "" H 1650 700 30  0000 C CNN
-	1    1650 700 
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	1800 700  2000 700 
-Wire Wire Line
-	1900 700  1900 900 
-Wire Wire Line
-	1900 900  1800 900 
-Connection ~ 1900 700 
-Wire Wire Line
-	1500 700  1400 700 
-Wire Wire Line
-	1400 900  1500 900 
-Text Notes 700  1100 0    69   ~ 0
-Determines ~RESET~ control for HUB
-Wire Notes Line
-	2750 500  2750 1200
 Wire Notes Line
 	500  1200 3450 1200
 Wire Notes Line
@@ -1192,4 +1097,24 @@ Wire Notes Line
 	2850 1900 3450 1900
 Wire Notes Line
 	3450 1900 3450 1200
+$Comp
+L R R63
+U 1 1 56280EFC
+P 10150 1700
+F 0 "R63" V 10230 1700 50  0000 C CNN
+F 1 "1K" V 10150 1700 50  0000 C CNN
+F 2 "Custom Parts:R_0603_sm" V 10080 1700 30  0001 C CNN
+F 3 "http://www.mouser.com/ds/2/427/dcrcwe3-109170.pdf" H 10150 1700 30  0001 C CNN
+F 4 "71-CRCW0603-1.0K-E3" H 10150 1700 60  0001 C CNN "Mouse PN"
+	1    10150 1700
+	0    -1   -1   0   
+$EndComp
+Text GLabel 5150 2550 2    60   Input ~ 0
+CAN_BUF_SEQ
+Text GLabel 5150 2650 2    60   Input ~ 0
+CAN_BUF_FTDI
+Text GLabel 5150 3100 2    60   Input ~ 0
+CAN_RXD_SEQ
+Text GLabel 2500 5850 2    60   Input ~ 0
+SIM_WAKE
 $EndSCHEMATC

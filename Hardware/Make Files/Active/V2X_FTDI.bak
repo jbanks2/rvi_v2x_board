@@ -101,8 +101,8 @@ AR Path="/55AD78AF" Ref="U1"  Part="1"
 AR Path="/55AB1D0F/55AD78AF" Ref="U1"  Part="1" 
 F 0 "U1" H 5450 5400 50  0000 L CNN
 F 1 "FT4232H" H 7250 5400 50  0000 L CNN
-F 2 "Housings_QFP:LQFP-64_10x10mm_Pitch0.5mm" H 6500 3300 50  0000 C CNN
-F 3 "http://www.mouser.com/ds/2/163/DS_FT4232H-9150.pdf" H 6500 3300 50  0000 C CNN
+F 2 "Housings_QFP:LQFP-64_10x10mm_Pitch0.5mm" H 6500 3300 50  0001 C CNN
+F 3 "http://www.mouser.com/ds/2/163/DS_FT4232H-9150.pdf" H 6500 3300 50  0001 C CNN
 F 4 "895-FT4232HL" H 6500 3300 60  0001 C CNN "Mouse PN"
 	1    6500 3300
 	1    0    0    -1  
@@ -358,7 +358,7 @@ Text GLabel 5300 2400 0    67   Input ~ 0
 FTDI_DM
 Text GLabel 5300 2500 0    67   Input ~ 0
 FTDI_DP
-Text GLabel 4350 2900 0    60   Input ~ 0
+Text GLabel 4800 2900 0    60   Input ~ 0
 ~FTDI_RESET
 Text GLabel 900  950  0    60   Input ~ 0
 3V3_B
@@ -424,17 +424,17 @@ Text Notes 9100 2350 0    60   ~ 0
 Serial channel for OBD interface control\n
 Text Notes 9150 3250 0    60   ~ 0
 Serial channel for Accelerometer data\n
-Text GLabel 4350 3050 0    69   Input ~ 0
+Text GLabel 4800 3050 0    69   Input ~ 0
 HUB_PWR_PRT1
 $Comp
-L R R3
+L R R2
 U 1 1 5606A910
-P 4500 3050
-F 0 "R3" V 4580 3050 50  0000 C CNN
-F 1 "DNS" V 4500 3050 50  0000 C CNN
-F 2 "Custom Parts:R_0603_sm" V 4430 3050 30  0001 C CNN
-F 3 "" H 4500 3050 30  0000 C CNN
-	1    4500 3050
+P 4950 2900
+F 0 "R2" V 5030 2900 50  0000 C CNN
+F 1 "DNS" V 4950 2900 50  0000 C CNN
+F 2 "Custom Parts:R_0603_sm" V 4880 2900 30  0001 C CNN
+F 3 "" H 4950 2900 30  0000 C CNN
+	1    4950 2900
 	0    1    1    0   
 $EndComp
 Wire Wire Line
@@ -519,12 +519,12 @@ Wire Wire Line
 Wire Wire Line
 	7700 1500 8050 1500
 Wire Wire Line
-	4650 3050 4700 3050
+	5100 3050 5150 3050
 Wire Wire Line
-	4700 3050 4700 2900
+	5150 3050 5150 2900
 Wire Wire Line
-	4650 2900 5300 2900
-Connection ~ 4700 2900
+	5100 2900 5300 2900
+Connection ~ 5150 2900
 $Comp
 L FILTER FB2
 U 1 1 5607395E
@@ -756,15 +756,15 @@ Text GLabel 2850 7300 2    60   Input ~ 0
 Text GLabel 3300 6900 2    60   Input ~ 0
 3V3_B
 $Comp
-L R R2
+L R R3
 U 1 1 56090D92
-P 4500 2900
-F 0 "R2" V 4580 2900 50  0000 C CNN
-F 1 "0" V 4500 2900 50  0000 C CNN
-F 2 "Custom Parts:R_0603_sm" V 4430 2900 30  0001 C CNN
-F 3 "http://www.mouser.com/ds/2/427/dcrcwe3-109170.pdf" H 4500 2900 30  0001 C CNN
-F 4 "71-CRCW0603-0-E3" H 4500 2900 60  0001 C CNN "Mouse PN"
-	1    4500 2900
+P 4950 3050
+F 0 "R3" V 5030 3050 50  0000 C CNN
+F 1 "0" V 4950 3050 50  0000 C CNN
+F 2 "Custom Parts:R_0603_sm" V 4880 3050 30  0001 C CNN
+F 3 "http://www.mouser.com/ds/2/427/dcrcwe3-109170.pdf" H 4950 3050 30  0001 C CNN
+F 4 "71-CRCW0603-0-E3" H 4950 3050 60  0001 C CNN "Mouse PN"
+	1    4950 3050
 	0    -1   1    0   
 $EndComp
 $Comp
@@ -839,4 +839,6 @@ Wire Wire Line
 	6100 1050 6100 1100
 Wire Wire Line
 	6000 1050 6000 1100
+Text Notes 3750 3500 0    69   ~ 0
+FTDI ~RESET~ signal is \nautomatically controlled \nby HUB port enabled signal
 $EndSCHEMATC

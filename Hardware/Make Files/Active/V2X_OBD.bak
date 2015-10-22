@@ -231,7 +231,7 @@ U 1 1 55B1E71A
 P 5950 6600
 F 0 "U10" H 5550 6950 50  0000 L CNN
 F 1 "MCP2551" H 6050 6950 50  0000 L CNN
-F 2 "Housings_SOIC:SOIC-8_3.9x4.9mm_Pitch1.27mm" H 5950 6600 50  0000 C CIN
+F 2 "Housings_SOIC:SOIC-8_3.9x4.9mm_Pitch1.27mm" H 5950 6600 50  0001 C CIN
 F 3 "http://www.mouser.com/ds/2/268/21667d-63675.pdf" H 5950 6600 60  0001 C CNN
 F 4 "579-MCP2551-I/SN" H 5950 6600 60  0001 C CNN "Mouse PN"
 	1    5950 6600
@@ -1116,15 +1116,15 @@ $EndComp
 $Comp
 L CONN_01X01 P4
 U 1 1 55B92A71
-P 750 1550
-F 0 "P4" H 750 1650 50  0000 C CNN
-F 1 "DB-9 to OBD2" V 850 1550 50  0000 C CNN
-F 2 "" H 750 1550 60  0001 C CNN
-F 3 "http://www.amazon.com/Adapter-Cable--Connecting-Diagnostic-Interface-Compliant/dp/B007UKTW8E/ref=sr_1_1?ie=UTF8&qid=1443117694&sr=8-1" H 750 1550 60  0001 C CNN
-	1    750  1550
+P 10650 1100
+F 0 "P4" H 10650 1200 50  0000 C CNN
+F 1 "DB-9 to OBD2" V 10750 1100 50  0000 C CNN
+F 2 "" H 10650 1100 60  0001 C CNN
+F 3 "http://www.amazon.com/Adapter-Cable--Connecting-Diagnostic-Interface-Compliant/dp/B007UKTW8E/ref=sr_1_1?ie=UTF8&qid=1443117694&sr=8-1" H 10650 1100 60  0001 C CNN
+	1    10650 1100
 	1    0    0    -1  
 $EndComp
-NoConn ~ 550  1550
+NoConn ~ 10450 1100
 Wire Wire Line
 	3950 1550 3950 1300
 Wire Wire Line
@@ -1874,8 +1874,6 @@ Wire Wire Line
 	10200 2050 8800 2050
 Text GLabel 9950 4550 3    60   Input ~ 0
 CAN_TXD
-Entry Bus Bus
-	6700 200  6800 300 
 $Comp
 L LM339 U8
 U 4 1 561EFD20
@@ -1888,4 +1886,10 @@ F 4 "LM339ADR" H 3800 5050 60  0001 C CNN "Mouse PN"
 	4    3800 5050
 	1    0    0    -1  
 $EndComp
+NoConn ~ 8800 1750
+NoConn ~ 8800 1850
+NoConn ~ 8800 1950
+NoConn ~ 3450 5150
+NoConn ~ 3450 4950
+NoConn ~ 4150 5050
 $EndSCHEMATC
