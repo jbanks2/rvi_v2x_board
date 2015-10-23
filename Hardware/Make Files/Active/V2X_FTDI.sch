@@ -553,7 +553,7 @@ F 0 "C1" H 1725 1200 50  0000 L CNN
 F 1 "4U7" H 1725 1000 50  0000 L CNN
 F 2 "Custom Parts:C_0805_SM" H 1738 950 30  0001 C CNN
 F 3 "http://www.yuden.co.jp/productdata/catalog/en/mlcc_all_e.pdf" H 1700 1100 60  0001 C CNN
-F 4 "963-LMK212B7475KG-T" H 1700 1100 60  0001 C CNN "Mouse PN"
+F 4 "581-12063C475KAT2A" H 1700 1100 60  0001 C CNN "Mouse PN"
 	1    1700 1100
 	-1   0    0    -1  
 $EndComp
@@ -577,7 +577,7 @@ F 0 "C3" H 1725 2050 50  0000 L CNN
 F 1 "4U7" H 1725 1850 50  0000 L CNN
 F 2 "Custom Parts:C_0805_SM" H 1738 1800 30  0001 C CNN
 F 3 "http://www.yuden.co.jp/productdata/catalog/en/mlcc_all_e.pdf" H 1700 1950 60  0001 C CNN
-F 4 "963-LMK212B7475KG-T" H 1700 1950 60  0001 C CNN "Mouse PN"
+F 4 "581-12063C475KAT2A" H 1700 1950 60  0001 C CNN "Mouse PN"
 	1    1700 1950
 	-1   0    0    -1  
 $EndComp

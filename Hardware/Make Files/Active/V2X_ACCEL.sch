@@ -139,7 +139,7 @@ F 0 "C54" H 2475 1550 50  0000 L CNN
 F 1 "4U7" H 2475 1350 50  0000 L CNN
 F 2 "Custom Parts:C_0805_SM" H 2488 1300 30  0001 C CNN
 F 3 "http://www.yuden.co.jp/productdata/catalog/en/mlcc_all_e.pdf" H 2450 1450 60  0001 C CNN
-F 4 "963-LMK212B7475KG-T" H 2450 1450 60  0001 C CNN "Mouse PN"
+F 4 "581-12063C475KAT2A" H 2450 1450 60  0001 C CNN "Mouse PN"
 	1    2450 1450
 	1    0    0    -1  
 $EndComp
