@@ -1,0 +1,11 @@
+4.7uf 25 are 2012 not 0805 as on board
+PDI header is SMT not TH
+USB/SER header is SMT not TH
+25v 100uf in 12B filter is al elct not Tant as built
+wrong led resistor values.
+r65 rplaced by diode
+R70, R73 replaced by 24k
+R71 replaced by 10k
+SW2 mouser part wrong
+board to board connector needs updating
+

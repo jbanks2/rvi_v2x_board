@@ -1,4 +1,4 @@
-update=11/3/2015 10:57:06 AM
+update=11/12/2015 2:43:46 PM
 version=1
 last_client=kicad
 [cvpcb]
@@ -25,6 +25,16 @@ SolderMaskMinWidth=0
 DrawSegmentWidth=0.2
 BoardOutlineThickness=0.09999999999999999
 ModuleOutlineThickness=0.15
+[schematic_editor]
+version=1
+PageLayoutDescrFile=
+PlotDirectoryName=
+SubpartIdSeparator=0
+SubpartFirstId=65
+NetFmtName=Pcbnew
+SpiceForceRefPrefix=0
+SpiceUseNetNumbers=0
+LabSize=69
 [eeschema]
 version=1
 LibDir=C:/Users/Jesse/Documents/GitHub/kicad-library/library;C:/Users/Jesse/Documents/GitHub/Kicad_Custom_Parts
@@ -108,13 +118,3 @@ LibName76=Xicor
 LibName77=xilinx
 LibName78=Zilog
 LibName79=C:/Users/jbanks2/Documents/Kicad_Custom_Parts/CUSTOM_KICAD_PART
-[schematic_editor]
-version=1
-PageLayoutDescrFile=
-PlotDirectoryName=
-SubpartIdSeparator=0
-SubpartFirstId=65
-NetFmtName=Pcbnew
-SpiceForceRefPrefix=0
-SpiceUseNetNumbers=0
-LabSize=69
