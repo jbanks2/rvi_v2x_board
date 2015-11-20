@@ -47,7 +47,7 @@ typedef struct power_state {
 struct power_state power;
 
 void init_power_seq(void);
-void set_register();
+void set_register(void);
 void bits_To_Shift_Register(uint16_t bits);
 void run_sequence(struct step sequence[], int size);
 void turn_on (uint16_t pin_name_on);

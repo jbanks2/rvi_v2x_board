@@ -11,6 +11,5 @@
 
 #include "../../asf.h"
 
-#define ENABLE_3V3 0X01
 
 #endif /* V2XCOMM_H_ */

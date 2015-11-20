@@ -9,7 +9,7 @@
 
 
 void init_power_seq() {
-	//clear all outputs to 0
+	 
 	ioport_configure_pin(SEQ_SCK, IOPORT_DIR_OUTPUT | IOPORT_INIT_HIGH);
 	gpio_set_pin_low(SEQ_SCK);
 	ioport_configure_pin(SEQ_MOSI, IOPORT_DIR_OUTPUT | IOPORT_INIT_HIGH);

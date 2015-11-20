@@ -157,9 +157,7 @@ Wire Wire Line
 	1700 1050 1800 1050
 Connection ~ 1700 1050
 Wire Wire Line
-	2300 1050 2400 1050
-Wire Wire Line
-	2400 1050 2500 1050
+	2300 1050 2500 1050
 Wire Wire Line
 	2400 1050 2400 1100
 Connection ~ 2400 1050
@@ -373,11 +371,7 @@ $EndComp
 Text GLabel 1350 2300 0    60   Input ~ 0
 5V0_EN
 Wire Wire Line
-	2250 2300 2550 2300
-Wire Wire Line
-	2550 2300 2800 2300
-Wire Wire Line
-	2800 2300 2950 2300
+	2250 2300 2950 2300
 Connection ~ 2550 2300
 Connection ~ 2800 2300
 $Comp
@@ -405,9 +399,7 @@ $EndComp
 Wire Wire Line
 	2550 2700 2550 2800
 Wire Wire Line
-	2450 2800 2550 2800
-Wire Wire Line
-	2550 2800 2650 2800
+	2450 2800 2650 2800
 Connection ~ 2550 2800
 $Comp
 L C C45
@@ -422,17 +414,11 @@ F 4 "603-CC126KKX7R7BB106" H 3450 2950 60  0001 C CNN "Mouse PN"
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3150 2800 3250 2800
-Wire Wire Line
-	3250 2800 3450 2800
-Wire Wire Line
-	3450 2800 3700 2800
+	3150 2800 3700 2800
 Wire Wire Line
 	3250 3050 3250 2800
 Wire Wire Line
-	1700 3050 1800 3050
-Wire Wire Line
-	1800 3050 3250 3050
+	1700 3050 3250 3050
 Connection ~ 3250 2800
 Wire Wire Line
 	1700 2800 1800 2800
@@ -442,13 +428,9 @@ Connection ~ 1800 3050
 Wire Wire Line
 	1400 3050 1350 3050
 Wire Wire Line
-	1350 3050 1350 2800
+	1350 2800 1350 3050
 Wire Wire Line
-	1250 2800 1300 2800
-Wire Wire Line
-	1300 2800 1350 2800
-Wire Wire Line
-	1350 2800 1400 2800
+	1250 2800 1400 2800
 Connection ~ 1350 2800
 Wire Wire Line
 	1300 2800 1300 2500
@@ -518,11 +500,7 @@ F 4 "942-IRF9335TRPBF" H 4550 4150 60  0001 C CNN "Mouse PN"
 	1    0    0    1   
 $EndComp
 Wire Wire Line
-	4350 3950 4650 3950
-Wire Wire Line
-	4650 3950 4900 3950
-Wire Wire Line
-	4900 3950 5050 3950
+	4350 3950 5050 3950
 Connection ~ 4650 3950
 Connection ~ 4900 3950
 $Comp
@@ -562,16 +540,12 @@ $EndComp
 Wire Wire Line
 	4650 4350 4650 4450
 Wire Wire Line
-	4550 4450 4650 4450
-Wire Wire Line
-	4650 4450 4750 4450
+	4550 4450 4750 4450
 Connection ~ 4650 4450
 Wire Wire Line
 	5350 4700 5350 4450
 Wire Wire Line
-	3800 4700 3900 4700
-Wire Wire Line
-	3900 4700 5350 4700
+	3800 4700 5350 4700
 Connection ~ 5350 4450
 Wire Wire Line
 	3800 4450 3900 4450
@@ -581,9 +555,7 @@ Connection ~ 3900 4700
 Wire Wire Line
 	3500 4700 3450 4700
 Wire Wire Line
-	3450 4450 3450 4700
-Wire Wire Line
-	3450 4700 3450 4750
+	3450 4450 3450 4750
 Connection ~ 3450 4450
 Wire Wire Line
 	3400 4450 3400 4150
@@ -630,9 +602,7 @@ $EndComp
 Text GLabel 5550 4350 0    60   Input ~ 0
 3V3_A
 Wire Wire Line
-	5250 4450 5350 4450
-Wire Wire Line
-	5350 4450 5550 4450
+	5250 4450 5550 4450
 $Comp
 L GND #PWR067
 U 1 1 55FCEBFC
@@ -674,11 +644,7 @@ $EndComp
 Text GLabel 2650 5100 2    69   Input ~ 0
 BUTTON
 Wire Wire Line
-	900  5100 1600 5100
-Wire Wire Line
-	1600 5100 1900 5100
-Wire Wire Line
-	1900 5100 1950 5100
+	900  5100 1950 5100
 Wire Wire Line
 	1600 5100 1600 5150
 $Comp
@@ -693,11 +659,7 @@ F 3 "" H 1600 5450 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2550 3950 2650 3950
-Wire Wire Line
-	2650 3950 2800 3950
-Wire Wire Line
-	2800 3950 3450 3950
+	2550 3950 3450 3950
 Connection ~ 2650 3950
 Connection ~ 2800 3950
 Wire Wire Line
@@ -726,9 +688,7 @@ Text Notes 3750 5750 0    69   ~ 0
 SEQ will disable the 3V3 Supply\nand siphon power from 4V1 while \nin SMS standby recieve power state.
 Connection ~ 3450 4700
 Wire Wire Line
-	3400 4450 3450 4450
-Wire Wire Line
-	3450 4450 3500 4450
+	3400 4450 3500 4450
 Text Notes 800  6150 0    69   ~ 0
 Button force starts the 3V3 to start SEQ\nSEQ must hold 3V3_EN high to stay on\nBUTTON is soft button signal once running\n3V3_EN pulled low kills supply regaurdless if button pressed
 Text GLabel 2950 2300 2    60   Input ~ 0
@@ -1110,9 +1070,7 @@ $EndComp
 Wire Wire Line
 	5250 7250 5300 7250
 Wire Wire Line
-	5250 7400 5300 7400
-Wire Wire Line
-	5300 7400 5350 7400
+	5250 7400 5350 7400
 Connection ~ 5300 7400
 Text GLabel 3050 7050 2    60   Input ~ 0
 ~SIM_PWR_ON
@@ -1271,9 +1229,7 @@ F 4 "77-VJ0603Y103KXACBC" H 2400 4950 60  0001 C CNN "Mouse PN"
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2250 5100 2400 5100
-Wire Wire Line
-	2400 5100 2650 5100
+	2250 5100 2650 5100
 Connection ~ 2400 5100
 $Comp
 L GND #PWR077
@@ -1370,9 +1326,7 @@ $EndComp
 Wire Wire Line
 	2650 3950 2650 4000
 Wire Wire Line
-	2150 3950 2200 3950
-Wire Wire Line
-	2200 3950 2250 3950
+	2150 3950 2250 3950
 Wire Wire Line
 	2200 3950 2200 4050
 Wire Wire Line
@@ -1400,9 +1354,7 @@ F 3 "" H 7200 4300 69  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	6400 4000 6500 4000
-Wire Wire Line
-	6500 4000 6600 4000
+	6400 4000 6600 4000
 Wire Wire Line
 	6500 4000 6500 4100
 Wire Wire Line
@@ -1415,9 +1367,7 @@ Wire Wire Line
 Wire Wire Line
 	6550 4500 6600 4500
 Wire Wire Line
-	7850 4000 7900 4000
-Wire Wire Line
-	7900 4000 7950 4000
+	7850 4000 7950 4000
 Wire Wire Line
 	7900 4000 7900 4100
 Wire Wire Line
@@ -1448,9 +1398,7 @@ F 3 "" H 9100 4650 69  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	8300 4350 8400 4350
-Wire Wire Line
-	8400 4350 8500 4350
+	8300 4350 8500 4350
 Wire Wire Line
 	8400 4350 8400 4450
 Wire Wire Line
@@ -1463,9 +1411,7 @@ Wire Wire Line
 Wire Wire Line
 	8450 4850 8500 4850
 Wire Wire Line
-	9750 4350 9800 4350
-Wire Wire Line
-	9800 4350 9850 4350
+	9750 4350 9850 4350
 Wire Wire Line
 	9800 4350 9800 4450
 Wire Wire Line
@@ -1496,9 +1442,7 @@ F 3 "" H 7600 5750 69  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	6800 5450 6900 5450
-Wire Wire Line
-	6900 5450 7000 5450
+	6800 5450 7000 5450
 Wire Wire Line
 	6900 5450 6900 5550
 Wire Wire Line
@@ -1511,9 +1455,7 @@ Wire Wire Line
 Wire Wire Line
 	6950 5950 7000 5950
 Wire Wire Line
-	8250 5450 8300 5450
-Wire Wire Line
-	8300 5450 8350 5450
+	8250 5450 8350 5450
 Wire Wire Line
 	8300 5450 8300 5550
 Wire Wire Line
@@ -1531,18 +1473,14 @@ F 3 "" H 5500 2500 69  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	6150 2200 6200 2200
-Wire Wire Line
-	6200 2200 6250 2200
+	6150 2200 6250 2200
 Wire Wire Line
 	6200 2200 6200 2300
 Wire Wire Line
 	6200 2300 6150 2300
 Connection ~ 6200 2200
 Wire Wire Line
-	4750 2200 4800 2200
-Wire Wire Line
-	4800 2200 4900 2200
+	4750 2200 4900 2200
 Wire Wire Line
 	4900 2450 4850 2450
 Wire Wire Line
