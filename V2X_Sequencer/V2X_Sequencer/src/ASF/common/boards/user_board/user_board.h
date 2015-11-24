@@ -32,20 +32,26 @@ void board_init(void);
 
 /** Name string macro */
 #define BOARD_NAME                "RVI_V2X_Version_1.2"
+/** @} */
 
 /** \name LED0 definitions
+ *  net: SEQ_LED3 or "PWR" LED
  *  @{ */
 #define LED0_PIN                  IOPORT_CREATE_PIN(PORTB, 0)
 #define LED0_ACTIVE               true
 #define LED0_INACTIVE             !LED0_ACTIVE
 /** @} */
+
 /** \name LED1 definitions
+ *  net: SEQ_LED1 or "M2M" LED
  *  @{ */
 #define LED1_PIN                  IOPORT_CREATE_PIN(PORTA, 6)
 #define LED1_ACTIVE               true
 #define LED1_INACTIVE             !LED0_ACTIVE
 /** @} */
+
 /** \name LED2 definitions
+ *  net: SEQ_LED3 or "GPS" LED
  *  @{ */
 #define LED2_PIN                  IOPORT_CREATE_PIN(PORTA, 7)
 #define LED2_ACTIVE               true
@@ -56,8 +62,7 @@ void board_init(void);
 /**
  * \name LED #1 definitions
  *
- * Wrapper macros for LED0
- * boards.
+ * net: SEQ_LED1 or "M2M" LED
  *
  *  @{ */
 #define LED_1_NAME                "LED1 (M2M, Green)"
@@ -70,8 +75,7 @@ void board_init(void);
 /**
  * \name LED #2 definitions
  *
- * Wrapper macros for LED2
- * boards.
+ * net: SEQ_LED2 or "GPS" LED
  *
  *  @{ */
 #define LED_2_NAME                "LED2 (GPS, Blue)"
@@ -84,8 +88,7 @@ void board_init(void);
 /**
  * \name LED #0 definitions
  *
- * Wrapper macros for LED0
- * boards.
+ * net: SEQ_LED3 or "PWR" LED
  *
  *  @{ */
 #define LED_0_NAME                "LED0 (PWR, Red)"
@@ -108,8 +111,7 @@ void board_init(void);
 /**
  * \name Button #0 definitions
  *
- * Wrapper macros for SW0
- * boards.
+ * User Button Input
  *
  *  @{ */
 #define BUTTON_0_NAME             "Button"
@@ -128,8 +130,7 @@ void board_init(void);
 /**
  * \name Button #1 definitions
  *
- * Wrapper macros for SW1
- * boards.
+ * SIMCARD insertion detection
  *
  *  @{ */
 #define BUTTON_1_NAME             "SIMCARD Detect"
@@ -143,8 +144,7 @@ void board_init(void);
 /**
  * \name Serial Buffer #0 definitions
  *
- * Wrapper macros for BUF0
- * boards.
+ * Makes Atmel active communicator with ELM/STN device
  *
  *  @{ */
 #define BUF_0_NAME             "Buffer SEQ Active"
@@ -163,8 +163,7 @@ void board_init(void);
 /**
  * \name Serial Buffer #1 definitions
  *
- * Wrapper macros for BUF1
- * boards.
+ * Makes FTDI active communicator with ELM/STN device
  *
  *  @{ */
 #define BUF_1_NAME             "Buffer FTDI Active"
@@ -181,7 +180,7 @@ void board_init(void);
 /** @} */
 
 /** Number of on-board buttons */
-#define BUFFER_COUNT 1
+#define BUFFER_COUNT 2
 
 /** \name CP0 definitions
  *  @{ */
@@ -193,8 +192,8 @@ void board_init(void);
 /**
  * \name Charge Pump #0 definitions
  *
- * Wrapper macros for CP0
- * boards.
+ * LED power supply charge pump pin
+ * must be toggled >10khz to activate blue LED
  *
  *  @{ */
 #define CHARGEPUMP_0_NAME             "Charge Pump"
@@ -218,14 +217,14 @@ void board_init(void);
 #define EXT1_PIN_SR_LATCH                  IOPORT_CREATE_PIN(PORTC,1)
 #define EXT1_PIN_CAN_TXD                   IOPORT_CREATE_PIN(PORTC,2) //TX SIGNAL (PORT C RXD0) FROM CAN MODULE
 #define EXT1_PIN_CAN_RXD                   IOPORT_CREATE_PIN(PORTC,3) //RX SIGNAL (PORT C TXD0) TO CAN MODULE BUFFERED
-#define EXT1_PIN_SS                        IOPORT_CREATE_PIN(PORTC,4)
-#define EXT1_PIN_MOSI                      IOPORT_CREATE_PIN(PORTC,5)
-#define EXT1_PIN_MISO                      IOPORT_CREATE_PIN(PORTC,6)
-#define EXT1_PIN_SCK                       IOPORT_CREATE_PIN(PORTC,7)
+#define EXT1_PIN_SPI_SS                    IOPORT_CREATE_PIN(PORTC,4)
+#define EXT1_PIN_SPI_MOSI                  IOPORT_CREATE_PIN(PORTC,5)
+#define EXT1_PIN_SPI_MISO                  IOPORT_CREATE_PIN(PORTC,6)
+#define EXT1_PIN_SPI_SCK                   IOPORT_CREATE_PIN(PORTC,7)
 #define EXT1_PIN_HUB_SDA                   IOPORT_CREATE_PIN(PORTE,0)
 #define EXT1_PIN_HUB_SCL                   IOPORT_CREATE_PIN(PORTE,1)
-#define EXT1_PIN_ACL_RXD                    IOPORT_CREATE_PIN(PORTE,2) //RX SIGNAL (PORT E RXD0) FROM SEQ TO FTDI FOR ACCEL AT INTERFACE
-#define EXT1_PIN_ACL_TXD                    IOPORT_CREATE_PIN(PORTE,3) //TX SIGNAL (PORT E TXD0) FROM SEQ TO FTDI FOR ACCEL AT INTERFACE
+#define EXT1_PIN_ACL_RXD                   IOPORT_CREATE_PIN(PORTE,2) //RX SIGNAL (PORT E RXD0) FROM SEQ TO FTDI FOR ACCEL AT INTERFACE
+#define EXT1_PIN_ACL_TXD                   IOPORT_CREATE_PIN(PORTE,3) //TX SIGNAL (PORT E TXD0) FROM SEQ TO FTDI FOR ACCEL AT INTERFACE
 #define EXT1_PIN_SIM_WAKE                  IOPORT_CREATE_PIN(PORTD,0)
 #define EXT1_PIN_SIM_NETWORK               IOPORT_CREATE_PIN(PORTD,1)
 #define EXT1_PIN_SIM_TXD                   IOPORT_CREATE_PIN(PORTE,2) //TX SIGNAL (PORT D RXD0) FROM SIM MODULE
@@ -237,7 +236,7 @@ void board_init(void);
 
 /** \name Extension header #1 pin definitions by function
  *  @{
- */
+ 
 #define EXT1_PIN_IRQ_1            EXT1_PIN_ACL_INT2
 #define EXT1_PIN_IRQ_0            EXT1_PIN_ACL_INT1
 #define EXT1_PIN_GPIO_0           EXT1_PIN_HUB_STATUS
@@ -259,7 +258,7 @@ void board_init(void);
 #define EXT1_PIN_GPIO_6 		  EXT1_PIN_SIM_NETWORK        
 #define EXT1_PIN_GPIO_7 		  EXT1_PIN_SIM_PWR            
 #define EXT1_PIN_UART_RX2 		  EXT1_PIN_SEQ_RXD            
-#define EXT1_PIN_UART_TX2 		  EXT1_PIN_SEQ_TXD            
+#define EXT1_PIN_UART_TX2 		  EXT1_PIN_SEQ_TXD    */        
 /** @} */
 
 
@@ -303,6 +302,7 @@ void board_init(void);
  */
 
 //! @{
+//#define sck_pin				  EXT1_PIN_SPI_SCK
 #define ACL_SPI				  &SPIC
 #define ACL_CS			      EXT1_PIN_SPI_SS
 #define ACL_MASTER_SCK	      EXT1_PIN_SPI_SCK // SCK as output
