@@ -1846,7 +1846,7 @@ Disassembly of section .text:
      ffe:	96 e0       	ldi	r25, 0x06	; 6
     1000:	4f dd       	rcall	.-1378   	; 0xaa0 <ioport_configure_port_pin>
     1002:	40 e0       	ldi	r20, 0x00	; 0
-    1004:	58 e1       	ldi	r21, 0x18	; 24
+    1004:	50 e0       	ldi	r21, 0x00	; 0
     1006:	61 e0       	ldi	r22, 0x01	; 1
     1008:	80 e0       	ldi	r24, 0x00	; 0
     100a:	96 e0       	ldi	r25, 0x06	; 6
@@ -1933,8 +1933,8 @@ Disassembly of section .text:
     10b0:	16 c0       	rjmp	.+44     	; 0x10de <main+0x9c>
     10b2:	20 93 05 06 	sts	0x0605, r18
     10b6:	80 93 06 06 	sts	0x0606, r24
-    10ba:	90 91 68 06 	lds	r25, 0x0668
-    10be:	95 ff       	sbrs	r25, 5
+    10ba:	90 91 08 06 	lds	r25, 0x0608
+    10be:	90 fd       	sbrc	r25, 0
     10c0:	ea cf       	rjmp	.-44     	; 0x1096 <main+0x54>
     10c2:	40 93 26 06 	sts	0x0626, r20
     10c6:	80 93 05 06 	sts	0x0605, r24

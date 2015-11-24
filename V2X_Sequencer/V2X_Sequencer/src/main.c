@@ -40,7 +40,7 @@ int main ()
 	turn_off((1<<ENABLE_SIM_PWR_ON)); //end of power on pulse
 	while (1){
 		
-		if (simcardStatus() == true)							{ioport_set_pin_high(LED_0_PIN);	}
+		if (buttonStatus() == true)							{ioport_set_pin_high(LED_0_PIN);	}
 		else													{ioport_set_pin_low(LED_0_PIN);		}
 		setChargePumpHigh();
 		if (ioport_get_pin_level(EXT1_PIN_SIM_NETWORK) == true)	{ioport_set_pin_high(LED_1_PIN);	}

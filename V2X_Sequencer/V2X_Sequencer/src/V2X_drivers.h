@@ -14,9 +14,12 @@ void toggleChargePump(void);
 inline static setChargePumpLow(void) {gpio_set_pin_low(CHARGEPUMP_0_PIN);}
 inline static setChargePumpHigh(void) {gpio_set_pin_high(CHARGEPUMP_0_PIN);}
 
-/** \name SIMCARD detect function 
- * returns "true" if simcard is installed
- */
+/** SIMCARD detect function 
+ * returns "true" if installed **/
 inline bool simcardStatus(void) {return 1-ioport_get_pin_level(SW1_PIN);}
+
+/** Button detect function 
+ * returns "true" if installed **/
+inline bool buttonStatus(void) {return ioport_get_pin_level(SW0_PIN);}
 
 #endif /* V2X_DRIVERS_H_ */
