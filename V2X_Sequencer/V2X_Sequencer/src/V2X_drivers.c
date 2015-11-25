@@ -7,6 +7,7 @@
 
 #include <delay.h>
 #include <gpio.h>
+#include "V2X_drivers.h"
 
 void toggleChargePump(void)
 {
@@ -16,3 +17,10 @@ void toggleChargePump(void)
 	
 }
 
+void canbusSerialRouting(uint8_t direction)
+{
+	gpio_set_pin_low(BUF0_PIN);
+	gpio_set_pin_low(BUF1_PIN);
+	if		(direction == BUFFER_FTDI_ROUTING)	{gpio_set_pin_high(BUF1_PIN);}
+	else	/*(direction == BUFFER_AVR_ROUTING)*/	{gpio_set_pin_high(BUF0_PIN);}
+}

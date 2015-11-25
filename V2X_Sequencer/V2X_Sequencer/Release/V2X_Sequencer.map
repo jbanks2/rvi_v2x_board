@@ -59,7 +59,6 @@ Discarded input sections
  .bss           0x00000000        0x0 src/V2X_drivers.o
  .text.toggleChargePump
                 0x00000000        0xc src/V2X_drivers.o
- .comment       0x00000000       0x31 src/V2X_drivers.o
  .text          0x00000000        0x0 src/ASF/xmega/drivers/usart/usart.o
  .data          0x00000000        0x0 src/ASF/xmega/drivers/usart/usart.o
  .bss           0x00000000        0x0 src/ASF/xmega/drivers/usart/usart.o
@@ -466,7 +465,7 @@ END GROUP
 .rela.plt
  *(.rela.plt)
 
-.text           0x00000000     0x10f6
+.text           0x00000000     0x1116
  *(.vectors)
  .vectors       0x00000000      0x1fc C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/XMEGAA_DFP/1.0.36/gcc/dev/atxmega16a4u/avrxmega2/crtatxmega16a4u.o
                 0x00000000                __vector_default
@@ -650,54 +649,57 @@ END GROUP
  .text.__vector_46
                 0x000003b4      0x180 src/ASF/xmega/drivers/twi/twim.o
                 0x000003b4                __vector_46
+ .text.canbusSerialRouting
+                0x00000534       0x1c src/V2X_drivers.o
+                0x00000534                canbusSerialRouting
  .text.shiftRegisterInit
-                0x00000534       0x8c src/sequence.o
-                0x00000534                shiftRegisterInit
- .text.turn_on  0x000005c0      0x26e src/sequence.o
-                0x000005c0                turn_on
+                0x00000550       0x8c src/sequence.o
+                0x00000550                shiftRegisterInit
+ .text.turn_on  0x000005dc      0x26e src/sequence.o
+                0x000005dc                turn_on
  .text.turn_off
-                0x0000082e      0x272 src/sequence.o
-                0x0000082e                turn_off
+                0x0000084a      0x272 src/sequence.o
+                0x0000084a                turn_off
  .text.ioport_configure_port_pin
-                0x00000aa0       0x48 src/ASF/common/services/ioport/xmega/ioport_compat.o
-                0x00000aa0                ioport_configure_port_pin
+                0x00000abc       0x48 src/ASF/common/services/ioport/xmega/ioport_compat.o
+                0x00000abc                ioport_configure_port_pin
  .text.sysclk_init
-                0x00000ae8        0xe src/ASF/common/services/clock/xmega/sysclk.o
-                0x00000ae8                sysclk_init
+                0x00000b04        0xe src/ASF/common/services/clock/xmega/sysclk.o
+                0x00000b04                sysclk_init
  .text.__vector_6
-                0x00000af6       0xb2 src/ASF/xmega/drivers/dma/dma.o
-                0x00000af6                __vector_6
+                0x00000b12       0xb2 src/ASF/xmega/drivers/dma/dma.o
+                0x00000b12                __vector_6
  .text.__vector_7
-                0x00000ba8       0xbe src/ASF/xmega/drivers/dma/dma.o
-                0x00000ba8                __vector_7
+                0x00000bc4       0xbe src/ASF/xmega/drivers/dma/dma.o
+                0x00000bc4                __vector_7
  .text.__vector_8
-                0x00000c66       0xb8 src/ASF/xmega/drivers/dma/dma.o
-                0x00000c66                __vector_8
+                0x00000c82       0xb8 src/ASF/xmega/drivers/dma/dma.o
+                0x00000c82                __vector_8
  .text.__vector_9
-                0x00000d1e       0xa0 src/ASF/xmega/drivers/dma/dma.o
-                0x00000d1e                __vector_9
+                0x00000d3a       0xa0 src/ASF/xmega/drivers/dma/dma.o
+                0x00000d3a                __vector_9
  .text.__vector_10
-                0x00000dbe       0x32 src/ASF/xmega/drivers/rtc/rtc.o
-                0x00000dbe                __vector_10
+                0x00000dda       0x32 src/ASF/xmega/drivers/rtc/rtc.o
+                0x00000dda                __vector_10
  .text.__vector_11
-                0x00000df0       0xce src/ASF/xmega/drivers/rtc/rtc.o
-                0x00000df0                __vector_11
- .text.pinInit  0x00000ebe      0x180 src/ASF/common/boards/user_board/init.o
-                0x00000ebe                pinInit
+                0x00000e0c       0xce src/ASF/xmega/drivers/rtc/rtc.o
+                0x00000e0c                __vector_11
+ .text.pinInit  0x00000eda      0x180 src/ASF/common/boards/user_board/init.o
+                0x00000eda                pinInit
  .text.board_init
-                0x0000103e        0x4 src/ASF/common/boards/user_board/init.o
-                0x0000103e                board_init
+                0x0000105a        0x8 src/ASF/common/boards/user_board/init.o
+                0x0000105a                board_init
  .text.startup.main
-                0x00001042       0xa2 src/main.o
-                0x00001042                main
+                0x00001062       0xa2 src/main.o
+                0x00001062                main
  .text.avr-libc
-                0x000010e4        0xe c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/../../../../avr/lib/avrxmega2\libc.a(memset.o)
-                0x000010e4                memset
-                0x000010f2                . = ALIGN (0x2)
+                0x00001104        0xe c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/../../../../avr/lib/avrxmega2\libc.a(memset.o)
+                0x00001104                memset
+                0x00001112                . = ALIGN (0x2)
  *(.fini9)
- .fini9         0x000010f2        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/avrxmega2\libgcc.a(_exit.o)
-                0x000010f2                _exit
-                0x000010f2                exit
+ .fini9         0x00001112        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/avrxmega2\libgcc.a(_exit.o)
+                0x00001112                _exit
+                0x00001112                exit
  *(.fini9)
  *(.fini8)
  *(.fini8)
@@ -716,11 +718,11 @@ END GROUP
  *(.fini1)
  *(.fini1)
  *(.fini0)
- .fini0         0x000010f2        0x4 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/avrxmega2\libgcc.a(_exit.o)
+ .fini0         0x00001112        0x4 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/avrxmega2\libgcc.a(_exit.o)
  *(.fini0)
-                0x000010f6                _etext = .
+                0x00001116                _etext = .
 
-.data           0x00802000        0x0 load address 0x000010f6
+.data           0x00802000        0x0 load address 0x00001116
                 0x00802000                PROVIDE (__data_start, .)
  *(.data)
  *(.data*)
@@ -743,8 +745,8 @@ END GROUP
  COMMON         0x00802015        0x8 src/ASF/xmega/drivers/rtc/rtc.o
                 0x00802015                rtc_data
                 0x0080201d                PROVIDE (__bss_end, .)
-                0x000010f6                __data_load_start = LOADADDR (.data)
-                0x000010f6                __data_load_end = (__data_load_start + SIZEOF (.data))
+                0x00001116                __data_load_start = LOADADDR (.data)
+                0x00001116                __data_load_end = (__data_load_start + SIZEOF (.data))
 
 .noinit         0x0080201d        0x0
                 0x0080201d                PROVIDE (__noinit_start, .)
@@ -794,6 +796,7 @@ END GROUP
  *(.comment)
  .comment       0x00000000       0x30 src/ASF/xmega/drivers/twi/twim.o
                                  0x31 (size before relaxing)
+ .comment       0x00000030       0x31 src/V2X_drivers.o
  .comment       0x00000030       0x31 src/sequence.o
  .comment       0x00000030       0x31 src/ASF/common/services/ioport/xmega/ioport_compat.o
  .comment       0x00000030       0x31 src/ASF/common/services/clock/xmega/sysclk.o

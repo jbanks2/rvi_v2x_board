@@ -36,7 +36,9 @@ src/ASF/common/boards/user_board/init.d \
  ../src/ASF/common/services/ioport/xmega/ioport_compat.h \
  ../src/ASF/common/services/ioport/xmega/../ioport.h ../src/sequence.h \
  ../src/./ASF/common/boards/board.h \
- ../src/ASF/common/boards/user_board/user_board.h
+ ../src/ASF/common/boards/user_board/user_board.h ../src/V2X_drivers.h \
+ ../src/ASF/common/services/gpio/gpio.h \
+ ../src/ASF/common/services/gpio/xmega_gpio/xmega_gpio.h
 
 ../src/ASF/common/boards/board.h:
 
@@ -115,3 +117,9 @@ c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\
 ../src/./ASF/common/boards/board.h:
 
 ../src/ASF/common/boards/user_board/user_board.h:
+
+../src/V2X_drivers.h:
+
+../src/ASF/common/services/gpio/gpio.h:
+
+../src/ASF/common/services/gpio/xmega_gpio/xmega_gpio.h:

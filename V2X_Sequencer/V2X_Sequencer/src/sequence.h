@@ -33,8 +33,5 @@ void shiftRegisterLatch(void);
 void bits_To_Shift_Register(uint16_t bits);
 void turn_on (uint16_t pin_name_on);
 void turn_off(uint16_t pin_name_off);
-void toggleChargePump(void);
-void chargePumpLow(void);
-void chargePumpHigh(void);
 
 #endif /* SEQUENCE_H_ */

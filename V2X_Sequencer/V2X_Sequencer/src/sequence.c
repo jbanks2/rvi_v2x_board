@@ -35,12 +35,9 @@ void shiftRegisterClear(void)
 void bits_To_Shift_Register(uint16_t bits) {
 	
 	state = bits;
-//	uint16_t preserve= bits;
 	for (int i=0; i<16; i++) {
-//	for (int i=15; i >= 0; i--) {
 		
 		if (bits>>i & 1)
-//		if ((1<<i) & bits) //if bit weight 'i' is set, send high
 		{gpio_set_pin_high(EXT1_PIN_SPI_MOSI);}
 		else
 		{gpio_set_pin_low(EXT1_PIN_SPI_MOSI);}
@@ -49,7 +46,6 @@ void bits_To_Shift_Register(uint16_t bits) {
 		gpio_set_pin_low(EXT1_PIN_SPI_SCK);
 	}
 	shiftRegisterLatch();
-//	state = preserve;
 }
 
 /*
@@ -63,15 +59,13 @@ void run_sequence(struct step sequence[], int size) {
 }
 */
 
-void turn_on (uint16_t pin_name_on) {
-	state |= pin_name_on; //| state;
+void turn_on (uint16_t pin_on_mask) {
+	state |= pin_on_mask; //| state;
 	bits_To_Shift_Register(state);
 }
 
-void turn_off(uint16_t pin_name_off)
+void turn_off(uint16_t pin_off_mask)
 {
-	//uint16_t compare_matrix = pin_name_off ^ 0xffff;
-	//state = compare_matrix & state;
-	state &= ~(pin_name_off); //& state;
+	state &= ~(pin_off_mask); //& state;
 	bits_To_Shift_Register(state);
 }

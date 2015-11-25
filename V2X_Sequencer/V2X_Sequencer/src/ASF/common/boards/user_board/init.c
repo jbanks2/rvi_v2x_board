@@ -14,6 +14,7 @@
 #include "ioport.h"
 #include "sequence.h"
 #include "user_board/user_board.h"
+#include "V2X_drivers.h"
 
 void pinInit()
 {
@@ -61,4 +62,5 @@ void board_init(void)
 	ioport_init();				//Initializes the IOPORT service	
 	pinInit();					//whole chip pin init
 	shiftRegisterInit();		//Configure SR specific pin modes, sets SR to default states
+	canbusSerialRouting(BUFFER_FTDI_ROUTING);
 }

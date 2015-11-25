@@ -43,7 +43,7 @@ src/V2X_drivers.d src/V2X_drivers.o: ../src/V2X_drivers.c \
  ../src/ASF/common/services/ioport/ioport.h \
  ../src/ASF/common/services/ioport/xmega/ioport.h \
  ../src/ASF/common/services/ioport/xmega/ioport_compat.h \
- ../src/ASF/common/services/ioport/xmega/../ioport.h
+ ../src/ASF/common/services/ioport/xmega/../ioport.h ../src/V2X_drivers.h
 
 ../src/ASF/common/services/delay/delay.h:
 
@@ -140,3 +140,5 @@ c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\
 ../src/ASF/common/services/ioport/xmega/ioport_compat.h:
 
 ../src/ASF/common/services/ioport/xmega/../ioport.h:
+
+../src/V2X_drivers.h:

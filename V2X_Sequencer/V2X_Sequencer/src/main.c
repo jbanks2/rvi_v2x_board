@@ -40,15 +40,21 @@ int main ()
 	turn_off((1<<ENABLE_SIM_PWR_ON)); //end of power on pulse
 	while (1){
 		
-		if (buttonStatus() == true)							{ioport_set_pin_high(LED_0_PIN);	}
-		else													{ioport_set_pin_low(LED_0_PIN);		}
-		setChargePumpHigh();
-		if (ioport_get_pin_level(EXT1_PIN_SIM_NETWORK) == true)	{ioport_set_pin_high(LED_1_PIN);	}
-		else													{ioport_set_pin_low(LED_1_PIN);		}
-		if (ioport_get_pin_level(EXT1_PIN_SIM_PWR) == true)		{ioport_set_pin_high(LED_2_PIN);	}
-		else													{ioport_set_pin_low(LED_2_PIN);		}
+		if (simcardStatus() == true)							{led_0_on();	}
+		else													{led_0_off();	}
+		setChargePumpHigh();									
+		if (ioport_get_pin_level(EXT1_PIN_SIM_NETWORK) == true)	{led_1_on();	}
+		else													{led_1_off();	}
+		if (ioport_get_pin_level(EXT1_PIN_SIM_PWR) == true)		{led_2_on();	}
+		else													{led_2_off();	}
 		setChargePumpLow();
 		
+// 		canbusSerialRouting(BUFFER_AVR_ROUTING);
+// 		delay_ms(1000);
+// 		led_0_on();
+// 		canbusSerialRouting(BUFFER_FTDI_ROUTING);
+// 		delay_ms(1000);
+// 		led_0_off();
 		
 		//toggleChargePump();
 	}
