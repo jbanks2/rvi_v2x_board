@@ -42,12 +42,12 @@ int main ()
 		
 		if (simcardStatus() == true)							{led_0_on();	}
 		else													{led_0_off();	}
-		setChargePumpHigh();									
+		toggleChargePump();									
 		if (ioport_get_pin_level(EXT1_PIN_SIM_NETWORK) == true)	{led_1_on();	}
 		else													{led_1_off();	}
 		if (ioport_get_pin_level(EXT1_PIN_SIM_PWR) == true)		{led_2_on();	}
 		else													{led_2_off();	}
-		setChargePumpLow();
+		toggleChargePump();
 		
 // 		canbusSerialRouting(BUFFER_AVR_ROUTING);
 // 		delay_ms(1000);

@@ -11,10 +11,10 @@
 #include <board.h>
 #include <compiler.h>
 #include <conf_board.h>
-#include "ioport.h"
-#include "sequence.h"
-#include "user_board/user_board.h"
-#include "V2X_drivers.h"
+#include <ioport.h>
+#include "./sequence.h"
+#include "./board.h"
+#include "./V2X_drivers.h"
 
 void pinInit()
 {
