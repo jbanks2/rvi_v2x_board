@@ -356,17 +356,6 @@ F 3 "" H 9650 1300 60  0000 C CNN
 	1    9650 1300
 	0    1    1    0   
 $EndComp
-$Comp
-L R R8
-U 1 1 55A75EF8
-P 8750 1550
-F 0 "R8" V 8830 1550 50  0000 C CNN
-F 1 "DNS" V 8750 1550 50  0000 C CNN
-F 2 "Custom Parts:R_0603_sm" V 8680 1550 30  0001 C CNN
-F 3 "" H 8750 1550 30  0000 C CNN
-	1    8750 1550
-	-1   0    0    1   
-$EndComp
 Text GLabel 9450 2950 2    60   Input ~ 0
 SIMCARD_V
 $Comp
@@ -582,8 +571,6 @@ Wire Wire Line
 Wire Wire Line
 	9650 1200 9650 1200
 Connection ~ 9650 1800
-Wire Wire Line
-	9650 1700 9650 2000
 Connection ~ 4250 4150
 Wire Wire Line
 	4150 4150 4250 4150
@@ -738,30 +725,6 @@ Wire Wire Line
 Wire Wire Line
 	2300 6100 2300 6050
 Connection ~ 2300 6050
-Text GLabel 8650 1350 0    60   Input ~ 0
-4V1_B
-$Comp
-L R R9
-U 1 1 5602F7C8
-P 8750 1850
-F 0 "R9" V 8830 1850 50  0000 C CNN
-F 1 "DNS" V 8750 1850 50  0000 C CNN
-F 2 "Custom Parts:R_0603_sm" V 8680 1850 30  0001 C CNN
-F 3 "" H 8750 1850 30  0000 C CNN
-	1    8750 1850
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	9650 1600 8950 1600
-Wire Wire Line
-	8950 1600 8950 1700
-Wire Wire Line
-	8950 1700 8650 1700
-Wire Wire Line
-	8750 1350 8650 1350
-Wire Wire Line
-	8750 1350 8750 1400
-Connection ~ 8750 1700
 Text GLabel 4850 2450 2    69   Input ~ 0
 PC_WAKE
 Text GLabel 4850 2650 2    69   Input ~ 0
@@ -894,8 +857,6 @@ F 4 "530-142-0701-801" H 6700 6400 60  0001 C CNN "Mouse PN"
 	1    6700 6400
 	-1   0    0    -1  
 $EndComp
-Wire Wire Line
-	9650 2000 8750 2000
 $Comp
 L C C15
 U 1 1 5603FE34
@@ -1074,8 +1035,8 @@ P 2200 5100
 F 0 "P26" H 2200 5550 50  0000 C CNN
 F 1 "CONN_02X10" V 2200 5100 50  0000 C CNN
 F 2 "Pin_Headers:Pin_Header_Straight_2x10" H 2200 3900 60  0001 C CNN
-F 3 "http://www.mouser.com/ProductDetail/FCI/77313-824-20LF/?qs=sGAEpiMZZMs%252bGHln7q6pm24n0txessAMJKIe4p3QHSo%3d" H 2200 3900 60  0001 C CNN
-F 4 "649-77313-824-20LF" H 2200 5100 60  0001 C CNN "Mouse PN"
+F 3 "http://www.mouser.com/ds/2/418/NG_CD_84952_A4-635383.pdf" H 2200 3900 60  0001 C CNN
+F 4 "571-2-84952-0" H 2200 5100 60  0001 C CNN "Mouse PN"
 	1    2200 5100
 	1    0    0    -1  
 $EndComp
@@ -1107,7 +1068,7 @@ Text GLabel 4250 4200 3    60   Input ~ 0
 4V1_B
 Text GLabel 1950 4750 0    60   Input ~ 0
 SIMCARD_B
-Text GLabel 8650 1700 0    60   Input ~ 0
+Text GLabel 9650 1600 0    60   Input ~ 0
 SIMCARD_B
 $Comp
 L C C21
@@ -1404,7 +1365,7 @@ U 1 1 562F3CE4
 P 7600 4600
 F 0 "U24" H 7350 4800 40  0000 C CNN
 F 1 "TLV70012DCK" H 7700 4800 40  0000 C CNN
-F 2 "" H 7600 4700 35  0001 C CIN
+F 2 "TO_SOT_Packages_SMD:SOT-23-5" H 7600 4700 35  0001 C CIN
 F 3 "" H 7600 4600 60  0000 C CNN
 	1    7600 4600
 	1    0    0    -1  
@@ -1483,4 +1444,6 @@ F 3 "" H 8150 5050 60  0000 C CNN
 	1    8150 5050
 	-1   0    0    -1  
 $EndComp
+Wire Wire Line
+	9650 1700 9650 1800
 $EndSCHEMATC
