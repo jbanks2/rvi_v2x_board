@@ -1024,11 +1024,11 @@ U 1 1 560F2C34
 P 2200 5100
 F 0 "P26" H 2200 5550 50  0000 C CNN
 F 1 "CONN_02X10" V 2200 5100 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_2x10" H 2200 3900 60  0001 C CNN
+F 2 "Custom Parts:FFC-1MMx20" H 2200 3900 60  0001 C CNN
 F 3 "http://www.mouser.com/ProductDetail/FCI/77313-824-20LF/?qs=sGAEpiMZZMs%252bGHln7q6pm24n0txessAMJKIe4p3QHSo%3d" H 2200 3900 60  0001 C CNN
 F 4 "649-77313-824-20LF" H 2200 5100 60  0001 C CNN "Mouse PN"
 	1    2200 5100
-	-1   0    0    1   
+	1    0    0    -1  
 $EndComp
 Text GLabel 1950 4850 0    60   Input ~ 0
 SIM_USB_DET_B
