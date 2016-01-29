@@ -83,7 +83,7 @@ EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 6 8
+Sheet 6 6
 Title "V2X - Open source RVI over SMS daughter card"
 Date "2015-07-17"
 Rev "1.2"
@@ -135,23 +135,19 @@ Text GLabel 4150 1150 2    60   Input ~ 0
 HUB_CLK
 Text GLabel 4150 1250 2    60   Input ~ 0
 HUB_CLKN
-Text GLabel 6200 7150 2    60   Input ~ 0
+Text GLabel 6300 3050 2    60   Input ~ 0
 HUB_CLK
-Text GLabel 5500 7150 0    60   Input ~ 0
+Text GLabel 5600 3050 0    60   Input ~ 0
 HUB_CLKN
-Wire Wire Line
-	5500 7150 5650 7150
-Wire Wire Line
-	6050 7150 6200 7150
 $Comp
 L GND #PWR085
 U 1 1 55F89454
-P 5850 7250
-F 0 "#PWR085" H 5850 7000 50  0001 C CNN
-F 1 "GND" V 5850 7050 50  0000 C CNN
-F 2 "" H 5850 7250 60  0000 C CNN
-F 3 "" H 5850 7250 60  0000 C CNN
-	1    5850 7250
+P 5950 3150
+F 0 "#PWR085" H 5950 2900 50  0001 C CNN
+F 1 "GND" V 5950 2950 50  0000 C CNN
+F 2 "" H 5950 3150 60  0000 C CNN
+F 3 "" H 5950 3150 60  0000 C CNN
+	1    5950 3150
 	1    0    0    -1  
 $EndComp
 NoConn ~ 2750 1650
@@ -169,60 +165,16 @@ F 4 "71-CRCW0603-12K-E3" H 4950 950 60  0001 C CNN "Mouse PN"
 	0    1    1    0   
 $EndComp
 $Comp
-L R R77
-U 1 1 55F89CC5
-P 3700 3600
-F 0 "R77" V 3780 3600 50  0000 C CNN
-F 1 "DNS" V 3700 3600 50  0000 C CNN
-F 2 "Custom Parts:R_0603_sm" V 3630 3600 30  0001 C CNN
-F 3 "" H 3700 3600 30  0000 C CNN
-	1    3700 3600
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	3700 3750 3700 3950
-Connection ~ 3700 3850
-Text GLabel 3700 3450 1    60   Input ~ 0
-3V3_B
-Wire Wire Line
-	3700 3450 3700 3450
-Wire Wire Line
-	3700 4250 3700 4250
-Text Notes 2200 4150 0    60   ~ 0
-Boot Strapping Option\nSUSP_IND = NON_REM0\nSMBDATA = NON_REM1\nNON_REM[1:0] = 10 \nmeans neither down port\n is removable \n\n\nSMBCLK = CFG_SEL = '0'\nMeans the hub is self powered
-$Comp
-L R R81
-U 1 1 55F8A6E8
-P 7300 3450
-F 0 "R81" V 7380 3450 50  0000 C CNN
-F 1 "DNS" V 7300 3450 50  0000 C CNN
-F 2 "Custom Parts:R_0603_sm" V 7230 3450 30  0001 C CNN
-F 3 "" H 7300 3450 30  0000 C CNN
-	1    7300 3450
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	7300 3600 7300 3800
-Connection ~ 7300 3700
-Text GLabel 7200 3200 0    60   Input ~ 0
-3V3_B
-$Comp
 L GND #PWR086
 U 1 1 55F8A8AD
-P 7300 4100
-F 0 "#PWR086" H 7300 3850 50  0001 C CNN
-F 1 "GND" V 7300 3900 50  0000 C CNN
-F 2 "" H 7300 4100 60  0000 C CNN
-F 3 "" H 7300 4100 60  0000 C CNN
-	1    7300 4100
-	1    0    0    -1  
+P 6250 1450
+F 0 "#PWR086" H 6250 1200 50  0001 C CNN
+F 1 "GND" V 6250 1250 50  0000 C CNN
+F 2 "" H 6250 1450 60  0000 C CNN
+F 3 "" H 6250 1450 60  0000 C CNN
+	1    6250 1450
+	0    1    1    0   
 $EndComp
-Wire Wire Line
-	7300 3300 7300 3200
-Wire Wire Line
-	7300 3200 7200 3200
-Text Notes 5450 3650 0    60   ~ 0
-Boot Strapping Option\nPRTPWR1 = Battery Charge Enable\n0  = feature off, we dont need.
 $Comp
 L GND #PWR087
 U 1 1 55F8AB65
@@ -234,11 +186,6 @@ F 3 "" H 5100 950 60  0000 C CNN
 	1    5100 950 
 	0    -1   -1   0   
 $EndComp
-Wire Wire Line
-	4800 950  4150 950 
-Wire Wire Line
-	1100 1750 2750 1750
-Connection ~ 1250 1750
 $Comp
 L GND #PWR088
 U 1 1 55F8AFDA
@@ -250,9 +197,6 @@ F 3 "" H 1250 2050 60  0000 C CNN
 	1    1250 2050
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	1650 950  2750 950 
-Connection ~ 1750 950 
 $Comp
 L GND #PWR089
 U 1 1 55F8B30B
@@ -276,10 +220,6 @@ F 4 "603-CC603KRX7R7BB105" H 1600 2150 60  0001 C CNN "Mouse PN"
 	1    1600 2150
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	1600 2000 1600 1850
-Wire Wire Line
-	1600 1850 2750 1850
 $Comp
 L GND #PWR090
 U 1 1 55F8B452
@@ -291,8 +231,6 @@ F 3 "" H 1600 2300 60  0000 C CNN
 	1    1600 2300
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	4150 1050 4800 1050
 $Comp
 L GND #PWR091
 U 1 1 55F8B6A0
@@ -304,13 +242,8 @@ F 3 "" H 4800 1350 60  0000 C CNN
 	1    4800 1350
 	1    0    0    -1  
 $EndComp
-Text Notes 5500 4050 0    60   ~ 0
-PRTPWR1 and PRTPWR2 go\n high when the port is active
 Text GLabel 4150 1750 2    60   Input ~ 0
 3V3_B
-Wire Wire Line
-	7200 3750 7300 3750
-Connection ~ 7300 3750
 Text GLabel 4150 1950 2    60   Input ~ 0
 HUB_SCL
 Text GLabel 4150 2050 2    60   Input ~ 0
@@ -318,32 +251,22 @@ HUB_SDA
 $Comp
 L GND #PWR092
 U 1 1 55F9C2E3
-P 3700 4250
-F 0 "#PWR092" H 3700 4000 50  0001 C CNN
-F 1 "GND" V 3700 4050 50  0000 C CNN
-F 2 "" H 3700 4250 60  0000 C CNN
-F 3 "" H 3700 4250 60  0000 C CNN
-	1    3700 4250
-	1    0    0    -1  
+P 6250 1700
+F 0 "#PWR092" H 6250 1450 50  0001 C CNN
+F 1 "GND" V 6250 1500 50  0000 C CNN
+F 2 "" H 6250 1700 60  0000 C CNN
+F 3 "" H 6250 1700 60  0000 C CNN
+	1    6250 1700
+	0    1    1    0   
 $EndComp
 Text GLabel 4150 1650 2    60   Input ~ 0
 HUB_SUSP_IND
-Text GLabel 3700 3850 0    60   Input ~ 0
+Text GLabel 6550 1700 2    60   Input ~ 0
 HUB_SUSP_IND
 Text GLabel 2750 1550 0    69   Input ~ 0
 HUB_PWR_PRT1
-Text GLabel 7700 3700 2    69   Input ~ 0
-HUB_STATUS
-Text GLabel 4150 3850 2    69   Input ~ 0
-HUB_SUSP
-Wire Wire Line
-	4150 3850 4150 3850
-Wire Wire Line
-	3850 3850 3700 3850
-Text GLabel 7200 3750 0    69   Input ~ 0
+Text GLabel 6550 1450 2    69   Input ~ 0
 HUB_PWR_PRT1
-Wire Wire Line
-	7300 3700 7400 3700
 Text GLabel 4150 1550 2    60   Input ~ 0
 3V3_B
 Text GLabel 4150 1450 2    67   Input ~ 0
@@ -389,164 +312,323 @@ F 4 "603-CC603KRX7R7BB105" H 1750 1100 60  0001 C CNN "Mouse PN"
 	1    0    0    -1  
 $EndComp
 $Comp
-L R R78
-U 1 1 56070A28
-P 4000 3850
-F 0 "R78" V 4080 3850 50  0000 C CNN
-F 1 "1K" V 4000 3850 50  0000 C CNN
-F 2 "Custom Parts:R_0603_sm" V 3930 3850 30  0001 C CNN
-F 3 "http://www.vishay.com/doc?20035" H 4000 3850 30  0001 C CNN
-F 4 "71-CRCW0603-1.0K-E3" H 4000 3850 60  0001 C CNN "Mouse PN"
-	1    4000 3850
-	0    -1   -1   0   
-$EndComp
-$Comp
-L R R82
-U 1 1 56070A80
-P 7550 3700
-F 0 "R82" V 7630 3700 50  0000 C CNN
-F 1 "1K" V 7550 3700 50  0000 C CNN
-F 2 "Custom Parts:R_0603_sm" V 7480 3700 30  0001 C CNN
-F 3 "http://www.vishay.com/doc?20035" H 7550 3700 30  0001 C CNN
-F 4 "71-CRCW0603-1.0K-E3" H 7550 3700 60  0001 C CNN "Mouse PN"
-	1    7550 3700
-	0    -1   -1   0   
-$EndComp
-$Comp
 L CRYSTAL_SMD X3
 U 1 1 56092E15
-P 5850 7150
-F 0 "X3" H 5850 7240 50  0000 C CNN
-F 1 "24MHz" H 5880 7040 50  0000 L CNN
-F 2 "Custom Parts:AWSCR" H 5850 7150 60  0001 C CNN
-F 3 "http://www.abracon.com/Resonators/N_AWSCR-MT.pdf" H 5850 7150 60  0001 C CNN
-F 4 "815-AWSCR-24.00MTD-T" H 5850 7150 60  0001 C CNN "Mouse PN"
-	1    5850 7150
+P 5950 3050
+F 0 "X3" H 5950 3140 50  0000 C CNN
+F 1 "24MHz" H 5980 2940 50  0000 L CNN
+F 2 "Custom Parts:AWSCR" H 5950 3050 60  0001 C CNN
+F 3 "http://www.abracon.com/Resonators/N_AWSCR-MT.pdf" H 5950 3050 60  0001 C CNN
+F 4 "815-AWSCR-24.00MTD-T" H 5950 3050 60  0001 C CNN "Mouse PN"
+	1    5950 3050
 	1    0    0    -1  
 $EndComp
-Text GLabel 7500 1000 2    60   Input ~ 0
+Text GLabel 3800 3050 0    60   Input ~ 0
 ~HUB_RESET
-Text GLabel 6900 1200 0    60   Input ~ 0
+Text GLabel 3300 3250 0    60   Input ~ 0
 5V0_HOST
-Text GLabel 6900 1000 0    60   Input ~ 0
-HUB_ENABLE
-$Comp
-L R R18
-U 1 1 5627870C
-P 7150 1000
-F 0 "R18" V 7230 1000 50  0000 C CNN
-F 1 "DNS" V 7150 1000 50  0000 C CNN
-F 2 "Custom Parts:R_0603_sm" V 7080 1000 30  0001 C CNN
-F 3 "" H 7150 1000 30  0000 C CNN
-	1    7150 1000
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	7300 1000 7500 1000
-Wire Wire Line
-	7400 1000 7400 1200
-Wire Wire Line
-	7300 1200 7500 1200
-Connection ~ 7400 1000
-Wire Wire Line
-	7000 1000 6900 1000
-Wire Wire Line
-	6900 1200 7000 1200
-Text Notes 6200 1500 0    69   ~ 0
+Text Notes 2600 3550 0    69   ~ 0
 Determines ~RESET~ control for HUB\nSet to Auto Host 5V0 detect
 $Comp
 L R R19
 U 1 1 5627871B
-P 7150 1200
-F 0 "R19" V 7230 1200 50  0000 C CNN
-F 1 "47K" V 7150 1200 50  0000 C CNN
-F 2 "Custom Parts:R_0603_sm" V 7080 1200 30  0001 C CNN
-F 3 "http://www.mouser.com/ds/2/427/dcrcwe3-109170.pdf" H 7150 1200 30  0001 C CNN
-F 4 "71-CRCW0603-47K-E3" H 7150 1200 60  0001 C CNN "Mouse PN"
-	1    7150 1200
+P 3550 3250
+F 0 "R19" V 3630 3250 50  0000 C CNN
+F 1 "47K" V 3550 3250 50  0000 C CNN
+F 2 "Custom Parts:R_0603_sm" V 3480 3250 30  0001 C CNN
+F 3 "http://www.mouser.com/ds/2/427/dcrcwe3-109170.pdf" H 3550 3250 30  0001 C CNN
+F 4 "71-CRCW0603-47K-E3" H 3550 3250 60  0001 C CNN "Mouse PN"
+	1    3550 3250
 	0    -1   -1   0   
 $EndComp
 $Comp
 L R R60
 U 1 1 56278723
-P 7650 1200
-F 0 "R60" V 7730 1200 50  0000 C CNN
-F 1 "47K" V 7650 1200 50  0000 C CNN
-F 2 "Custom Parts:R_0603_sm" V 7580 1200 30  0001 C CNN
-F 3 "http://www.mouser.com/ds/2/427/dcrcwe3-109170.pdf" H 7650 1200 30  0001 C CNN
-F 4 "71-CRCW0603-47K-E3" H 7650 1200 60  0001 C CNN "Mouse PN"
-	1    7650 1200
+P 4050 3250
+F 0 "R60" V 4130 3250 50  0000 C CNN
+F 1 "47K" V 4050 3250 50  0000 C CNN
+F 2 "Custom Parts:R_0603_sm" V 3980 3250 30  0001 C CNN
+F 3 "http://www.mouser.com/ds/2/427/dcrcwe3-109170.pdf" H 4050 3250 30  0001 C CNN
+F 4 "71-CRCW0603-47K-E3" H 4050 3250 60  0001 C CNN "Mouse PN"
+	1    4050 3250
 	0    -1   -1   0   
 $EndComp
-Connection ~ 7400 1200
 $Comp
 L GND #PWR093
 U 1 1 5627872B
-P 7800 1200
-F 0 "#PWR093" H 7800 950 50  0001 C CNN
-F 1 "GND" V 7800 1000 50  0000 C CNN
-F 2 "" H 7800 1200 60  0000 C CNN
-F 3 "" H 7800 1200 60  0000 C CNN
-	1    7800 1200
+P 4200 3250
+F 0 "#PWR093" H 4200 3000 50  0001 C CNN
+F 1 "GND" V 4200 3050 50  0000 C CNN
+F 2 "" H 4200 3250 60  0000 C CNN
+F 3 "" H 4200 3250 60  0000 C CNN
+	1    4200 3250
 	0    -1   -1   0   
 $EndComp
 $Comp
 L R R80
 U 1 1 5627F427
-P 3700 4100
-F 0 "R80" V 3780 4100 50  0000 C CNN
-F 1 "47K" V 3700 4100 50  0000 C CNN
-F 2 "Custom Parts:R_0603_sm" V 3630 4100 30  0001 C CNN
-F 3 "http://www.mouser.com/ds/2/427/dcrcwe3-109170.pdf" H 3700 4100 30  0001 C CNN
-F 4 "71-CRCW0603-47K-E3" H 3700 4100 60  0001 C CNN "Mouse PN"
-	1    3700 4100
-	1    0    0    -1  
+P 6400 1700
+F 0 "R80" V 6480 1700 50  0000 C CNN
+F 1 "47K" V 6400 1700 50  0000 C CNN
+F 2 "Custom Parts:R_0603_sm" V 6330 1700 30  0001 C CNN
+F 3 "http://www.mouser.com/ds/2/427/dcrcwe3-109170.pdf" H 6400 1700 30  0001 C CNN
+F 4 "71-CRCW0603-47K-E3" H 6400 1700 60  0001 C CNN "Mouse PN"
+	1    6400 1700
+	0    -1   1    0   
 $EndComp
 $Comp
 L R R83
 U 1 1 5627F762
-P 7300 3950
-F 0 "R83" V 7380 3950 50  0000 C CNN
-F 1 "47K" V 7300 3950 50  0000 C CNN
-F 2 "Custom Parts:R_0603_sm" V 7230 3950 30  0001 C CNN
-F 3 "http://www.mouser.com/ds/2/427/dcrcwe3-109170.pdf" H 7300 3950 30  0001 C CNN
-F 4 "71-CRCW0603-47K-E3" H 7300 3950 60  0001 C CNN "Mouse PN"
-	1    7300 3950
-	-1   0    0    1   
+P 6400 1450
+F 0 "R83" V 6480 1450 50  0000 C CNN
+F 1 "47K" V 6400 1450 50  0000 C CNN
+F 2 "Custom Parts:R_0603_sm" V 6330 1450 30  0001 C CNN
+F 3 "http://www.mouser.com/ds/2/427/dcrcwe3-109170.pdf" H 6400 1450 30  0001 C CNN
+F 4 "71-CRCW0603-47K-E3" H 6400 1450 60  0001 C CNN "Mouse PN"
+	1    6400 1450
+	0    1    1    0   
 $EndComp
 $Comp
-L R R64
-U 1 1 56280338
-P 6650 2350
-F 0 "R64" V 6730 2350 50  0000 C CNN
-F 1 "DNS" V 6650 2350 50  0000 C CNN
-F 2 "Custom Parts:R_0603_sm" V 6580 2350 30  0001 C CNN
-F 3 "" H 6650 2350 30  0000 C CNN
-	1    6650 2350
-	-1   0    0    1   
+L USB_OTG P?
+U 1 1 567BADA8
+P 1300 3200
+F 0 "P?" H 1625 3075 50  0000 C CNN
+F 1 "USB_u" H 1300 3400 50  0000 C CNN
+F 2 "Custom Parts:USB_Micro-B-DX4R005JJ2R1800" V 1250 3100 60  0001 C CNN
+F 3 "http://www.mouser.com/ds/2/206/MB-0187-2E_DX4-221395.pdf" H 1250 3100 60  0001 C CNN
+F 4 "656-DX4R005JJ2R1800" H 1300 3200 60  0001 C CNN "Mouse PN"
+	1    1300 3200
+	0    -1   1    0   
 $EndComp
-Text GLabel 6550 2100 0    60   Input ~ 0
-3V3_B
-Wire Wire Line
-	6650 2200 6650 2100
-Wire Wire Line
-	6550 2100 7000 2100
-Text GLabel 6650 2500 3    60   Input ~ 0
-HUB_SCL
+Text GLabel 1600 3100 2    67   Input ~ 0
+HUB_DM
+Text GLabel 1600 3200 2    67   Input ~ 0
+HUB_DP
 $Comp
-L R R97
-U 1 1 56280403
-P 7000 2350
-F 0 "R97" V 7080 2350 50  0000 C CNN
-F 1 "DNS" V 7000 2350 50  0000 C CNN
-F 2 "Custom Parts:R_0603_sm" V 6930 2350 30  0001 C CNN
-F 3 "" H 7000 2350 30  0000 C CNN
-	1    7000 2350
-	-1   0    0    1   
+L GND #PWR?
+U 1 1 567BADB1
+P 1200 3600
+F 0 "#PWR?" H 1200 3350 50  0001 C CNN
+F 1 "GND" V 1200 3400 50  0000 C CNN
+F 2 "" H 1200 3600 60  0000 C CNN
+F 3 "" H 1200 3600 60  0000 C CNN
+	1    1200 3600
+	1    0    0    -1  
 $EndComp
+$Comp
+L GND #PWR?
+U 1 1 567BADB7
+P 1600 3400
+F 0 "#PWR?" H 1600 3150 50  0001 C CNN
+F 1 "GND" V 1600 3200 50  0000 C CNN
+F 2 "" H 1600 3400 60  0000 C CNN
+F 3 "" H 1600 3400 60  0000 C CNN
+	1    1600 3400
+	1    0    0    -1  
+$EndComp
+Text Notes 2150 2850 2    60   ~ 0
+HUB Data
+Text GLabel 1600 3000 2    60   Input ~ 0
+5V0_HOST
+NoConn ~ 1600 3300
 Wire Wire Line
-	7000 2100 7000 2200
-Text GLabel 7000 2500 3    60   Input ~ 0
+	5600 3050 5750 3050
+Wire Wire Line
+	6150 3050 6300 3050
+Wire Wire Line
+	6550 1700 6550 1700
+Wire Wire Line
+	4800 950  4150 950 
+Wire Wire Line
+	1100 1750 1250 1750
+Wire Wire Line
+	1250 1750 2750 1750
+Connection ~ 1250 1750
+Wire Wire Line
+	1650 950  1750 950 
+Wire Wire Line
+	1750 950  2750 950 
+Connection ~ 1750 950 
+Wire Wire Line
+	1600 2000 1600 1850
+Wire Wire Line
+	1600 1850 2750 1850
+Wire Wire Line
+	4150 1050 4800 1050
+Wire Wire Line
+	3800 3050 3800 3250
+Wire Wire Line
+	3700 3250 3800 3250
+Wire Wire Line
+	3800 3250 3900 3250
+Wire Wire Line
+	3300 3250 3400 3250
+Connection ~ 3800 3250
+Text GLabel 6550 1950 2    60   Input ~ 0
 HUB_SDA
-Connection ~ 6650 2100
+Text GLabel 6550 1200 2    60   Input ~ 0
+HUB_SCL
+Text GLabel 6250 1950 0    60   Input ~ 0
+3V3_B
+$Comp
+L GND #PWR?
+U 1 1 567BB69B
+P 6250 1200
+F 0 "#PWR?" H 6250 950 50  0001 C CNN
+F 1 "GND" V 6250 1000 50  0000 C CNN
+F 2 "" H 6250 1200 60  0000 C CNN
+F 3 "" H 6250 1200 60  0000 C CNN
+	1    6250 1200
+	0    1    1    0   
+$EndComp
+Text Notes 5950 1000 0    69   ~ 0
+Bootstrapping Options
+$Comp
+L R R?
+U 1 1 567BBCB0
+P 6400 1200
+F 0 "R?" V 6480 1200 50  0000 C CNN
+F 1 "47K" V 6400 1200 50  0000 C CNN
+F 2 "Custom Parts:R_0603_sm" V 6330 1200 30  0001 C CNN
+F 3 "http://www.mouser.com/ds/2/427/dcrcwe3-109170.pdf" H 6400 1200 30  0001 C CNN
+F 4 "71-CRCW0603-47K-E3" H 6400 1200 60  0001 C CNN "Mouse PN"
+	1    6400 1200
+	0    1    1    0   
+$EndComp
+$Comp
+L R R?
+U 1 1 567BBCEF
+P 6400 1950
+F 0 "R?" V 6480 1950 50  0000 C CNN
+F 1 "47K" V 6400 1950 50  0000 C CNN
+F 2 "Custom Parts:R_0603_sm" V 6330 1950 30  0001 C CNN
+F 3 "http://www.mouser.com/ds/2/427/dcrcwe3-109170.pdf" H 6400 1950 30  0001 C CNN
+F 4 "71-CRCW0603-47K-E3" H 6400 1950 60  0001 C CNN "Mouse PN"
+	1    6400 1950
+	0    1    1    0   
+$EndComp
+Text Notes 7100 1250 0    69   ~ 0
+0: Default configuration: Strap options enabled,  hub as “self-powered”
+Text Notes 7350 1750 0    69   ~ 0
+(NON_REM0) 
+Text Notes 7100 2000 0    69   ~ 0
+(NON_REM1) 
+Text Notes 5950 2200 0    69   ~ 0
+NON_REM[1:0] = 10: ports 1 and 2 are non-removable
+Text Notes 7500 1500 0    69   ~ 0
+0: Battery charging feature is not supported for port 1
+$Comp
+L ADXL345 U?
+U 1 1 567BDB8D
+P 3850 7200
+F 0 "U?" H 3600 7700 60  0000 C CNN
+F 1 "ADXL345" H 3850 7000 60  0000 C CNN
+F 2 "Custom Parts:LGA-14_5x3mm" H 3850 7200 60  0001 C CNN
+F 3 "http://www.mouser.com/ds/2/609/ADXL345-246395.pdf" H 3850 7200 60  0001 C CNN
+F 4 "584-ADXL345BCCZ-R7" H 3850 7200 60  0001 C CNN "Mouse PN"
+	1    3850 7200
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 567BDB94
+P 3400 7300
+F 0 "#PWR?" H 3400 7050 50  0001 C CNN
+F 1 "GND" H 3400 7150 50  0000 C CNN
+F 2 "" H 3400 7300 60  0000 C CNN
+F 3 "" H 3400 7300 60  0000 C CNN
+	1    3400 7300
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3400 7100 3400 7300
+Connection ~ 3400 7200
+Connection ~ 3400 7300
+$Comp
+L GND #PWR?
+U 1 1 567BDB9D
+P 2000 7100
+F 0 "#PWR?" H 2000 6850 50  0001 C CNN
+F 1 "GND" H 2000 6950 50  0000 C CNN
+F 2 "" H 2000 7100 60  0000 C CNN
+F 3 "" H 2000 7100 60  0000 C CNN
+	1    2000 7100
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C?
+U 1 1 567BDBA4
+P 2900 6950
+F 0 "C?" H 2925 7050 50  0000 L CNN
+F 1 "4U7" H 2925 6850 50  0000 L CNN
+F 2 "Custom Parts:C_0805_SM" H 2938 6800 30  0001 C CNN
+F 3 "http://www.yuden.co.jp/productdata/catalog/en/mlcc_all_e.pdf" H 2900 6950 60  0001 C CNN
+F 4 "581-12063C475KAT2A" H 2900 6950 60  0001 C CNN "Mouse PN"
+	1    2900 6950
+	1    0    0    -1  
+$EndComp
+$Comp
+L FILTER FB?
+U 1 1 567BDBAC
+P 2550 6800
+F 0 "FB?" H 2550 6950 50  0000 C CNN
+F 1 "220" H 2550 6700 50  0000 C CNN
+F 2 "Custom Parts:R_0603_sm" H 2550 6800 60  0001 C CNN
+F 3 "http://product.tdk.com/emc/beads/detailed_information.php?lang=en&ref=jp&part_no=MPZ1608S221ATA00" H 2550 6800 60  0001 C CNN
+F 4 "810-MPZ1608S221ATA00" H 2550 6800 60  0001 C CNN "Mouse PN"
+	1    2550 6800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2900 6800 3400 6800
+$Comp
+L GND #PWR?
+U 1 1 567BDBB4
+P 2900 7100
+F 0 "#PWR?" H 2900 6850 50  0001 C CNN
+F 1 "GND" H 2900 6950 50  0000 C CNN
+F 2 "" H 2900 7100 60  0000 C CNN
+F 3 "" H 2900 7100 60  0000 C CNN
+	1    2900 7100
+	1    0    0    -1  
+$EndComp
+Connection ~ 2200 6800
+Wire Wire Line
+	2200 6800 2200 7400
+Wire Wire Line
+	2200 7400 3150 7400
+Wire Wire Line
+	3150 7400 3150 6900
+Wire Wire Line
+	3150 6900 3400 6900
+Connection ~ 2900 6800
+Connection ~ 2000 6800
+Text GLabel 4300 7200 2    60   Input ~ 0
+ACL_INT2
+Text GLabel 4300 7300 2    60   Input ~ 0
+ACL_INT1
+Text GLabel 1850 6800 0    60   Input ~ 0
+3V3_D
+Wire Wire Line
+	1850 6800 2200 6800
+Text GLabel 4300 6900 2    60   Input ~ 0
+SEQ_SCK
+Text GLabel 4300 7100 2    60   Input ~ 0
+SEQ_MISO
+Text GLabel 4300 7000 2    60   Input ~ 0
+SEQ_MOSI
+Text GLabel 4300 6800 2    60   Input ~ 0
+SEQ_SS
+$Comp
+L C C?
+U 1 1 567BDBCA
+P 2000 6950
+F 0 "C?" H 2025 7050 50  0000 L CNN
+F 1 "100N" H 2025 6850 50  0000 L CNN
+F 2 "Custom Parts:C_0603_SM" H 2038 6800 30  0001 C CNN
+F 3 "http://www.mouser.com/ds/2/400/mlcc_commercial_general_en-266370.pdf" H 2000 6950 60  0001 C CNN
+F 4 "810-C1608X7R1E104K" H 2000 6950 60  0001 C CNN "Mouse PN"
+	1    2000 6950
+	-1   0    0    -1  
+$EndComp
 $EndSCHEMATC
