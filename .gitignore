@@ -1,0 +1,7 @@
+*.o
+*.elf
+*.hex
+*.lss
+*.map
+*.srec
+V2X_Sequencer/V2X_Sequencer/Release/Makefile

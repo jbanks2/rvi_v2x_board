@@ -14,14 +14,15 @@
 #define BUFFER_FTDI_ROUTING 1
 
 void toggleChargePump(void);
-inline static void setChargePumpLow(void) {gpio_set_pin_low(CHARGEPUMP_0_PIN);}
-inline static void setChargePumpHigh(void) {gpio_set_pin_high(CHARGEPUMP_0_PIN);}
+inline static void chargePumpToggle(void) {gpio_toggle_pin(CHARGEPUMP_0_PIN); }
+inline static void ChargePumpLow(void) {gpio_set_pin_low(CHARGEPUMP_0_PIN);}
+inline static void ChargePumpHigh(void) {gpio_set_pin_high(CHARGEPUMP_0_PIN);}
 
-inline static void led_0_on	(void) {gpio_set_pin_high(LED_0_PIN);	}
+inline static void led_0_on		(void) {gpio_set_pin_high(LED_0_PIN);	}
 inline static void led_0_off	(void) {gpio_set_pin_low(LED_0_PIN);	}		  
-inline static void led_1_on	(void) {gpio_set_pin_high(LED_1_PIN);	}
+inline static void led_1_on		(void) {gpio_set_pin_high(LED_1_PIN);	}
 inline static void led_1_off	(void) {gpio_set_pin_low(LED_1_PIN);	}
-inline static void led_2_on	(void) {gpio_set_pin_high(LED_2_PIN);	}
+inline static void led_2_on		(void) {gpio_set_pin_high(LED_2_PIN);	}
 inline static void led_2_off	(void) {gpio_set_pin_low(LED_2_PIN);	}
 	
 /** SIMCARD detect function 
