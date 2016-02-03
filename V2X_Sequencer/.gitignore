@@ -41,3 +41,15 @@ $RECYCLE.BIN/
 Network Trash Folder
 Temporary Items
 .apdisk
+*.d
+*.o
+*.eep
+*.hex
+*.lss
+*.xml
+*.srec
+*.map
+*.elf
+*.mk
+V2X_Sequencer/Debug/Makefile
+V2X_Sequencer/Release/Makefile
