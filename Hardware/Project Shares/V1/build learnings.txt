@@ -1,5 +1,0 @@
-chip beads are 0805  not 0603
-2 types of 100n caps ( amybe from seperate projects)
-4U7 is 0805 not 0603
-U3 not ordered
-missing 1A ptc fuse
